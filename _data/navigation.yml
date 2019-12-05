@@ -1,0 +1,11 @@
+# main links
+main:
+  #- title: "Blogs"
+  #  url: /blogs/
+  - title: "📚 Categories"
+    url: /categories/
+  - title: "🏆 My Projects"
+    url: /categories/#projects
+  - title: "📝 My CV"
+    url: https://drive.google.com/file/d/1a2jJkzTap9O-Ews70mQJ8wtiZdJPYQ89/view?usp=sharing
+
