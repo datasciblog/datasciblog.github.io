@@ -98,9 +98,9 @@ The Mathematics performance and World population data are totally clean.
 ## 4.1. Overall
 
 <figure class="third">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/1.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/2.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/3.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/1.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/2.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/3.png?raw=true">
 </figure>
 
 Data Science is one of the fastest-growing jobs of 2018, as CNBC reported.
@@ -114,8 +114,8 @@ The number of survey-takers, as a result, also extended from around 17,000 of pe
 ### 4.2.1. Gender
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/4.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/5.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/4.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/5.png?raw=true">
 </figure>
 
 After one year, there were still hundereds of people do not want to declare their gender. While the number of male and female participants was up, people with other gender were less willing to take the survey.
@@ -125,14 +125,14 @@ The survey showed that the proportion of female respondents slightly increased f
 ### 4.2.2. Age
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/6.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/7.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/6.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/7.png?raw=true">
 </figure>
 
 The age distributions showed that respondents of the 2018 survey seemed to be a lot younger than the previous year. The 18-21 and 22-24 age group saw substantial rises from 7.48% to 12.73% and 14.54% to 21.55%, respectively.
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/8.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/8.png?raw=true">
 </figure>
 
 Most of working-age group saw an increase in the number of survey-takers. The figures for two youngest age groups were more than double after one year, with rises of 142.96% and 111.48%. 
@@ -143,8 +143,8 @@ There were slight decreases in the numbers of people aged from 55 to 79 years ol
 ### 4.2.3. Age by Gender
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/9.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/10.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/9.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/10.png?raw=true">
 </figure>
 
 Female respondents were relatively younger than male in the year 2017, however, the age distributions for both gender looked more similar when it came to the year 2018.
@@ -152,8 +152,8 @@ Female respondents were relatively younger than male in the year 2017, however, 
 ### 4.2.4. Gender by Age
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/11.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/12.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/11.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/12.png?raw=true">
 </figure>
 
 While the percentages of female in age groups from 18 to 29 decreased, there were higher proportions of female in other age groups. In 2017, there were no female aged over 80 but we could see some in one year later.
@@ -161,11 +161,11 @@ While the percentages of female in age groups from 18 to 29 decreased, there wer
 ## 4.3. Country
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/13.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/13.png?raw=true">
 </figure>
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/14.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/14.png?raw=true">
 </figure>
 
 Look at the country distribution of respondents, we could see the domination of United States over two years. However, this may not last long since the communities of India and China are growing very fast.
@@ -173,8 +173,8 @@ Look at the country distribution of respondents, we could see the domination of 
 Most of countries in Africa - the world's second largest and second most-populous continent have not appeared in the Data Science map yet. The three representatives of this continent are South Africa, Nigeria and Kenya.
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/15.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/16.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/15.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/16.png?raw=true">
 </figure>
 
 The list of top 10 countries with most respondents changed slightly ater one year:
@@ -187,8 +187,8 @@ The list of top 10 countries with most respondents changed slightly ater one yea
 Although, this is just a part of the big picture. Let's have a look at the speed of growth in different countries.
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/17.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/18.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/17.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/18.png?raw=true">
 </figure>
 
 What happened to Australia? The data science community in this country seemed not to be as strong as their economy in the year 2018 when the number of participants significantly decreased. Philippines followed Australia with a decline of 13.1%.
@@ -198,8 +198,8 @@ Meanwhile, top 5 countries with greatest growth are three from Asia and one from
 ### 4.3.1. Age by Country
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/19.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/20.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/19.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/20.png?raw=true">
 </figure>
 
 India and China respondents looked a lot younger than those from the US. However, it may be a greate advantage for the US since older usually comes with wiser.
@@ -207,8 +207,8 @@ India and China respondents looked a lot younger than those from the US. However
 ### 4.3.2. Gender by Country
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/21.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/22.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/21.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/22.png?raw=true">
 </figure>
 
 It seemed that United States was doing the best job in terms of gender equality while Japan had the lowest proportion of female participants.
@@ -218,8 +218,8 @@ It seemed that United States was doing the best job in terms of gender equality 
 ### 4.4.1. Formal Degree
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/23.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/24.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/23.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/24.png?raw=true">
 </figure>
 
 Most of new respondents of the survey had at least Barchelor degree. Especially, the numbers of respondents who obtained a Master degree were highest in both years. In the year 2018, the proportion of people who have a Master degree was up to 45.5% from 37.53% in 2017. Meanwhile, the proportions of people who have PhD or Barchelor remained the same.
@@ -227,7 +227,7 @@ Most of new respondents of the survey had at least Barchelor degree. Especially,
 ### 4.4.2. Major of Degree
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/25.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/25.png?raw=true">
 </figure>
 
 Computer Science, Mathematics/Statistics, Engineering were the three main majors of participants. In 2018, there were a large amount of new respondents from Business disciplines. Hundered people with environment disciplines also took part in. Computer Science dominated in both years.
@@ -235,8 +235,8 @@ Computer Science, Mathematics/Statistics, Engineering were the three main majors
 ### 4.4.3. Degree by Major
 
 <figure class="half">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/26.png?raw=true">
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/27.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/26.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/27.png?raw=true">
 </figure>
 
 For the top 6 majors of respondents, Physics/Astronomy was the only one in which the number of PhD was higher than the number of Master and Barchelor degree, in both two years.
@@ -246,11 +246,11 @@ For the top 6 majors of respondents, Physics/Astronomy was the only one in which
 ### 4.5.1. Programming Languages
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/28.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/28.png?raw=true">
 </figure>
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/29.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/29.png?raw=true">
 </figure>
 
 In 2017, Python and R were the two programing languages that were recommended most for beginners. Python was voted by 63.11% of respondents, R came in the second with only 24.03% and much lower for other languages.
@@ -260,7 +260,7 @@ This was relatively reasonable since Python was picked as the most used language
 ### 4.5.2. Visualisation Libraries
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/30.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/30.png?raw=true">
 </figure>
 
 The most used libraries used for visualisation in 2018 were Matplotlib for Python with 55.05% and ggplot2 for R with 23.61%. 
@@ -268,7 +268,7 @@ The most used libraries used for visualisation in 2018 were Matplotlib for Pytho
 ### 4.5.3. Machine Learning Frameworks
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/31.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/31.png?raw=true">
 </figure>
 
 For those who may be interested in working with Machine Learning algorithms, Scikit-Learn took the lead with 46.49%, followed by TensorFlow and Keras.
@@ -278,13 +278,13 @@ We could see a pattern here, for all kinds of tools and libraries, the most used
 ## 4.6. Salary
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/32.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/32.png?raw=true">
 </figure>
 
 Just like in many industries, gender inequality also occurred in Data Science. The gender pay gap in this filed was $6,560 last year 2018. The problem was even more extreme in some countries. Let's have a look at the average salaries by gender in Australia, China, India, Russia, United Kingdom and United States.
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/33.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/33.png?raw=true">
 </figure>
 
 There were some points that remarkable here:
@@ -302,7 +302,7 @@ There were some points that remarkable here:
 ## 4.7. Correlation
 
 <figure>
-	<img src="https://github.com/trungha-ngx/trungha-ngx.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/34.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-04-01-what-was-happening-in-data-science-2017-2018/34.png?raw=true">
 </figure>
 
 Look at the graph, we can see a positive correlation between mathematics performance Score of students in one country and the activeness of the data science comunity in that country. In particular, the correlation between them was around 64%.
