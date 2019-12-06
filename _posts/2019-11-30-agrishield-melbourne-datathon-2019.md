@@ -3,6 +3,7 @@ layout: single
 title:  "Agricultural Insurance Marketplace - Melbourne Datathon 2019"
 date:   2019-11-30
 permalink: /2019/11/30/melbourne-datathon-2019/
+excerpt: ""
 categories: 
 - Projects
 tags:

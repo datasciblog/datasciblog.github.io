@@ -3,6 +3,7 @@ layout: single
 title:  "What Was Happening in Data Science?"
 date:   2019-12-05
 permalink: /2019/12/05/what-was-happening-in-data-science/
+excerpt: ""
 categories: 
 - Data Visualisation
 tags:

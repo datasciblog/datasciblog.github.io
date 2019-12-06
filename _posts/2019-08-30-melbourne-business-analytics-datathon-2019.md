@@ -3,6 +3,7 @@ layout: single
 title:  "Hitting Power in Relation to the Choice of Racket - Melbourne Business Analytics Datathon 2019"
 date:   2019-11-30
 permalink: /2019/08/30/melbourne-business-analytics-datathon-2019/
+excerpt: ""
 categories: 
 - Projects
 tags:

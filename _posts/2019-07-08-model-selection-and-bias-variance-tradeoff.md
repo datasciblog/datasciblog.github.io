@@ -3,6 +3,7 @@ layout: single
 title:  "StatLearning-02: Model Selection and Bias-Variance Tradeoff"
 date:   2019-07-08
 permalink: /2019/07/08/model-selection-and-bias-variance-tradeoff/
+excerpt: ""
 categories: 
 - Statistical Learning
 tags:
