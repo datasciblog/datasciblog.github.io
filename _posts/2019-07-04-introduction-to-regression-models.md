@@ -6,8 +6,8 @@ permalink: /2019/07/04/introduction-to-regression-models/
 categories: 
 - Statistical Learning
 tags:
-- Regression
-- Linear Models
+- regression
+- linear models
 classes: wide
 toc: true
 toc_label: "Table of Contents"

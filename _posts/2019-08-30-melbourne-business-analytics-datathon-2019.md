@@ -6,8 +6,8 @@ permalink: /2019/08/30/melbourne-business-analytics-datathon-2019/
 categories: 
 - Projects
 tags:
-- Datathon
-- Tennis
+- datathon
+- tennis
 classes: wide
 toc: true
 toc_label: "Table of Contents"

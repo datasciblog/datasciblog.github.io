@@ -6,7 +6,7 @@ permalink: /2019/12/05/what-was-happening-in-data-science/
 categories: 
 - Data Visualisation
 tags:
-- Kaggle
+- kaggle
 classes: wide
 toc: true
 toc_label: "Table of Contents"

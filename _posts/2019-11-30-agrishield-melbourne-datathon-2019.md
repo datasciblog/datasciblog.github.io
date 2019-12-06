@@ -6,8 +6,8 @@ permalink: /2019/11/30/melbourne-datathon-2019/
 categories: 
 - Projects
 tags:
-- Datathon
-- Satellite Intelligence
+- datathon
+- satellite intelligence
 classes: wide
 toc: true
 toc_label: "Table of Contents"
