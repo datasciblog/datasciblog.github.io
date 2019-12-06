@@ -28,7 +28,7 @@ $$MSE_{Te} = Ave_{i \in Te}[y_i - \hat{f}(x_i)]$$
 These are some examples of the relationship between the flexibility of a model and its $MSEs$ on training and test data.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-07-08-model-selection-and-bias-variance-tradeoff/1.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-07-08-SL-02-model-selection-and-bias-variance-tradeoff/1.png?raw=true">
 	<figcaption>Left: Data simulated from f, shown in black. Three estimates off are shown: the linear regression line (orange curve), and two smoothing spline fits (blue and green curves). Right: Training MSE (grey curve), test MSE (red curve), and minimum possible test MSE over all methods (dashed line). Squares represent the training and test MSEs for the three fits shown in the left-hand panel.</figcaption>
 </figure>
 
@@ -37,12 +37,12 @@ In this figure above, the dashed line refers to the irreducible error $Var(\epsi
 $$E[(Y- \hat{f}(X))^2 | X=x] = [f(x) - \hat{f}(X)]^2 + Var(\epsilon)$$
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-07-08-model-selection-and-bias-variance-tradeoff/2.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-07-08-SL-02-model-selection-and-bias-variance-tradeoff/2.png?raw=true">
 	<figcaption>Using a different true f that is much closer to linear. In this setting, linear regression provides a very good fit to the data.</figcaption>
 </figure>
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-07-08-model-selection-and-bias-variance-tradeoff/3.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-07-08-SL-02-model-selection-and-bias-variance-tradeoff/3.png?raw=true">
 	<figcaption>Using a different f that is far from linear. In this setting, linear regression provides a very poor fit to the data.</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ But what is the expected value of $\hat{f}(x_0)$? Remember that, for different 
 Typically as the flexibility of $\hat{f}$ increases, the expected value $E[\hat{f}(x_0)]$ is changing toward the true value $f(x_0)$ making the bias decreased. At the same time, the variability of $\hat{f}(x_0)$ will increase. The bias-variance tradeoff when choosing the flexibility of a model is demonstrated in the figure below.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-07-08-model-selection-and-bias-variance-tradeoff/4.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-07-08-SL-02-model-selection-and-bias-variance-tradeoff/4.png?raw=true">
 </figure>
 
 In short, as the flexibility of a model increases, the variance increases, the bias decreases, and the MSE is always U-curved.
