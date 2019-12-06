@@ -20,18 +20,15 @@ toc_icon: "cog"
 
 AgriShield is an agricultural insurance marketplace for farmers and brokers based in Australia.
 
-AgriShield utilises time-series satellite images and other data resources such rainfall, temperature, soil, etc. to provide users insights and forecast a field's production and also provide data to insurers to help them facilitate their actuarial modelling process.
+AgriShield utilises time-series satellite images and other data resources such as rainfall, temperature, soil, etc. to provide users insights and prediction of crop production. In addition, these data can be provided to insurers to help them facilitate actuarial modelling process.
 
-This repository includes my code on dealing with time-series satellite images. All the data can be found here: [https://medium.com/satellite-intelligence
-](https://medium.com/satellite-intelligence)
+The main challenges when working with these satellite images were **detecting cloud/cloud shadow** and **imputing missing pixels** where the cloud/cloud shadow had been removed. Here is my [Python code](https://github.com/trungha-ngx/AgriShield-Melbourne-Datathon-2019) on dealing with these problems.
 
 # Results
 
 With AgriShield's solution, we were one of the 5 finalists giving a presentation in front of hundreds of people including many Data Science experts from ANZ, KPMG, Growing Data, etc. and came in 4th place at Melbourne Datathon 2019.
 
 Here comes our work:
-
-- Code: [GitHub](https://github.com/trungha-ngx/AgriShield-Melbourne-Datathon-2019)
 
 - Presentation: [Slideshare](https://www.slideshare.net/TrungHNguyn1/agrishield-melbourne-datathon-2019)
 
