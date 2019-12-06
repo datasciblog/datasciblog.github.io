@@ -92,6 +92,7 @@ More flexible regression model $\hat{f}_S(education, seniority)$ fit to the simu
 
 As we can see, the linear model is less accurate and flexible but more interpretable compared to the thin-plate spline model. This is called the trade-off between prediction accuracy and model interpretability.
 
-### Reference
+***
+Reference
 
 James, G., Witten, Daniela. author, Hastie, Trevor. author, & Tibshirani, Robert. author. (2013). An Introduction to Statistical Learning with Applications in R (1st ed. 2013.).
