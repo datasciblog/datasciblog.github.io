@@ -26,11 +26,11 @@ These are some takeaways from [Activation Functions lecture](https://www.courser
 </figure>
 
 # Tanh vs Sigmoid
-- In general, tanh is almost always superior to sigmoid function.
-- One exception of using sigmoid function is for the output layer of a binary classifier.
-- Both functions could slow down gradient descent as their derivatives become very small (~0) at two *tails*.
+- In general, **tanh** is almost always superior to **sigmoid** function.
+- One exception of using **sigmoid** function is for the output layer of a binary classifier.
+- Both functions could slow down gradient descent as their derivatives become very small at two *tails* (*the vanishing gradient problem*).
 
 # ReLU and leaky ReLU
-- ReLU does not suffer from a very small derivative as tanh and sigmoid. This is a very common choice these days.
-- The disadvantage of ReLU is its derivative equals 0 when the input value is negative. This is why we have leak ReLU.
+- **ReLU** does not suffer from the vanishing gradient problem as tanh and sigmoid. It is a very common choice these days.
+- The disadvantage of **ReLU** is its derivative equals 0 when the input value is negative. This is why we have **leak ReLU**.
 
