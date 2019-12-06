@@ -65,6 +65,6 @@ Typically as the flexibility of $\hat{f}$ increases, the expected value $E[\hat{
 In short, as the flexibility of a model increases, the variance increases, the bias decreases, and the MSE is always U-curved.
 
 ***
-**Reference**:
+**Reference**
 
 James, G., Witten, Daniela. author, Hastie, Trevor. author, & Tibshirani, Robert. author. (2013). An Introduction to Statistical Learning with Applications in R (1st ed. 2013.).
