@@ -26,7 +26,7 @@ These are some takeaways from [Activation Functions lecture](https://www.courser
 </figure>
 
 # Tanh vs Sigmoid
-- In general, **tanh** is almost always superior to **sigmoid** function.
+- Most of the time, **tanh** is superior to **sigmoid** function.
 - One exception of using **sigmoid** function is for the output layer of a binary classifier.
 - However, both functions could slow down the gradient descent algorithm as their derivatives become very small when input values are very large which usually occurs in training neural networks (*the vanishing gradient problem*).
 
