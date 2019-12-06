@@ -29,8 +29,8 @@ These are some takeaways from [Activation Functions lecture](https://www.courser
 # Tanh vs Sigmoid
 - Most of the time, **tanh** is superior to **sigmoid** function. The reason is the mean of tanh activation's output is closer to zero, and so it centers the data better for the next layer. 
 - One exception of using **sigmoid** function is for the output layer of a binary classifier.
-- However, both functions could slow down the gradient descent algorithm as their derivatives become very small when the inputs are very large which usually occurs in training deep neural networks (*the vanishing gradient problem*).
+- However, both functions could slow down the gradient descent algorithm as their derivatives become very small when the inputs are very large which usually occurs in training deep neural networks.
 
 # ReLU vs Leaky ReLU
-- **ReLU** does not suffer from the vanishing gradient problem. It is a very common choice these days.
+- **ReLU** does not suffer from the very small gradient problem. So that it is a very common choice of activation function these days.
 - A disadvantage of **ReLU** is that its derivative is equal to 0 for negative input values. This is why we have **leaky ReLU**. However, **leaky ReLU** is not used as much as **ReLU** in practice. This is because when training neural networks, the input of ReLU function is usually large which can help overcome the disadvantage.
