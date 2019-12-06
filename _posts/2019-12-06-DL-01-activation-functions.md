@@ -22,7 +22,7 @@ These are some takeaways from [Activation Functions lecture](https://www.courser
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-06-DL-01-activation-functions/1.png?raw=true">
-	<figcaption>Activation functions in comparison. Red curves stand for, respectively, sigmoid, hyperbolic tangent, ReLU, and Softplus functions. Their first derivative is plotted in blue. *Source: researchgate.net*</figcaption>
+	<figcaption>Activation functions in comparison. Red curves stand for, respectively, sigmoid, hyperbolic tangent, ReLU, and Softplus functions. Their first derivative is plotted in blue. Source: researchgate.net</figcaption>
 </figure>
 
 # Tanh vs Sigmoid
