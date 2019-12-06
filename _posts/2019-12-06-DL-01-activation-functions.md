@@ -33,4 +33,4 @@ These are some takeaways from [Activation Functions lecture](https://www.courser
 
 # ReLU vs leaky ReLU
 - **ReLU** does not suffer from the vanishing gradient problem. It is a very common choice these days.
-- A disadvantage of **ReLU** is that its derivative is equal to 0 for negative input values. This is why we have **leak ReLU**. However, **leak ReLU** is not used as much as **ReLU** in practice. This is because when training neural networks, the input of ReLU function is usually large which can help overcome the disadvantage.
+- A disadvantage of **ReLU** is that its derivative is equal to 0 for negative input values. This is why we have **leaky ReLU**. However, **leaky ReLU** is not used as much as **ReLU** in practice. This is because when training neural networks, the input of ReLU function is usually large which can help overcome the disadvantage.
