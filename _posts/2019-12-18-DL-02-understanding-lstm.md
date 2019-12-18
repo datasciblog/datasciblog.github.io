@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "DL-02: Understanding LSTM Cell"
+title:  "DL-02: Understanding LSTM"
 date:   2019-12-18
-permalink: /2019/12/18/understanding-lstm-cell/
+permalink: /2019/12/18/understanding-lstm/
 excerpt: ""
 categories: 
 - Deep Learning
@@ -22,7 +22,7 @@ toc_icon: "cog"
 When I walked through Deep Learning Specialisation in Coursera, everything seemed to be easy until I hit the LSTM part of [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models) course.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-18-DL-02-understanding-lstm-cell/1.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-18-DL-02-understanding-lstm/1.png?raw=true">
 	<figcaption>LSTM-Cell (Source: Coursera)</figcaption>
 </figure>
 
