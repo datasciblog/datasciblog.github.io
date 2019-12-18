@@ -124,7 +124,7 @@ $$ \mathbf{a}^{\langle t \rangle} = \mathbf{\Gamma}_o^{\langle t \rangle} * \tan
 
 ### Explanation of equation
 * The hidden state $\mathbf{a}^{\langle t \rangle}$ is determined by the cell state $\mathbf{c}^{\langle t \rangle}$ in combination with the output gate $\mathbf{\Gamma}_{o}$.
-* The cell state state is passed through the "tanh" function to rescale values between -1 and +1.
+* The cell state is passed through the "tanh" function to rescale values between -1 and +1.
 * The output gate acts like a "mask" that either preserves the values of $\tanh(\mathbf{c}^{\langle t \rangle})$ or keeps those values from being included in the hidden state $\mathbf{a}^{\langle t \rangle}$
 
 ## Prediction $\mathbf{y}^{\langle t \rangle}_{pred}$
