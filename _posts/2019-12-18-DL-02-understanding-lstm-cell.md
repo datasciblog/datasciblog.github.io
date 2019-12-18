@@ -127,5 +127,6 @@ $$ \mathbf{a}^{\langle t \rangle} = \mathbf{\Gamma}_o^{\langle t \rangle} * \tan
 ## Prediction $\mathbf{y}^{\langle t \rangle}_{pred}$
 * The prediction in this use case is a classification, so we'll use a softmax.
 
-The equation is:
+### Equation
+
 $$\mathbf{y}^{\langle t \rangle}_{pred} = \textrm{softmax}(\mathbf{W}_{y} \mathbf{a}^{\langle t \rangle} + \mathbf{b}_{y})$$
