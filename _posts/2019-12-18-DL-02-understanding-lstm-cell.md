@@ -22,7 +22,7 @@ toc_icon: "cog"
 I found this explanation very undestandable for those who have had a hard time to get how LSTM works. The content of this post is drawn from [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models) course taught by Prof. Andrew Ng. The explanation comes with a coding assignment so it would violate the rule if I public the code here. 
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-18-DL-02-building-lstm-from-scratch/1.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-18-DL-02-understanding-lstm-cell/1.png?raw=true">
 	<figcaption>LSTM-Cell (Source: Coursera)</figcaption>
 </figure>
 
