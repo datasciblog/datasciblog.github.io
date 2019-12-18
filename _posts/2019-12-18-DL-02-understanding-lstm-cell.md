@@ -66,23 +66,22 @@ $$\mathbf{\tilde{c}}^{\langle t \rangle} = \tanh\left( \mathbf{W}_{c} [\mathbf{a
 ### Explanation of the equation
 * The 'tanh' function produces values between -1 and +1.
 
-## Update gate $\mathbf{\Gamma}_{i}$
+## Update gate $\mathbf{\Gamma}_{u}$
 
 * We use the update gate to decide what aspects of the candidate $\tilde{\mathbf{c}}^{\langle t \rangle}$ to add to the cell state $c^{\langle t \rangle}$.
 * The update gate decides what parts of a "candidate" tensor $\tilde{\mathbf{c}}^{\langle t \rangle}$ are passed onto the cell state $\mathbf{c}^{\langle t \rangle}$.
 * The update gate is a tensor containing values between 0 and 1.
     * When a unit in the update gate is close to 1, it allows the value of the candidate $\tilde{\mathbf{c}}^{\langle t \rangle}$ to be passed onto the hidden state $\mathbf{c}^{\langle t \rangle}$
     * When a unit in the update gate is close to 0, it prevents the corresponding value in the candidate from being passed onto the hidden state.
-* Notice that we use the subscript "i" and not "u", to follow the convention used in the literature.
 
 ### Equation
 
-$$\mathbf{\Gamma}_i^{\langle t \rangle} = \sigma(\mathbf{W}_i[a^{\langle t-1 \rangle}, \mathbf{x}^{\langle t \rangle}] + \mathbf{b}_i)\tag{2} $$ 
+$$\mathbf{\Gamma}_u^{\langle t \rangle} = \sigma(\mathbf{W}_u[a^{\langle t-1 \rangle}, \mathbf{x}^{\langle t \rangle}] + \mathbf{b}_u)\tag{2} $$ 
 
 ### Explanation of the equation
 
-* Similar to the forget gate, here $\mathbf{\Gamma}_i^{\langle t \rangle}$, the sigmoid produces values between 0 and 1.
-* The update gate is multiplied element-wise with the candidate, and this product ($\mathbf{\Gamma}_{i}^{\langle t \rangle} * \tilde{c}^{\langle t \rangle}$) is used in determining the cell state $\mathbf{c}^{\langle t \rangle}$.
+* Similar to the forget gate, here $\mathbf{\Gamma}_u^{\langle t \rangle}$, the sigmoid produces values between 0 and 1.
+* The update gate is multiplied element-wise with the candidate, and this product ($\mathbf{\Gamma}_{u}^{\langle t \rangle} * \tilde{c}^{\langle t \rangle}$) is used in determining the cell state $\mathbf{c}^{\langle t \rangle}$.
 
 ## Cell state $\mathbf{c}^{\langle t \rangle}$
 
@@ -113,7 +112,7 @@ $$ \mathbf{\Gamma}_o^{\langle t \rangle}=  \sigma(\mathbf{W}_o[\mathbf{a}^{\lang
 ## Hidden state $\mathbf{a}^{\langle t \rangle}$
 
 * The hidden state gets passed to the LSTM cell's next time step.
-* It is used to determine the three gates ($\mathbf{\Gamma}_{f}, \mathbf{\Gamma}_{u}, \mathbf{\Gamma}_{o}$) of the next time step.
+* It is used to determine the three gates $\mathbf{\Gamma}_{f}, \mathbf{\Gamma}_{u}, \mathbf{\Gamma}_{o}$ of the next time step.
 * The hidden state is also used for the prediction $y^{\langle t \rangle}$.
 
 ### Equation
