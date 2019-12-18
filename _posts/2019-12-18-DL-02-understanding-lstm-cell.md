@@ -90,13 +90,13 @@ $$\mathbf{\Gamma}_u^{\langle t \rangle} = \sigma(\mathbf{W}_u[a^{\langle t-1 \ra
 
 ### Equation
 
-$$ \mathbf{c}^{\langle t \rangle} = \mathbf{\Gamma}_f^{\langle t \rangle}* \mathbf{c}^{\langle t-1 \rangle} + \mathbf{\Gamma}_{i}^{\langle t \rangle} *\mathbf{\tilde{c}}^{\langle t \rangle} \tag{4} $$
+$$ \mathbf{c}^{\langle t \rangle} = \mathbf{\Gamma}_f^{\langle t \rangle}* \mathbf{c}^{\langle t-1 \rangle} + \mathbf{\Gamma}_{u}^{\langle t \rangle} *\mathbf{\tilde{c}}^{\langle t \rangle} \tag{4} $$
 
 ### Explanation of equation
 * The previous cell state $\mathbf{c}^{\langle t-1 \rangle}$ is adjusted (weighted) by the forget gate $\mathbf{\Gamma}_{f}^{\langle t \rangle}$
 * and the candidate value $\tilde{\mathbf{c}}^{\langle t \rangle}$, adjusted (weighted) by the update gate $\mathbf{\Gamma}_{i}^{\langle t \rangle}$
 
-## - Output gate $\mathbf{\Gamma}_{o}$
+## Output gate $\mathbf{\Gamma}_{o}$
 
 * The output gate decides what gets sent as the prediction (output) of the time step.
 * The output gate is like the other gates. It contains values that range from 0 to 1.
@@ -112,7 +112,7 @@ $$ \mathbf{\Gamma}_o^{\langle t \rangle}=  \sigma(\mathbf{W}_o[\mathbf{a}^{\lang
 ## Hidden state $\mathbf{a}^{\langle t \rangle}$
 
 * The hidden state gets passed to the LSTM cell's next time step.
-* It is used to determine the three gates ($\mathbf{\Gamma}_{f}$, $\mathbf{\Gamma}_{u}, $\mathbf{\Gamma}_{o}$) of the next time step.
+* It is used to determine the three gates ($\mathbf{\Gamma}_{f}$, $\mathbf{\Gamma}_{u}$, $\mathbf{\Gamma}_{o}$) of the next time step.
 * The hidden state is also used for the prediction $y^{\langle t \rangle}$.
 
 ### Equation
