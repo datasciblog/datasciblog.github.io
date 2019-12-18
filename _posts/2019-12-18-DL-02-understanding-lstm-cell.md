@@ -28,7 +28,7 @@ When I walked through Deep Learning Specialisation in Coursera, everything seeme
 
 Out of nowhere, all these equations and new concepts (i.e. gates) just appeared and scared me. LSTM was tough, at first. But then I found it really undestandable by breaking the big abstract concept into smaller pieces and trying to conquer one piece at a time.
 
-After going through this post, you may find the maths behind LSTM still unreachable but you should have a good understanding of how LSTM works. The content of this post is drawn from the first coding assignment of the course so it would violate the rule if I public the code here. You can find it somewhere else on the internet though.
+After going through this post, you may find the maths behind LSTM still unreachable but you should have a good understanding of how LSTM works. The content of this post is drawn from the first coding assignment of the course.
 
 # Overview of gates and states
 
