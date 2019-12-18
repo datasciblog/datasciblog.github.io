@@ -112,7 +112,7 @@ $$ \mathbf{\Gamma}_o^{\langle t \rangle}=  \sigma(\mathbf{W}_o[\mathbf{a}^{\lang
 ## Hidden state $\mathbf{a}^{\langle t \rangle}$
 
 * The hidden state gets passed to the LSTM cell's next time step.
-* It is used to determine the three gates $\mathbf{\Gamma}_{f}, \mathbf{\Gamma}_{u}, \mathbf{\Gamma}_{o}$ of the next time step.
+* It is used to determine the three gates ($\mathbf{\Gamma}_{f}$, $\mathbf{\Gamma}_{u}, $\mathbf{\Gamma}_{o}$) of the next time step.
 * The hidden state is also used for the prediction $y^{\langle t \rangle}$.
 
 ### Equation
