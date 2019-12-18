@@ -30,7 +30,7 @@ We will start by implementing the LSTM cell for a single time-step. Then you can
 
 # Overview of gates and states
 
-## - Forget gate $\mathbf{\Gamma}_{f}$
+## Forget gate $\mathbf{\Gamma}_{f}$
 
 * Let's assume we are reading words in a piece of text, and plan to use an LSTM to keep track of grammatical structures, such as whether the subject is singular ("puppy") or plural ("puppies"). 
 * If the subject changes its state (from a singular word to a plural word), the memory of the previous state becomes outdated, so we "forget" that outdated state.
@@ -77,7 +77,7 @@ $$\mathbf{\tilde{c}}^{\langle t \rangle} = \tanh\left( \mathbf{W}_{c} [\mathbf{a
 ### Variable names in the code
 * `cct`: candidate value $\mathbf{\tilde{c}}^{\langle t \rangle}$
 
-## - Update gate $\mathbf{\Gamma}_{i}$
+## Update gate $\mathbf{\Gamma}_{i}$
 
 * We use the update gate to decide what aspects of the candidate $\tilde{\mathbf{c}}^{\langle t \rangle}$ to add to the cell state $c^{\langle t \rangle}$.
 * The update gate decides what parts of a "candidate" tensor $\tilde{\mathbf{c}}^{\langle t \rangle}$ are passed onto the cell state $\mathbf{c}^{\langle t \rangle}$.
@@ -101,7 +101,7 @@ In the code, we'll use the variable names found in the academic literature.  The
 * `bi` is the update gate bias $\mathbf{b}_i$ (not "bu")
 * `it` is the forget gate $\mathbf{\Gamma}_i^{\langle t \rangle}$ (not "ut")
 
-## - Cell state $\mathbf{c}^{\langle t \rangle}$
+## Cell state $\mathbf{c}^{\langle t \rangle}$
 
 * The cell state is the "memory" that gets passed onto future time steps.
 * The new cell state $\mathbf{c}^{\langle t \rangle}$ is a combination of the previous cell state and the candidate value.
@@ -138,7 +138,7 @@ $$ \mathbf{\Gamma}_o^{\langle t \rangle}=  \sigma(\mathbf{W}_o[\mathbf{a}^{\lang
 * `bo`: output gate bias, $\mathbf{b_o}$
 * `ot`: output gate, $\mathbf{\Gamma}_{o}^{\langle t \rangle}$
 
-## - Hidden state $\mathbf{a}^{\langle t \rangle}$
+## Hidden state $\mathbf{a}^{\langle t \rangle}$
 
 * The hidden state gets passed to the LSTM cell's next time step.
 * It is used to determine the three gates ($\mathbf{\Gamma}_{f}, \mathbf{\Gamma}_{u}, \mathbf{\Gamma}_{o}$) of the next time step.
@@ -158,7 +158,7 @@ $$ \mathbf{a}^{\langle t \rangle} = \mathbf{\Gamma}_o^{\langle t \rangle} * \tan
 * 'a_prev`: hidden state from previous time step. $\mathbf{a}^{\langle t-1 \rangle}$ has shape $(n_{a}, m)$
 * `a_next`: hidden state for next time step.  $\mathbf{a}^{\langle t \rangle}$ has shape $(n_{a}, m)$ 
 
-## - Prediction $\mathbf{y}^{\langle t \rangle}_{pred}$
+## Prediction $\mathbf{y}^{\langle t \rangle}_{pred}$
 * The prediction in this use case is a classification, so we'll use a softmax.
 
 The equation is:
