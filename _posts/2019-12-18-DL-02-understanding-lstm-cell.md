@@ -19,19 +19,16 @@ toc_icon: "cog"
 
 # Introduction
 
-When I walked through five courses of Deep Learning Specialisation in Coursera, everything seemed to be easy to me until I hit the LSTM part of [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models) course.
-
-Out of nowhere, all of the equations and new concepts (like gates) just appeared and scared me. LSTM was tough to undestand, at first. But then I found this explanation really undestandable by breaking the big concept into smaller pieces and trying to "conquer" one at a time. 
-
-After going through this post, you may find the maths behind LSTM still unreachable but you should have a good perception of how LSTM works.
-
-The content of this post is drawn from the first coding assignment of the course so it would violate the rule if I public the code here. You can find it somewhere else though.
+When I walked through five courses of Deep Learning Specialisation in Coursera, everything seemed to be easy until I hit the LSTM part of [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models).
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-18-DL-02-understanding-lstm-cell/1.png?raw=true">
 	<figcaption>LSTM-Cell (Source: Coursera)</figcaption>
 </figure>
 
+Out of nowhere, all these equations and new concepts (i.e. gates) just appeared and scared me. LSTM was tough to undestand, at first. But then I found LSTM really undestandable by breaking the big concept into smaller pieces and conquering one at a time.
+
+After going through this post, you may find the maths behind LSTM still unreachable but you should have a good understanding of how LSTM works. The content of this post is drawn from the first coding assignment of the course so it would violate the rule if I public the code here. You can find it somewhere else on the internet though.
 
 # Overview of gates and states
 
