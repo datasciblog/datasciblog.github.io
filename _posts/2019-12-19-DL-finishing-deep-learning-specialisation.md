@@ -15,12 +15,16 @@ classes: wide
 #toc_icon: "cog"
 ---
 
+## Yay!
+
 Finally, I have finished the [Deep Learning Specialisation](https://www.coursera.org/specializations/deep-learning) on Coursera.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-finishing-deep-learning-specialisation/cert.png?raw=true">
 	<figcaption></figcaption>
 </figure>
+
+## Statistics
 
 I took me around 46 hours to finish all the courses.
 
@@ -31,7 +35,7 @@ I took me around 46 hours to finish all the courses.
 
 ## Helpful Resources
 
-- Summary notes by Tess Ferrandez: https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng
+- Summary notes by Tess Ferrandez: [Slideshare](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)
 
 ## How Do I Feel Now?
 
