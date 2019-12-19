@@ -57,8 +57,7 @@ Side Projects:
 - Hit Song Prediction
 
 Courses:
-- [TensorFlow in Practice Specialization](https://www.coursera.org/specializations/tensorflow-in-practice)
-- [TensorFlow: Data and Deployment Specialization](https://www.coursera.org/specializations/tensorflow-data-and-deployment)
+- [Practical Deep Learning for Coders, v3](https://course.fast.ai/)
 
 
 
