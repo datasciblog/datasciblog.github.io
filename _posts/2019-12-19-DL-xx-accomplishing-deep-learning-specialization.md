@@ -52,6 +52,10 @@ I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end
 
 ## What Next?
 
+Side Projects:
+- Bib Recognition
+- Hit Song Prediction
+
 
 
 
