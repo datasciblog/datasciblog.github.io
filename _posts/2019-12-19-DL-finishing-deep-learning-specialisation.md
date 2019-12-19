@@ -19,28 +19,28 @@ Finally, I have finished the [Deep Learning Specialisation](https://www.coursera
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-finishing-deep-learning-specialisation/cert.png?raw=true">
-	<figcaption>LSTM-Cell (Source: Coursera)</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 I took me around 46 hours to finish all the courses.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-finishing-deep-learning-specialisation/time.png?raw=true">
-	<figcaption>LSTM-Cell (Source: Coursera)</figcaption>
+	<figcaption></figcaption>
 </figure>
 
-Helpful resources:
+## Helpful Resources
 
 - Summary notes by Tess Ferrandez: https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng
 
-How do I feel now?
+## How Do I Feel Now?
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-finishing-deep-learning-specialisation/meme.jpg?raw=true">
-	<figcaption>LSTM-Cell (Source: Coursera)</figcaption>
+	<figcaption></figcaption>
 </figure>
 
-What next?
+## What Next?
 
 
 
