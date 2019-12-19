@@ -35,11 +35,9 @@ I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end
 
 ## What DiD I Learn?
 
-- You really don't need a solid mathematics background to start learning. In fact, most of the time, 
+- You really don't need a solid mathematics background to start learning.
 
 > If you don't understand, don't worry about it.
-
-- 
 
 ## Helpful Resources
 
