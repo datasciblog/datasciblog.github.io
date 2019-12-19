@@ -26,7 +26,7 @@ Finally, I can finish the [Deep Learning Specialization](https://www.coursera.or
 
 ## Statistics
 
-I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end, It took me around 46 hours to finish all the courses. 
+I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end, It took me around 46 hours to finish all these 5 courses.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/time.png?raw=true">
@@ -35,7 +35,7 @@ I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end
 
 ## What DiD I Learn?
 
-- You really don't need a solid mathematics background to start learning.
+- You really don't need a solid mathematics background to start learning these courses.
 
 > If you don't understand, don't worry about it.
 
