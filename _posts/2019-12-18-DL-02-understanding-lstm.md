@@ -9,7 +9,7 @@ categories:
 tags:
 - rnn
 - ltsm
-- deep learning specialisation
+- deep learning specialization
 - coursera
 classes: wide
 toc: true

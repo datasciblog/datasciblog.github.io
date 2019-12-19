@@ -1,13 +1,13 @@
 ---
 layout: single
-title:  "DL-xx: Finishing Deep Learning Specialisation"
+title:  "DL-xx: Accomplishing Deep Learning Specialization"
 date:   2019-12-19
-permalink: /2019/12/19/finishing-deep-learning-specialisation/
+permalink: /2019/12/19/accomplishing-deep-learning-specialization/
 excerpt: ""
 categories: 
 - Deep Learning
 tags:
-- deep learning specialisation
+- deep learning specialization
 - coursera
 classes: wide
 #toc: true
@@ -17,10 +17,10 @@ classes: wide
 
 ## Yay!
 
-Finally, I can finish the [Deep Learning Specialisation](https://www.coursera.org/specializations/deep-learning) offered by Coursera.
+Finally, I can finish the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) offered by Coursera.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-finishing-deep-learning-specialisation/cert.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/cert.png?raw=true">
 	<figcaption></figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ Finally, I can finish the [Deep Learning Specialisation](https://www.coursera.or
 I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end, It took me around 46 hours to finish all the courses. 
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-finishing-deep-learning-specialisation/time.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/time.png?raw=true">
 	<figcaption></figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end
 ## How Do I Feel Now?
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-finishing-deep-learning-specialisation/meme.jpg?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/meme.jpg?raw=true">
 	<figcaption></figcaption>
 </figure>
 

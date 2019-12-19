@@ -8,7 +8,7 @@ categories:
 - Deep Learning
 tags:
 - activation function
-- deep learning specialisation
+- deep learning specialization
 - coursera
 - gradient descent
 classes: wide
