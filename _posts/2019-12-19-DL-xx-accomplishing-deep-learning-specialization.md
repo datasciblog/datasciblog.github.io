@@ -35,7 +35,7 @@ I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end
 
 ## What DiD I Learn?
 
-- You really don't need a solid mathematics background to start learning these courses.
+- You really don't need a solid mathematics background to learn and do deep learning.
 
 > If you don't understand, don't worry about it.
 
