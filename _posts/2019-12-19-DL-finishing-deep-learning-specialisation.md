@@ -9,7 +9,7 @@ categories:
 tags:
 - deep learning specialisation
 - coursera
-classes: wide
+#classes: wide
 #toc: true
 #toc_label: "Table of Contents"
 #toc_icon: "cog"
