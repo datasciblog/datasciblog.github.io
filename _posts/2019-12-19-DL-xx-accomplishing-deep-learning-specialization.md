@@ -51,6 +51,8 @@ I started slowly at first, and studied really hard at the end. There was a bit r
 
 ## How Do I Feel Now?
 
+- The joy of learning.
+
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/meme.jpg?raw=true">
 	<figcaption></figcaption>
