@@ -43,7 +43,7 @@ I started slowly at first, and studied really hard at the end. There was a bit r
 
 > If you don't understand, don't worry about it.
 
-- You actually can do some hacks on quizzes and coding assignments. Firstly, because you can do them as many times as you want, it is feasible to achieve perfect grades for all the courses. Secondly, as the assignments are well explained and given instructions for every step needed to be done, you could make it even when you really don't understand how tensorflow works underneath. 
+- You actually can do some hacks on quizzes and coding assignments. Firstly, because you can do them as many times as you want, it is feasible to achieve perfect grades for all the courses. Secondly, as the assignments are well explained and given instructions for every step needed to be done, you could make it even when you really don't understand how tensorflow works underneath.
 
 ## Useful Resources
 
