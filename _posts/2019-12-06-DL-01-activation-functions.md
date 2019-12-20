@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "DL-01: Choosing Activation Functions for Neural Networks "
+title:  "Choosing Activation Functions for Neural Networks "
 date:   2019-12-06
 permalink: /2019/12/06/choosing-activation-functions-for-neural-networks/
 excerpt: ""

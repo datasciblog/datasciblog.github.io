@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "DL-02: Understanding LSTM"
+title:  "Understanding LSTM"
 date:   2019-12-18
 permalink: /2019/12/18/understanding-lstm/
 excerpt: ""
