@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "DL-xx: Accomplishing Deep Learning Specialization"
+title:  "Accomplishing Deep Learning Specialization"
 date:   2019-12-19
 permalink: /2019/12/19/accomplishing-deep-learning-specialization/
 excerpt: ""
@@ -22,7 +22,7 @@ Finally, I can finish the [Deep Learning Specialization](https://www.coursera.or
 > If you want to dive into Deep Learning as a beginner, you definitely should start with this course. However, it might be not enough for you to really do something serious as it would be more theoretical than practical. The good thing is, you will probably have a very good foundation to keep moving to other advanced courses.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/cert.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-03-accomplishing-deep-learning-specialization/cert.png?raw=true">
 	<figcaption></figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ I used [Toggl](https://toggl.com/) to track evey minutes of learning. It took me
 I started slowly at first, and studied really hard at the end. There was a bit rush and frustration to finish the last course about RNNs, to be honest.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/time.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-03-accomplishing-deep-learning-specialization/time.png?raw=true">
 	<figcaption></figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ I started slowly at first, and studied really hard at the end. There was a bit r
 - The joy of learning.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/meme.jpg?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-03-accomplishing-deep-learning-specialization/meme.jpg?raw=true">
 	<figcaption></figcaption>
 </figure>
 
