@@ -19,7 +19,7 @@ classes: wide
 
 Finally, I can finish the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) offered by Coursera. There are so many reviews about this course out there but I still want to give you some words.
 
-> If you want to dive into Deep Learning as a beginner, you definitely should start with this course. However, it would not enough for you to really do something serious as I found it more theoretical than practical. The good thing is, you will probably have a very good foundation to keep moving with other courses.
+> If you want to dive into Deep Learning as a beginner, you definitely should start with this course. However, it might be not enough for you to really do something serious as it would be more theoretical than practical. The good thing is, you will probably have a very good foundation to keep moving to other advanced courses.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/cert.png?raw=true">
@@ -28,7 +28,9 @@ Finally, I can finish the [Deep Learning Specialization](https://www.coursera.or
 
 ## Statistics
 
-I used [Toggl](https://toggl.com/) to track evey minutes of learning. At the end, it took me about 46 hours to finish all these 5 courses with an average grade of 98.08%. I started slowly at first, and worked really hard at the end.
+I used [Toggl](https://toggl.com/) to track evey minutes of learning. It took me about 46 hours to finish all these 5 courses with an average grade of 98.08%. 
+
+I started slowly at first, and studied really hard at the end. There was a bit rush and frustration to finish the last course about RNNs, to be honest.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-19-DL-xx-accomplishing-deep-learning-specialization/time.png?raw=true">
