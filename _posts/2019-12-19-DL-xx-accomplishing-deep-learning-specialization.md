@@ -61,7 +61,7 @@ I started slowly at first, and studied really hard at the end. There was a bit r
 Courses:
 - [Practical Deep Learning for Coders, v3](https://course.fast.ai/): This course may take more than 46 hours and efforts but it will give me a lot of chance to build some real Deep Learning models.
 
-> If you want to become a Deep Learning expert, you need to train a lot of models. - [Jeremy Howard](https://www.youtube.com/watch?v=J6XcP4JOHmk&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
+> Either you want to get started with Deep Learning or become a Deep Learning expert, you need to train lots of models. - [Jeremy Howard](https://youtu.be/J6XcP4JOHmk?t=4894)
 
 Side Projects:
 - Bib Recognition
