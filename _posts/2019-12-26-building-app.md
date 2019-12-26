@@ -179,7 +179,7 @@ Don't know how to do it? Check out these lessons:
         fastai
     ```
 
-### **Push all your files to [Github](https://github.com/trungha-ngx/MTP-vs-GD)**
+### **Push all the files to your [Github](https://github.com/trungha-ngx/MTP-vs-GD) repo**
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
 <figcaption></figcaption>
