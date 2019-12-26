@@ -161,7 +161,8 @@ Don't know how to do it? Check out these lessons:
     $ streamlit run app.py
 ```
 
-# Make your app alive
+
+# Deployment
 
 ## 1. **Create `Procfile` and `requirements.txt` files**
 
