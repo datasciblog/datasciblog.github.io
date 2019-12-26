@@ -157,13 +157,13 @@ Don't know how to do it? Check out these lessons:
 
         ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_2.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_2.gif)
 
-- **Run the app locally**
+### **Run the app locally**
 
     ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif)
 
 ## 3. Run your app publicly with Heroku
 
-- **Create `Procfile` and `requirements.txt` files**
+### **Create `Procfile` and `requirements.txt` files**
     - For `Procfile`, it requires only one line. Note that the file has no extention.
 
         ```
@@ -180,15 +180,15 @@ Don't know how to do it? Check out these lessons:
             fastai
         ```
 
-- **Upload all your files to [Github](https://github.com/trungha-ngx/MTP-vs-GD)**
+### **Upload all your files to [Github](https://github.com/trungha-ngx/MTP-vs-GD)**
     <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
 	<figcaption></figcaption>
     </figure>
 
-- **Create a [Heroku account](https://signup.heroku.com/). It's free.**
+### **Create a [Heroku account](https://signup.heroku.com/). It's free.**
 
-- **Go to [Heroku dashboard](https://dashboard.heroku.com/apps) and create a new app**
+### **Go to [Heroku dashboard](https://dashboard.heroku.com/apps) and create a new app**
     <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/1.png?raw=true">
 	<figcaption></figcaption>
@@ -212,4 +212,4 @@ Don't know how to do it? Check out these lessons:
 	<figcaption></figcaption>
     </figure>
 
-- **Boom! Your app is ready for public use:** [https://mtp-vs-gd.herokuapp.com/](https://mtp-vs-gd.herokuapp.com/)
+### **Boom! Your app is ready for public use:** [https://mtp-vs-gd.herokuapp.com/](https://mtp-vs-gd.herokuapp.com/)
