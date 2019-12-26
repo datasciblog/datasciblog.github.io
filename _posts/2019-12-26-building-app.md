@@ -20,15 +20,15 @@ classes: wide
 
 Training a deep learning model is cool, putting it into [production](https://mtp-vs-gd.herokuapp.com/) is even cooler. 
 
-As a student who had changed from a business background to data science, I always found it difficult to learn and do any IT stuff. That was the reason why during nearly two years of studying my master degree at Monash, I had been avoiding the question "What's next after training a machine learning model?". At that moment, I knew I should somehow make my model alive by taking further steps - putting it into a mobile or web application. But the idea of learning any web/app framework while there were a lot of assignments coming just discouraged me.
+As a student who had changed from a business background to data science, I always found it difficult to learn and do any IT stuff. That was the reason why during nearly two years studying at Monash, I had been avoiding the question "What's the next thing to do after training a machine learning model?". At that moment, I knew I should somehow make my model alive by taking further steps - putting it into an application. But the idea of learning any new web/app frameworks while a lot of assignments were coming just discouraged me.
 
-Fortunately, I had [Streamlit](https://streamlit.io/) and [Heroku](https://www.heroku.com/). They are simple and easy to use. While, Streamlit is an app framework which enables you writing an app without leaving your Jupyter Notebook, Heroku's platform gives you the simplest path to deliver your apps quickly.
+Fortunately, I had [Streamlit](https://streamlit.io/) and [Heroku](https://www.heroku.com/). While, Streamlit is an framework which enables you writing an app without leaving your Jupyter Notebook, Heroku's platform gives you the simplest path to deliver your apps quickly. I found Streamlit familiar just as Shiny in R and with Heroku, my app was deployed in just a few clicks. Now, let's see how I built my first app with my deep learning model.
 
 # Building Application
 
 ## 1. Train a model and export it
 
-For the purpose of introducing Streamlit and Heroku, I assume that you already have trained a model and exported it using **fastai** library.
+For the purpose of introducing Streamlit and Heroku, I assume that you've already trained a model and exported it using **fastai** library.
 
 Don't know how to do it? Check out these lessons:
 
@@ -159,7 +159,7 @@ Don't know how to do it? Check out these lessons:
     $ streamlit run app.py
 ```
 
-## 3. Run your app publicly with Heroku
+## 3. Make your app alive
 
 ### **Create `Procfile` and `requirements.txt` files**
 
