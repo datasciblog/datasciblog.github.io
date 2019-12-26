@@ -185,9 +185,7 @@ Don't know how to do it? Check out these lessons:
 <figcaption></figcaption>
 </figure>
 
-### **Create a [Heroku account](https://signup.heroku.com/)**
-
-### **Go to [dashboard](https://dashboard.heroku.com/apps) and create a new app**
+### **Create a [Heroku account](https://signup.heroku.com/). Go to [dashboard](https://dashboard.heroku.com/apps) and create a new app**
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/1.png?raw=true">
 <figcaption></figcaption>
