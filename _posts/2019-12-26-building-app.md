@@ -159,7 +159,9 @@ Don't know how to do it? Check out these lessons:
 
 ### **Run the app locally**
 
-![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif)
+```
+    $ streamlit run app.py
+```
 
 ## 3. Run your app publicly with Heroku
 
@@ -187,9 +189,9 @@ Don't know how to do it? Check out these lessons:
 <figcaption></figcaption>
 </figure>
 
-### **Create a [Heroku account](https://signup.heroku.com/). It's free.**
+### **Create a [Heroku account](https://signup.heroku.com/)**
 
-### **Go to [Heroku dashboard](https://dashboard.heroku.com/apps) and create a new app**
+### **Go to [dashboard](https://dashboard.heroku.com/apps) and create a new app**
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/1.png?raw=true">
 <figcaption></figcaption>
