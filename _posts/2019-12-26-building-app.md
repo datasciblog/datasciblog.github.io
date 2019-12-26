@@ -47,7 +47,7 @@ $ pip install streamlit
 
 - **Import all libraries we need**
 
-```python
+        ```python
         from fastai.vision import open_image, load_learner, image, torch
         import streamlit as st
         import numpy as np
@@ -57,14 +57,14 @@ $ pip install streamlit
         import PIL.Image
         import requests
         from io import BytesIO
-```
+        ```
 
 - **Create the app title with `st.title`**
 
-```python
+        ```python
         # App title
         st.title("Son Tung MTP vs G-Dragon")
-```
+        ```
 
 - **Define the function that loads the model and make prediction**
 
@@ -75,7 +75,7 @@ $ pip install streamlit
 
     ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/messages.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/messages.gif)
 
-```python
+        ```python
         def predict(img, display_img):
         
             # Display the test image
@@ -95,19 +95,19 @@ $ pip install streamlit
                 st.success("This is Son Tung MTP with the probability of " + str(pred_prob) + '%.')
             else:
                 st.success("This is G-Dragon with the probability of " + str(pred_prob) + '%.')
-```
+        ```
 
 - **Let user choose the source of input images with `st.option`**
 
-```python
+        ```python
         option = st.radio('', ['Choose a test image', 'Choose your own image'])
-```
+        ```
 
     - If they want to use a given test image, let them choose one from the list:
 
-```python
-        `st.selectbox` : displays a list of choice
-
+        - `st.selectbox` : displays a list of choice
+        
+        ```python
             if option == 'Choose a test image':
             
                 # Test image selection
@@ -124,15 +124,15 @@ $ pip install streamlit
             
                 # Predict and display the image
                 predict(img, display_img)
-```
+        ```
 
         ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_1.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_1.gif)
 
     - Else, they want to use their own image, let them input the url:
 
-```python
-        `st.text_input` : displays a single-line text input widget
+        - `st.text_input` : displays a single-line text input widget
 
+        ```python
             else:
                 url = st.text_input("Please input a url:")
             
@@ -153,15 +153,15 @@ $ pip install streamlit
             
                     except:
                         st.text("Invalid url!")
-```
+        ```
 
         ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_2.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_2.gif)
 
 - **Run the app locally**
 
-```
+        ```
         $ streamlit run app.py
-```
+        ```
 
     ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif)
 
@@ -170,51 +170,47 @@ $ pip install streamlit
 - **Create `Procfile` and `requirements.txt` files**
     - For `Procfile`, it requires only one line. Note that the file has no extention.
 
-```
+            ```
             web: streamlit run --server.enableCORS false --server.port $PORT app.py
-```
+            ```
 
     - For `requirements.txt`, put all libraries needed to run your app
 
-```
+            ```
             streamlit
             matplotlib
             numpy
             https://download.pytorch.org/whl/cpu/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
             fastai
-```
+            ```
 
 - **Upload all your files to [Github](https://github.com/trungha-ngx/MTP-vs-GD)**
-
     <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
 	<figcaption></figcaption>
     </figure>
 
 - **Create a [Heroku account](https://signup.heroku.com/). It's free**
-- **Go to [Heroku dashboard](https://dashboard.heroku.com/apps) and create a new app**
 
+- **Go to [Heroku dashboard](https://dashboard.heroku.com/apps) and create a new app**
     <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/1.png?raw=true">
 	<figcaption></figcaption>
     </figure>
 
-    Give it a name
-
+    - Give it a name
     <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/2.png?raw=true">
 	<figcaption></figcaption>
     </figure>
 
-    Connect the app to your GitHub repo
-
+    - Connect the app to your GitHub repo
     <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/3.png?raw=true">
 	<figcaption></figcaption>
     </figure>
 
-    Deploy it and wait a minute
-
+    - Deploy it and wait a minute
     <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/4.png?raw=true">
 	<figcaption></figcaption>
