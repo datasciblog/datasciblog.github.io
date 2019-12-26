@@ -22,7 +22,9 @@ Training a deep learning model is cool, putting it into [production](https://mtp
 
 As a student who had changed from a business background to data science, I always found it difficult to learn and do any IT stuff. That was the reason why during nearly two years studying at Monash, I had been avoiding the question "What's the next thing to do after training a machine learning model?". At that moment, I knew I should somehow make my model alive by taking further steps - putting it into an application. But the idea of learning any new web/app frameworks while a lot of assignments were coming just discouraged me.
 
-Fortunately, I had [Streamlit](https://streamlit.io/) and [Heroku](https://www.heroku.com/). While, Streamlit is an framework which enables you writing an app without leaving your Jupyter Notebook, Heroku's platform gives you the simplest path to deliver your apps quickly. I found Streamlit familiar just as Shiny in R and with Heroku, my app was deployed in just a few clicks. Now, let's see how I built my first app with my deep learning model.
+Fortunately, I had [Streamlit](https://streamlit.io/) and [Heroku](https://www.heroku.com/). While, Streamlit is an framework which enables you writing an app without leaving your Jupyter Notebook, Heroku's platform gives you the simplest path to deliver your apps quickly. I found Streamlit familiar just as Shiny in R and with Heroku, my app was deployed in just a few clicks. 
+
+Now, let's see how I built my first app to recognise if a person is [Son Tung M-TP](https://en.wikipedia.org/wiki/S%C6%A1n_T%C3%B9ng_M-TP) or [G-Dragon](https://en.wikipedia.org/wiki/G-Dragon). This is definitely a challenging task for computers as there are a lot of mutual things between these two people's appearance.
 
 # Building Application
 
