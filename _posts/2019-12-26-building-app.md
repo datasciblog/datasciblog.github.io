@@ -203,7 +203,7 @@ Don't know how to do it? Check out these lessons:
 <figcaption></figcaption>
 </figure>
 
-- Deploy it and wait a minute
+- Deploy it
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/4.png?raw=true">
 <figcaption></figcaption>
