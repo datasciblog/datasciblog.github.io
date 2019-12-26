@@ -17,7 +17,7 @@ classes: wide
 
 ## Yay!
 
-Finally, I can finish the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) offered by Coursera. There are so many reviews about this course out there but I still want to give you some words.
+Finally, I could finish the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) offered by Coursera. There are so many reviews about this course out there but I still want to give you some words.
 
 > If you want to dive into Deep Learning as a beginner, you definitely should start with this course. However, it might be not enough for you to really do something serious as it would be more theoretical than practical. The good thing is, you will probably have a very good foundation to keep moving to other advanced courses.
 
