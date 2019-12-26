@@ -207,7 +207,7 @@ Don't know how to do it? Check out these lessons:
 <figcaption></figcaption>
 </figure>
 
-## 4. Deploy it
+## 4. Make your app alive
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/4.png?raw=true">
 <figcaption></figcaption>
