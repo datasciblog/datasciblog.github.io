@@ -211,4 +211,7 @@ Don't know how to do it? Check out these lessons:
 <figcaption></figcaption>
 </figure>
 
-### **Boom! Your app is ready for public use:** [https://mtp-vs-gd.herokuapp.com/](https://mtp-vs-gd.herokuapp.com/)
+### **Boom! Your app is ready for public use.** 
+- Link to app: [https://mtp-vs-gd.herokuapp.com/](https://mtp-vs-gd.herokuapp.com/)
+- Source code: [https://github.com/trungha-ngx/MTP-vs-GD](https://github.com/trungha-ngx/MTP-vs-GD)
+
