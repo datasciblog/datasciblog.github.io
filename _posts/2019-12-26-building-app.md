@@ -11,9 +11,9 @@ tags:
 - streamlit
 - heroku
 classes: wide
-toc: true
-toc_label: "Table of Contents"
-toc_icon: "cog"
+# toc: true
+# toc_label: "Table of Contents"
+# toc_icon: "cog"
 ---
 
 # Introduction
