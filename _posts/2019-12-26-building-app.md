@@ -18,7 +18,7 @@ classes: wide
 
 # Introduction
 
-Training a deep learning model is cool, putting it into production is even cooler. 
+Training a deep learning model is cool, putting it into [production](https://mtp-vs-gd.herokuapp.com/) is even cooler. 
 
 As a student who had changed from a business background to data science, I always found it difficult to learn and do any IT stuff. That was the reason why during nearly two years of studying my master degree at Monash, I had been avoiding the question "What's next after training a machine learning model?". At that moment, I knew I should somehow make my model alive by taking further steps - putting it into a mobile or web application. But the idea of learning any web/app framework while there were a lot of assignments coming just discouraged me.
 
