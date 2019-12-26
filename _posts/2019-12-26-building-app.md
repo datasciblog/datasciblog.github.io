@@ -159,9 +159,9 @@ Don't know how to do it? Check out these lessons:
     $ streamlit run app.py
 ```
 
-## 3. Make your app alive
+# Make your app alive
 
-### **Create `Procfile` and `requirements.txt` files**
+## 1. **Create `Procfile` and `requirements.txt` files**
 
 - For `Procfile`, it requires only one line. Note that the file has no extention.
 
@@ -179,13 +179,13 @@ Don't know how to do it? Check out these lessons:
         fastai
     ```
 
-### **Push all the files to your [Github](https://github.com/trungha-ngx/MTP-vs-GD) repo**
+## 2. **Push all the files to your [Github](https://github.com/trungha-ngx/MTP-vs-GD) repo**
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
 <figcaption></figcaption>
 </figure>
 
-### **Create a [Heroku account](https://signup.heroku.com/). Go to [dashboard](https://dashboard.heroku.com/apps) and create a new app**
+## 3.  **Create a [Heroku account](https://signup.heroku.com/). Go to [dashboard](https://dashboard.heroku.com/apps) and create a new app**
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/1.png?raw=true">
 <figcaption></figcaption>
@@ -203,13 +203,13 @@ Don't know how to do it? Check out these lessons:
 <figcaption></figcaption>
 </figure>
 
-- Deploy it
+## 4. Deploy it
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/4.png?raw=true">
 <figcaption></figcaption>
 </figure>
 
-### **Boom! Your app is ready for public use.** 
+# **Boom! Your app is ready for public use.** 
 - Link to app: [https://mtp-vs-gd.herokuapp.com/](https://mtp-vs-gd.herokuapp.com/)
 - Source code: [https://github.com/trungha-ngx/MTP-vs-GD](https://github.com/trungha-ngx/MTP-vs-GD)
 
