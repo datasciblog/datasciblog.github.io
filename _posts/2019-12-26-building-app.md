@@ -24,8 +24,6 @@ As a student who had changed from a business background to data science, I alway
 
 Fortunately, I had [Streamlit](https://streamlit.io/) and [Heroku](https://www.heroku.com/).  While, Streamlit is an app framework which enables you writing an app without leaving your Jupyter Notebook, Heroku's platform gives you the simplest path to deliver your apps quickly. 
 
-[https://streamlit.io/media/videos/udacity_car_demo-2.mp4](https://streamlit.io/media/videos/udacity_car_demo-2.mp4)
-
 # Building Application
 
 ## 1. Train a model and export it
@@ -41,12 +39,15 @@ Don't know how to do it? Check out these lessons:
 
 ### Install `streamlit` on your environment
 
-    $ pip install streamlit
+```
+$ pip install streamlit
+```
 
-### Create `[app.py](http://app.py)` file
+### Create `app.py` file
 
 - **Import all libraries we need**
 
+```python
         from fastai.vision import open_image, load_learner, image, torch
         import streamlit as st
         import numpy as np
@@ -56,24 +57,25 @@ Don't know how to do it? Check out these lessons:
         import PIL.Image
         import requests
         from io import BytesIO
+```
 
 - **Create the app title with `st.title`**
 
+```python
         # App title
         st.title("Son Tung MTP vs G-Dragon")
+```
 
 - **Define the function that loads the model and make prediction**
 
-    `load_learner` : loads the trained model `export.pkl` inside the given folder
-
-    `st.image` : displays an image within the app
-
-    `st.spinner` : displays a message while executing
-
-    `st.success` : displays a success message
+    - `load_learner` : loads the trained model `export.pkl` inside the given folder
+    - `st.image` : displays an image within the app
+    - `st.spinner` : displays a message while executing
+    - `st.success` : displays a success message
 
     ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/messages.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/messages.gif)
 
+```python
         def predict(img, display_img):
         
             # Display the test image
@@ -93,13 +95,17 @@ Don't know how to do it? Check out these lessons:
                 st.success("This is Son Tung MTP with the probability of " + str(pred_prob) + '%.')
             else:
                 st.success("This is G-Dragon with the probability of " + str(pred_prob) + '%.')
+```
 
 - **Let user choose the source of input images with `st.option`**
 
+```python
         option = st.radio('', ['Choose a test image', 'Choose your own image'])
+```
 
     - If they want to use a given test image, let them choose one from the list:
 
+```python
         `st.selectbox` : displays a list of choice
 
             if option == 'Choose a test image':
@@ -118,11 +124,13 @@ Don't know how to do it? Check out these lessons:
             
                 # Predict and display the image
                 predict(img, display_img)
+```
 
         ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_1.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_1.gif)
 
     - Else, they want to use their own image, let them input the url:
 
+```python
         `st.text_input` : displays a single-line text input widget
 
             else:
@@ -145,12 +153,15 @@ Don't know how to do it? Check out these lessons:
             
                     except:
                         st.text("Invalid url!")
+```
 
         ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_2.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_2.gif)
 
 - **Run the app locally**
 
+```
         $ streamlit run app.py
+```
 
     ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif)
 
@@ -159,36 +170,55 @@ Don't know how to do it? Check out these lessons:
 - **Create `Procfile` and `requirements.txt` files**
     - For `Procfile`, it requires only one line. Note that the file has no extention.
 
+```
             web: streamlit run --server.enableCORS false --server.port $PORT app.py
+```
 
     - For `requirements.txt`, put all libraries needed to run your app
 
+```
             streamlit
             matplotlib
             numpy
             https://download.pytorch.org/whl/cpu/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
             fastai
+```
 
 - **Upload all your files to [Github](https://github.com/trungha-ngx/MTP-vs-GD)**
 
-    ![The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled.png](The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled.png)
-
+    <figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
+	<figcaption></figcaption>
+    </figure>
+    
 - **Create a [Heroku account](https://signup.heroku.com/). It's free**
 - **Go to [Heroku dashboard](https://dashboard.heroku.com/apps) and create a new app**
 
-    ![The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled%201.png](The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled%201.png)
+    <figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/1.png?raw=true">
+	<figcaption></figcaption>
+    </figure>
 
     Give it a name
 
-    ![The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled%202.png](The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled%202.png)
+    <figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/2.png?raw=true">
+	<figcaption></figcaption>
+    </figure>
 
     Connect the app to your GitHub repo
 
-    ![The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled%203.png](The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled%203.png)
+    <figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/3.png?raw=true">
+	<figcaption></figcaption>
+    </figure>
 
     Deploy it and wait a minute
 
-    ![The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled%204.png](The%20Simplest%20Way%20to%20Build%20an%20App%20with%20Your%20Deep%20Le/Untitled%204.png)
+    <figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/4.png?raw=true">
+	<figcaption></figcaption>
+    </figure>
 
 - **Boom! Your app is ready for public use.**
 
