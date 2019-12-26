@@ -132,7 +132,7 @@ Don't know how to do it? Check out these lessons:
 
         - `st.text_input` : displays a single-line text input widget
 
-    ```python
+        ```python
             else:
                 url = st.text_input("Please input a url:")
             
@@ -153,7 +153,7 @@ Don't know how to do it? Check out these lessons:
             
                     except:
                         st.text("Invalid url!")
-    ```
+        ```
 
         ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_2.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_2.gif)
 
