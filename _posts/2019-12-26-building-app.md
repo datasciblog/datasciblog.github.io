@@ -103,9 +103,7 @@ Don't know how to do it? Check out these lessons:
         option = st.radio('', ['Choose a test image', 'Choose your own image'])
      ```
 
-    - If they want to use a given test image, let them choose one from the list:
-
-        - `st.selectbox` : displays a list of choice
+    - If they want to use a given test image, let them choose one from the list with `st.selectbox`
         
         ```python
             if option == 'Choose a test image':
@@ -128,9 +126,7 @@ Don't know how to do it? Check out these lessons:
 
         ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_1.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/choice_1.gif)
 
-    - Else, they want to use their own image, let them input the url:
-
-        - `st.text_input` : displays a single-line text input widget
+    - Else, they want to use their own image, let them input the url with `st.text_input`
 
         ```python
             else:
