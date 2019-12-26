@@ -5,8 +5,9 @@ date:   2019-12-26
 permalink: /2019/12/26/building-app/
 excerpt: ""
 categories: 
-- Deep Learning
+- Projects
 tags:
+- deep learning
 - deployment
 - streamlit
 - heroku
