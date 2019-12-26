@@ -181,7 +181,7 @@ Don't know how to do it? Check out these lessons:
         fastai
     ```
 
-### **Upload all your files to [Github](https://github.com/trungha-ngx/MTP-vs-GD)**
+### **Push all your files to [Github](https://github.com/trungha-ngx/MTP-vs-GD)**
 <figure>
 <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
 <figcaption></figcaption>
