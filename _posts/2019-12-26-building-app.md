@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "The Simplest Way to Build an App with Your Deep Learning Model"
+title:  "The Simplest Way to Deploy Your Deep Learning Model"
 date:   2019-12-26
 permalink: /2019/12/26/building-app/
 excerpt: ""
