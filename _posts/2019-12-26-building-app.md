@@ -97,7 +97,7 @@ Don't know how to do it? Check out these lessons:
                 st.success("This is G-Dragon with the probability of " + str(pred_prob) + '%.')
     ```
 
-- **Let user choose the source of input images with `st.option`**
+- **Let user choose the source of input images with `st.radio`**
 
     ```python
         option = st.radio('', ['Choose a test image', 'Choose your own image'])
@@ -159,57 +159,58 @@ Don't know how to do it? Check out these lessons:
 
 ### **Run the app locally**
 
-    ![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif)
+![https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif](https://raw.githubusercontent.com/trungha-ngx/MTP-vs-GD/master/gif/run.gif)
 
 ## 3. Run your app publicly with Heroku
 
 ### **Create `Procfile` and `requirements.txt` files**
-    - For `Procfile`, it requires only one line. Note that the file has no extention.
 
-        ```
-            web: streamlit run --server.enableCORS false --server.port $PORT app.py
-        ```
+- For `Procfile`, it requires only one line. Note that the file has no extention.
 
-    - For `requirements.txt`, put all libraries needed to run your app
+    ```
+        web: streamlit run --server.enableCORS false --server.port $PORT app.py
+    ```
 
-        ```
-            streamlit
-            matplotlib
-            numpy
-            https://download.pytorch.org/whl/cpu/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
-            fastai
-        ```
+- For `requirements.txt`, put all libraries needed to run your app
+
+    ```
+        streamlit
+        matplotlib
+        numpy
+        https://download.pytorch.org/whl/cpu/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
+        fastai
+    ```
 
 ### **Upload all your files to [Github](https://github.com/trungha-ngx/MTP-vs-GD)**
-    <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
-	<figcaption></figcaption>
-    </figure>
+<figure>
+<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
+<figcaption></figcaption>
+</figure>
 
 ### **Create a [Heroku account](https://signup.heroku.com/). It's free.**
 
 ### **Go to [Heroku dashboard](https://dashboard.heroku.com/apps) and create a new app**
-    <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/1.png?raw=true">
-	<figcaption></figcaption>
-    </figure>
+<figure>
+<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/1.png?raw=true">
+<figcaption></figcaption>
+</figure>
 
-    - Give it a name
-    <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/2.png?raw=true">
-	<figcaption></figcaption>
-    </figure>
+- Give it a name
+<figure>
+<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/2.png?raw=true">
+<figcaption></figcaption>
+</figure>
 
-    - Connect the app to your GitHub repo
-    <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/3.png?raw=true">
-	<figcaption></figcaption>
-    </figure>
+- Connect the app to your GitHub repo
+<figure>
+<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/3.png?raw=true">
+<figcaption></figcaption>
+</figure>
 
-    - Deploy it and wait a minute
-    <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/4.png?raw=true">
-	<figcaption></figcaption>
-    </figure>
+- Deploy it and wait a minute
+<figure>
+<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/4.png?raw=true">
+<figcaption></figcaption>
+</figure>
 
 ### **Boom! Your app is ready for public use:** [https://mtp-vs-gd.herokuapp.com/](https://mtp-vs-gd.herokuapp.com/)
