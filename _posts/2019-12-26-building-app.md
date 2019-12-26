@@ -97,7 +97,7 @@ Don't know how to do it? Check out these lessons:
                 st.success("This is G-Dragon with the probability of " + str(pred_prob) + '%.')
     ```
 
-- **Let user choose the source of input images with `st.radio`**
+- **Let users choose the source of input images with `st.radio`**
 
     ```python
         option = st.radio('', ['Choose a test image', 'Choose your own image'])
