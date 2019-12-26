@@ -22,7 +22,7 @@ title                    : "DataSciBlog"
 title_separator          : "-"
 subtitle                 : #"What I Talk About When We Talk About Data" # site tagline that appears below site title in masthead
 name                     : "Ha NGUYEN"
-description              : "What I Talk About When I Talk About Data"
+description              : # "What I Talk About When I Talk About Data"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
