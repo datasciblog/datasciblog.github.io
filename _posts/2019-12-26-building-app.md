@@ -190,7 +190,7 @@ $ pip install streamlit
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2019-12-26-building-app/0.png?raw=true">
 	<figcaption></figcaption>
     </figure>
-    
+
 - **Create a [Heroku account](https://signup.heroku.com/). It's free**
 - **Go to [Heroku dashboard](https://dashboard.heroku.com/apps) and create a new app**
 
@@ -220,6 +220,4 @@ $ pip install streamlit
 	<figcaption></figcaption>
     </figure>
 
-- **Boom! Your app is ready for public use.**
-
-    [Streamlit](https://mtp-vs-gd.herokuapp.com/)
+- **Boom! Your app is ready for public use.**: [https://mtp-vs-gd.herokuapp.com/](https://mtp-vs-gd.herokuapp.com/)
