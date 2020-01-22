@@ -55,21 +55,21 @@ Mình xác định có 3 dạng features cần xử lý theo các cách thức k
 ### Missing and None values
 
 - **NaN/na** values: Đối categorical features, mình tạo một feature đếm tổng số giá trị NaN/na trên từng dòng.
-- **None** values: Tương tự như NaN/na ****values, mình tạo một feature tính tổng số giá trị None trên từng dòng.
+- **None** values: Tương tự như NaN/na values, mình tạo một feature tính tổng số giá trị None trên từng dòng.
 
 ### Categorical features với nhiều hơn 10 unique values
 
 - Mình dùng kỹ thuật **Count Encoding** cho mỗi feature.
-
+từng
 ### Categorical features với ít hơn 10 unique values + Boolean features
 
-- Mình sử dụng kỹ thuật **Count Encoding** và **One-hot Encoding** cho mỗi feature.
+- Mình sử dụng kỹ thuật **Count Encoding** và **One-hot Encoding** cho từng feature.
 
 ### Ordinal categorical features
 
 - Có 5 categorical features với giá trị là text nhưng mang ý nghĩa thứ tự (ví dụ: Zero, One, Two, Three, A,B, C, D...) nên mình chuyển sang dạng số cho từng feature.
 
-Kết quả là mình đã có 191 features mới sau khi thực hiện hết các kỹ thuật trên.
+Kết quả là mình đã có **191 features** mới sau khi thực hiện hết các kỹ thuật trên.
 
 ## Numerical Features
 
@@ -79,7 +79,7 @@ Kết quả là mình đã có 191 features mới sau khi thực hiện hết c�
 - Với mỗi numerical features chứa missing values, mình tạo một boolean feature tương ứng để biểu thị việc thiếu thông tin này.
 - Cuối cùng, với mỗi feature mình impute missing values bằng cả 3 phương pháp: constant value (-1), median và mean.
 
-Kết quả của các bước trên, mình có thêm 88 features mới.
+Kết quả của các bước trên, mình có thêm **88 features** mới.
 
 ## Label Mean Features
 
@@ -90,5 +90,12 @@ Kết quả của các bước trên, mình có thêm 88 features mới.
 
 - Mình dùng LightGBM + 5-fold CV với bộ features, mô hinh bị overfitting nhẹ. Validation score của mình rất cao, từ 0.25-0.4 nhưng điểm số đạt được tối đa trên LB là **0.21642**.
 - Đưa bộ features trên lên AutoML, mình đạt được điểm số **0.22449**.
-- Sau khi chạy nhiều lần LightGBM với các bộ hyperparameters khác nhau, mình lựa chọn một số file kết quả có điểm Gini > 0.21, cộng thêm file kết quả từ AutoML. Tính giá trị trung bình từ các file này, Gini score của mình tăng thêm một chút, đạt **0.22737**.
-- 0.22737 hiện tại là kết quả tốt nhất của mình.
+- Sau khi chạy nhiều lần LightGBM với các bộ hyperparameters khác nhau, mình lựa chọn một số file kết quả có điểm Gini > 0.21, cộng thêm file kết quả từ AutoML. Tính giá trị trung bình từ các file này, Gini score của mình tăng thêm một chút, đạt **0.22737** và là kết quả tốt nhất cho đến thời điểm hiện tại của mình.
+
+# What's next?
+- Mình sẽ tiếp tục tìm kiếm thêm ý tưởng để tạo thêm các features mới.
+- Tune hyperparameters cho model hiện tại. 
+- Xây dựng thêm models với XGBoost, Neural Networks,...
+- Thực hiện các kỹ thuật ensemble nâng cao.
+
+Chúc các bạn thi đấu vui vẻ!
