@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Kalapa Credit Scoring - #17 Solution, 0.22737 Gini Score"
+title:  "Kalapa's Credit Scoring Challenge - #17 Solution, 0.22737 Gini Score"
 date:   2020-01-21
 permalink: /2020/01/21/kalapa-credit-scoring-solution/
 excerpt: ""
@@ -59,11 +59,11 @@ Mình xác định có 3 dạng features cần xử lý theo các cách thức k
 
 ### Categorical features với nhiều hơn 10 unique values
 
-- Mình dùng kỹ thuật **Count Encoding** cho mỗi feature.
-từng
+- Mình dùng kỹ thuật **Count Encoding** cho từng feature.
+
 ### Categorical features với ít hơn 10 unique values + Boolean features
 
-- Mình sử dụng kỹ thuật **Count Encoding** và **One-hot Encoding** cho từng feature.
+- Mình sử dụng cả 2 kỹ thuật là **Count Encoding** và **One-hot Encoding** cho từng feature.
 
 ### Ordinal categorical features
 
@@ -84,7 +84,7 @@ Kết quả của các bước trên, mình có thêm **88 features** mới.
 ## Label Mean Features
 
 - Mình dùng thư viện scikit-learn để tạo các features mới là giá trị label trung bình của 500 đến 5000 nearest neighbors cho mỗi dòng.
-- Đây là những features quan trọng nhất giúp model của mình tăng đến 0.2 Gini score.
+- Đây là những features quan trọng nhất giúp model của mình tăng đến 0.2 điểm Gini.
 
 # Modelling
 
