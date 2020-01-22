@@ -9,6 +9,7 @@ categories:
 tags:
 - lightGBM
 - competition
+- credit scoring
 classes: wide
 # toc: true
 # toc_label: "Table of Contents"
