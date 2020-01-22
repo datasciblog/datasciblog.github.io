@@ -17,10 +17,10 @@ classes: wide
 ---
 
 # Giới thiệu
-Dưới đây là lời giải của mình cho cuộc thi [Kalapa's Credit Scoring Challenge](https://challenge.kalapa.vn/regulations.html). Lời giải này đã đưa mình lên vị trí thứ 17 vào ngày 21/01/2020. Đây cũng là lần đầu tiên mình tham gia một cuộc thi về dữ liệu như thế này nên mọi thứ mình làm đều là các bước tiếp cận cơ bản, phù hợp với các bạn mới, muốn xây dựng một baseline model.
+Dưới đây là lời giải của mình cho cuộc thi [Kalapa's Credit Scoring Challenge](https://challenge.kalapa.vn/regulations.html). Lời giải này đã đưa mình lên vị trí thứ 17 vào ngày 21/01/2020. Đây cũng là lần đầu tiên mình tham gia một cuộc thi dữ liệu dạng này nên mọi thứ mình làm đều là các bước tiếp cận cơ bản, phù hợp với các bạn mới, muốn xây dựng một baseline model.
 
 # EDA
-Mình có một số quan sát thú vị đối với bộ dữ liệu như sau:
+Mình chưa dành nhiều thời gian cho visualisation, chỉ quan sát statistics của từng features và tìm ra được một vài điểm thú vị:
 - Một số numerical features có chứa các giá trị -1, nên mình dự đoán dữ liệu này đã được BTC impute missing values trước đó. Rồi thêm một bước loại bỏ để tạo missing values mới. 
 - Nhiều features có số lượng missing values giống hệt nhau như FIELD_3,4,5,6 hay FIELD16,21,22,50,51,52,53,54,55,56,57. 
 - Các features FIELD_50,51,52,53 có giá trị trung bình giống nhau.
