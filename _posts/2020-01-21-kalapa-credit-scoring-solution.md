@@ -22,7 +22,7 @@ Dưới đây là lời giải của mình cho cuộc thi [Kalapa's Credit Scori
 # EDA
 Mình chưa dành nhiều thời gian cho visualisation, chỉ quan sát statistics của từng features và tìm ra được một vài điểm thú vị:
 - Một số numerical features có chứa các giá trị -1, nên mình dự đoán dữ liệu này đã được BTC impute missing values trước đó. Rồi thêm một bước loại bỏ để tạo missing values mới. 
-- Nhiều features có số lượng missing values giống hệt nhau như FIELD_3,4,5,6 hay FIELD16,21,22,50,51,52,53,54,55,56,57. 
+- Nhiều features có số lượng missing values giống hệt nhau như FIELD_3,4,5,6 hay FIELD_16,21,22,50,51,52,53,54,55,56,57. 
 - Các features FIELD_50,51,52,53 có giá trị trung bình giống nhau.
 - FIELD_50,52,53 là 3 features có các bộ giá trị min, 25th percentile, 50th percentile và 75th percentile bằng nhau.
 
@@ -32,6 +32,7 @@ Mình xác định có 3 dạng features cần xử lý theo các cách thức k
 
 1. Categorical và Boolean
 
+```python
     cat_features = ['province', 'district', 'maCv',
                     'FIELD_7', 'FIELD_8', 'FIELD_9',
                     'FIELD_10', 'FIELD_13', 'FIELD_17', 
@@ -45,16 +46,19 @@ Mình xác định có 3 dạng features cần xử lý theo các cách thức k
                      'FIELD_29', 'FIELD_30', 'FIELD_31', 
                      'FIELD_36', 'FIELD_37', 'FIELD_38', 
                      'FIELD_47', 'FIELD_48', 'FIELD_49'
+```
 
 2. Numerical
 
+```python
     num_features = [col for col in all_data.columns if col not in cat_features+bool_features]
+```
 
 ## Categorical & Boolean Features
 
 ### Missing and None values
 
-- **NaN/na** values: Đối categorical features, mình tạo một feature đếm tổng số giá trị NaN/na trên từng dòng.
+- **NaN/na** values: Đối categorical features, mình tạo một feature đếm tổng số giá trị NaN/na trên từng dòng, sau đó fill toàn bộ NaN values với giá trị "Missing".
 - **None** values: Tương tự như NaN/na values, mình tạo một feature tính tổng số giá trị None trên từng dòng.
 
 ### Categorical features với nhiều hơn 10 unique values
@@ -87,8 +91,13 @@ Kết quả của các bước trên, mình có thêm **88 features** mới.
 - Đây là những features quan trọng nhất giúp model của mình tăng đến 0.2 điểm Gini.
 
 # Modelling
-
 - Mình dùng LightGBM + 5-fold CV với bộ features, mô hinh bị overfitting nhẹ. Validation score của mình rất cao, từ 0.25-0.4 nhưng điểm số đạt được tối đa trên LB là **0.21642**.
+
+<figure>
+<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-21-kalapa-credit-scoring-solution/gini.png?raw=true">
+<figcaption></figcaption>
+</figure>
+
 - Đưa bộ features trên lên AutoML, mình đạt được điểm số **0.22449**.
 - Sau khi chạy nhiều lần LightGBM với các bộ hyperparameters khác nhau, mình lựa chọn một số file kết quả có điểm Gini > 0.21, cộng thêm file kết quả từ AutoML. Tính giá trị trung bình từ các file này, Gini score của mình tăng thêm một chút, đạt **0.22737** và là kết quả tốt nhất cho đến thời điểm hiện tại của mình.
 
