@@ -67,7 +67,7 @@ từng
 
 ### Ordinal categorical features
 
-- Có 5 categorical features với giá trị là text nhưng mang ý nghĩa thứ tự (ví dụ: Zero, One, Two, Three, A,B, C, D...) nên mình chuyển sang dạng số cho từng feature.
+- Có 5 categorical features với giá trị là text nhưng mang hàm ý thứ tự (ví dụ: Zero, One, Two, Three, A,B, C, D...) nên mình chuyển sang dạng số cho từng feature.
 
 Kết quả là mình đã có **191 features** mới sau khi thực hiện hết các kỹ thuật trên.
 
