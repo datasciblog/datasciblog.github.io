@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Kalapa's Credit Scoring Challenge - #12 Solution, 0.2729 Gini Score"
+title:  "Kalapa's Credit Scoring Challenge - #13 Solution, 0.2729 Gini Score"
 date:   2020-02-10
 permalink: /2020/02/10/kalapa-credit-scoring-solution/
 excerpt: ""
