@@ -99,3 +99,7 @@ One can show that the entropy will take on a value near zero if the $\hat{p}_{mk
 - Easily to handle qualitative predictors (categorical features).
 - Unfortunately, they are generally low at predictive accuracy. Trees can also be very **non-robust**. In other words, a small change in the data can lead to a large change in the final tree.
 - However, by aggregating many decision trees, using methods like bagging,random forests, and boosting, the predictive performance of trees can besubstantially improved.
+
+# References
+
+  James, G., Witten, Daniela, author, Hastie, Trevor, author, & Tibshirani, Robert, author. (2015). An introduction to statistical learning : with applications in R.
