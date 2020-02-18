@@ -30,9 +30,8 @@ Mình chưa dành nhiều thời gian cho visualisation, chỉ quan sát statist
 
 Mình xác định có 3 dạng features cần xử lý theo các cách thức khác nhau.
 
-1. Categorical và Boolean
+**1. Categorical và Boolean**
 
-```python
     cat_features = ['province', 'district', 'maCv',
                     'FIELD_7', 'FIELD_8', 'FIELD_9',
                     'FIELD_10', 'FIELD_13', 'FIELD_17', 
@@ -46,30 +45,27 @@ Mình xác định có 3 dạng features cần xử lý theo các cách thức k
                      'FIELD_29', 'FIELD_30', 'FIELD_31', 
                      'FIELD_36', 'FIELD_37', 'FIELD_38', 
                      'FIELD_47', 'FIELD_48', 'FIELD_49'
-```
 
-2. Numerical
+**2. Numerical**
 
-```python
     num_features = [col for col in all_data.columns if col not in cat_features+bool_features]
-```
 
 ## Categorical & Boolean Features
 
-### Missing and None values
+### 1. Missing and None values
 
-- **NaN/na** values: Đối categorical features, mình tạo một feature đếm tổng số giá trị NaN/na trên từng dòng, sau đó fill toàn bộ NaN values với giá trị "Missing".
+- **NaN/na** values: Đối categorical features, mình tạo một feature đếm tổng số giá trị NaN/na trên từng dòng. Sau đó mình fill toàn bộ NaN values với giá trị "Missing".
 - **None** values: Tương tự như NaN/na values, mình tạo một feature tính tổng số giá trị None trên từng dòng.
 
-### Categorical features với nhiều hơn 10 unique values
+### 2. Categorical features với nhiều hơn 10 unique values
 
 - Mình dùng kỹ thuật **Count Encoding** cho từng feature.
 
-### Categorical features với ít hơn 10 unique values + Boolean features
+### 3. Categorical features với ít hơn 10 unique values + Boolean features
 
 - Mình sử dụng cả 2 kỹ thuật là **Count Encoding** và **One-hot Encoding** cho từng feature.
 
-### Ordinal categorical features
+### 4. Ordinal categorical features
 
 - Có 5 categorical features với giá trị là text nhưng mang hàm ý thứ tự (ví dụ: Zero, One, Two, Three, A,B, C, D...) nên mình chuyển sang dạng số cho từng feature.
 
@@ -88,21 +84,17 @@ Kết quả của các bước trên, mình có thêm **88 features** mới.
 ## Label Mean Features
 
 - Mình dùng thư viện scikit-learn để tạo các features mới là giá trị label trung bình của 500 đến 5000 nearest neighbors cho mỗi dòng.
-- Đây là những features quan trọng nhất giúp model của mình tăng đến 0.2 điểm Gini.
+- Đây là những features quan trọng nhất giúp model của mình tăng đến 0.02 điểm Gini.
 
 # Modelling
-- Mình dùng LightGBM + 5-fold CV với bộ features, mô hinh bị overfitting nhẹ. Validation score của mình rất cao, từ 0.25-0.4 nhưng điểm số đạt được tối đa trên LB là **0.21642**.
 
-<figure>
-<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-21-kalapa-credit-scoring-solution/gini.png?raw=true">
-<figcaption></figcaption>
-</figure>
-
+- Mình dùng LightGBM + 5-fold CV với bộ features trên, mô hinh bị overfitting nhẹ. Validation score của mình rất cao, từ 0.25-0.4 nhưng điểm số đạt được tối đa trên LB là **0.21642**.
+![gini|424x424](upload://9Vh0ci3q3rYoR7cv15oYBfieL3c.png) 
 - Đưa bộ features trên lên AutoML, mình đạt được điểm số **0.22449**.
 - Sau khi chạy nhiều lần LightGBM với các bộ hyperparameters khác nhau, mình lựa chọn một số file kết quả có điểm Gini > 0.21, cộng thêm file kết quả từ AutoML. Tính giá trị trung bình từ các file này, Gini score của mình tăng thêm một chút, đạt **0.22737** và là kết quả tốt nhất cho đến thời điểm hiện tại của mình.
 
 # What's next?
-- Mình sẽ tiếp tục tìm kiếm thêm ý tưởng để tạo thêm các features mới.
+- Mình sẽ tiếp tục tìm kiếm ý tưởng để tạo thêm các features mới.
 - Tune hyperparameters cho model hiện tại. 
 - Xây dựng thêm models với XGBoost, Neural Networks,...
 - Thực hiện các kỹ thuật ensemble nâng cao.
