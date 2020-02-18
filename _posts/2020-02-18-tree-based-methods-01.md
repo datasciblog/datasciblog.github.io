@@ -33,13 +33,13 @@ toc_icon: "cog"
     <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/2.png?raw=true">
 </figure>
 
-The example shows how to use a decision tree to predict the (log) salary of a baseball player based on **Years** (the number of years that he has played in the major leagues) and **Hits** (the number of hits that he made in the previous year). The tree has two **internal nodes (**The points along the tree where the predictor space is split) and three **terminal nodes (leaves)**. The number in each leaf is the mean of the response for the observations that fall there.
+The example shows how to use a decision tree to predict the (log) salary of a baseball player based on **Years** (the number of years that he has played in the major leagues) and **Hits** (the number of hits that he made in the previous year). The tree has two **internal nodes** (the points along the tree where the predictor space is split) and three **terminal nodes (leaves)**. The number in each leaf is the mean of the response for the observations that fall there.
 
-Overall, the tree segments all players into three groups /boxes / leaves: $R1 ={X | Years<4.5}, R2 ={X | Years>=4.5,Hits<117.5}, and R3 ={X | Years>=4.5, Hits>=117.5}$. The predicted salaries for these three groups are $1,000×e^5.107 =$165,174, $1,000×e^5.999 =$402,834, and $1,000×e^6.740 =$845,346 respectively.
+Overall, the tree segments all players into three groups (or leaves): $R1 ={X \| Years<4.5}, R2 ={X \| Years>=4.5,Hits<117.5}, and R3 ={X \| Years>=4.5, Hits>=117.5}$. The predicted salaries for these three groups are $1,000 \times e^5.107 = 165,174$, $1,000 \times e^5.999 = 402,834$, and $1,000 \times e^6.740 = 845,346$ respectively.
 
 We might interpret the regression tree as follows: Years is the most important factor in determining Salary, and players withless experience earn lower salaries than more experienced players. Giventhat a player is less experienced, the number of hits that he made in the previous year seems to play little role in his salary. But among players who have been in the major leagues for five or more years, the number of hitsmade in the previous year does affect salary, and players who made morehits last year tend to have higher salaries. The regression tree shown in Figure 8.1 is likely an over-simplification of the true relationship between Hits, Years, and Salary. However, it has advantages over other types ofregression models: it is easier to interpret, and has a nice graphical representation.
 
-### The process of building a regression tree
+### The Process of Building a Regression Tree
 
 Roughly speaking,there are two steps.
 
@@ -100,7 +100,7 @@ An alternative to the Gini index is entropy, given by
 
 One can show that the entropy will take on a value near zero if the pˆmk’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the mth node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
 
-## Advantages and Disadvantages of Trees
+# Advantages and Disadvantages of Trees
 
 - Very easy to interpret and explain. In fact, they are even easier to explain than linear regression.
 - More closely mirror human decision-making than other approaches.
