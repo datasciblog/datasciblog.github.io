@@ -90,9 +90,9 @@ a measure of total variance across the K classes. It is not hard to see that the
 
 An alternative to the Gini index is **entropy**, given by
 
-$$ D = -\sum\limit_{k=1}_^K  \hat{p}_{mk}log(\hat{p}_{mk}).$$
+$$ D = -\sum\limit_{k=1}_^K  \hat{p}_{mk}log(\hat{p}_{mk}) .$$
 
-One can show that the entropy will take on a value near zero if the $\hat{p}_{mk}$’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the $m_{th}$ node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
+One can show that the entropy will take on a value near zero if the $\hat{p}_{mk}$’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the $m^{th}$ node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
 
 # Advantages and Disadvantages of Trees
 
