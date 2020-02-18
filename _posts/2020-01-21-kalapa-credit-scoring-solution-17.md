@@ -89,9 +89,11 @@ Kết quả của các bước trên, mình có thêm **88 features** mới.
 # Modelling
 
 - Mình dùng LightGBM + 5-fold CV với bộ features trên, mô hinh bị overfitting nhẹ. Validation score của mình rất cao, từ 0.25-0.4 nhưng điểm số đạt được tối đa trên LB là **0.21642**.
+
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-21-kalapa-credit-scoring-solution-17/1.png?raw=true">
 </figure>
+
 - Đưa bộ features trên lên AutoML, mình đạt được điểm số **0.22449**.
 - Sau khi chạy nhiều lần LightGBM với các bộ hyperparameters khác nhau, mình lựa chọn một số file kết quả có điểm Gini > 0.21, cộng thêm file kết quả từ AutoML. Tính giá trị trung bình từ các file này, Gini score của mình tăng thêm một chút, đạt **0.22737** và là kết quả tốt nhất cho đến thời điểm hiện tại của mình.
 
