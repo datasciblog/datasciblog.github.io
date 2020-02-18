@@ -35,7 +35,7 @@ toc_icon: "cog"
 
 The example shows how to use a decision tree to predict the *log* salary of a baseball player based on **Years** (the number of years that he has played in the major leagues) and **Hits** (the number of hits that he made in the previous year). The tree has two **internal nodes** (the points along the tree where the predictor space is split) and three **terminal nodes (leaves)**. The number in each leaf is the mean of the response for the observations that fall there.
 
-Overall, the tree segments all players into three groups (or leaves): $R1 = \{X \| Years<4.5\}$, $R2 = \{X \| Years>=4.5,Hits<117.5 \}$, and $R3 = \{X \| Years>=4.5, Hits>=117.5 \}$. The predicted salaries for these three groups are $1,000 \times e^5.107 = 165,174$, $1,000 \times e^5.999 = 402,834$, and $1,000 \times e^6.740 = 845,346$ respectively.
+Overall, the tree segments all players into three groups (or leaves): $R1 = \{X \| Years<4.5\}$, $R2 = \{X \| Years>=4.5,Hits<117.5 \}$, and $R3 = \{X \| Years>=4.5, Hits>=117.5 \}$. The predicted salaries for these three groups are $1,000 \times e^{5.107} = 165,174$, $1,000 \times e^{5.999} = 402,834$, and $1,000 \times e^{6.740} = 845,346$ respectively.
 
 ### The Interpretation of a Regression Tree
 We might interpret the regression tree as follows: 
