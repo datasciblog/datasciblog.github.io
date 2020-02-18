@@ -47,11 +47,11 @@ We might interpret the regression tree as follows:
 
 Roughly speaking, there are two steps:
 
-1. We divide the predictor space - that is, the set of possible values for $X_1, X_2, ... , X_p$ - into J distinct and non-overlapping regions, $R_1, R_2, ... , R_J$.
+1. We divide the predictor space - that is, the set of possible values for $X_1, X_2, ... , X_p$ - into $J$ distinct and non-overlapping regions, $R_1, R_2, ... , R_J$.
 
-2. For every observation that falls into the region Rj, we make the sameprediction, which is simply the mean of the response values for the training observations in $R_j$.
+2. For every observation that falls into the region $R_j$, we make the sameprediction, which is simply the mean of the response values for the training observations in $R_j$.
 
-How do we construct the regions $R_1, ... , R_J$? In theory, the goal is to find boxes $R_1, ... , R_J$ that minimize the RSS, given by
+How do we construct the regions $R_1, ... , R_J$? In theory, the goal is to find boxes $R_1, ... , R_J$ that minimize the $RSS$, given by
 
 $$ \sum\limits_{j=1}^J \sum\limits_{i \in R_j} (y_i - \hat{y}_{R_j})^2 , $$
 
@@ -69,10 +69,7 @@ A five-region example of this approach is shown below.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/4.png?raw=true">
-    <figcaption>- Top Left: A partition of two-dimensional feature space that could not result from recursive binary splitting. 
-    - Top Right: The output of recursivebinary splitting on a two-dimensional example. 
-    - Bottom Left: A tree correspondingto the partition in the top right panel. 
-    - Bottom Right: A perspective plot of theprediction surface corresponding to that tree.</figcaption>
+    <figcaption>Top Left: A partition of two-dimensional feature space that could not result from recursive binary splitting. Top Right: The output of recursivebinary splitting on a two-dimensional example. Bottom Left: A tree correspondingto the partition in the top right panel. Bottom Right: A perspective plot of theprediction surface corresponding to that tree.</figcaption>
 </figure>
 
 ## Classification Trees
@@ -87,13 +84,13 @@ Here $\hat{p}_{mk}$ represents the proportion of training observations in the $m
 
 The **Gini index** is defined by
 
-$$ G = \sum\limit_{k=1}^K \hat{p}_{mk}(1-\hat{p}_{mk}) ,$$
+$$ G = \sum\limits_{k=1}^K \hat{p}_{mk}(1-\hat{p}_{mk}) ,$$
 
 a measure of total variance across the K classes. It is not hard to see that the Gini index takes on a small value if all of the $\hat{p}_{mk}$’s are close to zero or one. For this reason the Gini index is referred to as a measure of node **purity** - *the value indicates that a node contains predominantly observations from a single class*.
 
 An alternative to the Gini index is **entropy**, given by
 
-$$ D = -\sum\limit_{k=1}^K  \hat{p}_{mk}log(\hat{p}_{mk}) .$$
+$$ D = -\sum\limits_{k=1}^K  \hat{p}_{mk}log(\hat{p}_{mk}) .$$
 
 One can show that the entropy will take on a value near zero if the $\hat{p}_{mk}$’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the $m^{th}$ node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
 
