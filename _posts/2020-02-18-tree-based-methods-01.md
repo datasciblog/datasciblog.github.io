@@ -27,9 +27,13 @@ classes: wide
 
 ### Example
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37312e74-1e17-49df-9048-fc1c96ffb7c2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37312e74-1e17-49df-9048-fc1c96ffb7c2/Untitled.png)
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/1.png?raw=true">
+</figure>
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca17bc9c-939d-40d0-bb62-204eb4efd295/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca17bc9c-939d-40d0-bb62-204eb4efd295/Untitled.png)
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/2.png?raw=true">
+</figure>
 
 The example shows how to use a decision tree to predict the (log) salary of a baseball player based on **Years** (the number of years that he has played in the major leagues) and **Hits** (the number of hits that he made in the previous year). The tree has two **internal nodes (**The points along the tree where the predictor space is split) and three **terminal nodes (leaves)**. The number in each leaf is the mean of the response for the observations that fall there.
 
