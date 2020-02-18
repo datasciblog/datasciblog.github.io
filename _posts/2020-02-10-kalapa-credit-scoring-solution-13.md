@@ -2,7 +2,7 @@
 layout: single
 title:  "Kalapa's Credit Scoring Challenge - #13 Solution, 0.2729 Gini Score"
 date:   2020-02-10
-permalink: /2020/02/10/kalapa-credit-scoring-solution/
+permalink: /2020/02/10/kalapa-credit-scoring-solution-13/
 excerpt: ""
 categories: 
 - Projects
@@ -94,12 +94,16 @@ Dưới đây là lời giải phần 2 của mình cho cuộc thi [Kalapa’s C
     - Sau khi thử một vài giá trị, mình đánh giá một `random_state` tốt sẽ cho mình điểm số Gini Score trung bình cao (>0.26) với Standard Deviation thấp (<0.03).
     - Mình tìm ra được giá trị `random_state` tốt nhất bằng cách chạy LightGBM với `random_state` từ 1000 đến 25,000. Điều này đồng nghĩa với việc mình đã train 24,000 x 5 = 120,000 mô hình LightGBM. Mình sử dụng nguồn tài nguyên tính toán (10 CPUs) của Kaggle để làm việc này. Dưới đây là mô hình giúp mình đạt điểm số **0.2579**, đưa mình lên vị trí 21 trong ngày 01/02/2020.
 
-![ROC|424x424](upload://r74jJT1XSCPNMQ2BOKhHSP2zY1Z.png) 
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/1.png?raw=true">
+</figure>
 
 - Từ mô hình tốt nhất này, mình nhận ra validation score của fold 3 rất thấp (0.2425). Và vì kết quả cuối cùng mà mình có là giá trị probability trung bình của 5 mô hình được huấn luyện trên 5 folds, vậy nếu mô hình số 3 là một mô hình "tồi" thì kết quả trung bình kia sẽ bị ảnh hưởng nghiêm trọng. Do đó mình đã loại bỏ mô hình số 3, chỉ lấy probability trung bình của 4 mô hình còn lại. Gini Score trên LB của mình tăng lên **0.26559**.
 - Mình tiếp tục thử nghiệm và loại bỏ lần lượt các mô hình còn lại, chỉ giữ lại mô hình số 4 với validation score cao nhất (0.3135). Điểm số trên LB của mình lúc này tăng lên **0.2729** đưa mình lên vị trí thứ 13 trên bảng xếp hạng.
 
-![place_13|690x151](upload://nKcSi3HixojPf3v4CrA4qkyXKk0.png) 
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/2.png?raw=true">
+</figure>
 
 # What's next?
 
