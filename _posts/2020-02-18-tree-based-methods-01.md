@@ -18,9 +18,9 @@ toc_icon: "cog"
 
 # Introduction
 
-- Tree-based methods are used for both regression and classification problems. The methods are simple and useful for **interpretation**.
+- Tree-based methods are used for both **regression** and **classification** problems. The methods are simple and useful for **interpretation**.
 - A decision tree is a weak learner compared to other predictive machine learning algorithms. We need other approaches such as **bagging**, **random forests** and **boosting** to improve the prediction accuracy.
-- These approaches involve producing a large number of trees which are then combined to yeild a single prediction. This prediction is often dramatically impr  oved in accuracy but also costs some **loss in the interpretability** of the model.
+- These approaches involve producing a large number of trees which are then combined to yeild a single prediction. This prediction is often dramatically improved in accuracy with a cost of some **loss in the interpretability**.
 
 # Regression Trees
 
@@ -31,9 +31,9 @@ toc_icon: "cog"
     <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/2.png?raw=true">
 </figure>
 
-The example shows how to use a decision tree to predict the *log* salary of a baseball player based on *Years* (the number of years that he has played in the major leagues) and *Hits* (the number of hits that he made in the previous year). The tree has two **internal nodes** (the points along the tree where the predictor space is split) and three **terminal nodes (leaves)**. The number in each leaf is the mean of the response for the observations that fall there.
+The example shows how to use a decision tree to predict the *log* salary of a baseball player based on *Years* - the number of years that he has played in the major leagues and *Hits* - the number of hits that he made in the previous year. The tree has two **internal nodes** - the points along the tree where the predictor space is split (i.e. $Years < 4.5$ and $Hits < 117.5$ and three **terminal nodes (leaves)**. The number in each leaf is the mean of the response for the observations that fall there.
 
-Overall, the tree segments all players into three groups (or leaves): $R1 = \{X \| Years<4.5\}$, $R2 = \{X \| Years>=4.5,Hits<117.5 \}$, and $R3 = \{X \| Years>=4.5, Hits>=117.5 \}$. The predicted salaries for these three groups are $1,000 \times e^{5.107} = 165,174$, $1,000 \times e^{5.999} = 402,834$, and $1,000 \times e^{6.740} = 845,346$ respectively.
+Overall, the tree segments all players into three groups (or leaves): $R1 = \big{ X \| Years<4.5 \big}$, $R2 = \big{ X \| Years>=4.5,Hits<117.5 \big}$, and $R3 = \big{ X \| Years>=4.5, Hits>=117.5 \big}$. The predicted salaries for these three groups are $1,000 \times e^{5.107} = 165,174$, $1,000 \times e^{5.999} = 402,834$, and $1,000 \times e^{6.740} = 845,346$ respectively.
 
 ## The Interpretation of a Regression Tree
 We might interpret the regression tree as follows: 
@@ -56,7 +56,7 @@ $$ \sum\limits_{j=1}^J \sum\limits_{i \in R_j} (y_i - \hat{y}_{R_j})^2 , $$
 Unfortunately, it is computationally infeasible to consider every possible partition of the feature space into $J$ boxes. For this reason, we take a **top-down, greedy** approach that is known as recursive binary splitting. The approach is **top-down** because it begins at the top of the tree (at which point all observations belong to a single region) and then successively splits the predictor space; each split is indicated via two new branches further down on the tree. It is **greedy** because at each step of the tree-building process, the best split is made at that particular step, rather than looking ahead and picking a split that will lead to a better tree in some future steps.
 
 In order to perform recursive binary splitting:
-- We first select the predictor $X_j$ and the cutpoint $s$ such that splitting the predictor space into the regions $ \{X \| X_j < s }$ and $ \{X \| X_j ≥ s }$ leads to the greatest possible reduction in $RSS$. That is, we consider all predictors $X_1, ... , X_p$, and all possible values of the cutpoint $s$ for each of the predictors, and then choose the predictor and cutpoint such that there sulting tree has the lowest $RSS$.
+- We first select the predictor $X_j$ and the cutpoint $s$ such that splitting the predictor space into the regions $ \big{ X \| X_j < s \big}$ and $ \big{ X \| X_j ≥ s \big}$ leads to the greatest possible reduction in $RSS$. That is, we consider all predictors $X_1, ... , X_p$, and all possible values of the cutpoint $s$ for each of the predictors, and then choose the predictor and cutpoint such that there sulting tree has the lowest $RSS$.
 - Next, we repeat the process, looking for the best predictor and best cutpoint in order to split the data further so as to **minimize the $RSS$ within each of the resulting regions**. 
 
 The process continues until a stopping criterion is reached; for instance, we may continue until no region contains more than five observations.
