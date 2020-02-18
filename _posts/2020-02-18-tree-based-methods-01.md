@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "Tree-based Methods - 01: The Basics of Decision Trees"
+title:  "Tree-based-01: The Basics of Decision Trees"
 date:   2020-02-18
-permalink: /2020/02/18/tree-based-methods-01/
+permalink: /2020/02/18/tree-based-01/
 excerpt: ""
 categories: 
 - Projects
