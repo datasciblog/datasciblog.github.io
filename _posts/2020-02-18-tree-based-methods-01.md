@@ -31,7 +31,7 @@ toc_icon: "cog"
     <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/2.png?raw=true">
 </figure>
 
-The example shows how to use a decision tree to predict the *log* salary of a baseball player based on *Years* - the number of years that he has played in the major leagues and *Hits* - the number of hits that he made in the previous year. The tree has two **internal nodes** - the points along the tree where the predictor space is split (i.e. $Years < 4.5$ and $Hits < 117.5$ and three **terminal nodes (leaves)**. The number in each leaf is the mean of the response for the observations that fall there.
+The example shows how to use a decision tree to predict the *log* salary of a baseball player based on *Years* - the number of years that he has played in the major leagues and *Hits* - the number of hits that he made in the previous year. The tree has two **internal nodes** - the points along the tree where the predictor space is split (i.e. $Years < 4.5$ and $Hits < 117.5$) and three **terminal nodes (leaves)**. The number in each leaf is the **mean** of the response for the observations that fall there.
 
 Overall, the tree segments all players into three groups (or leaves): $R1 = \{ X \| Years<4.5 \}$, $R2 = \{ X \| Years>=4.5,Hits<117.5 \}$, and $R3 = \{ X \| Years>=4.5, Hits>=117.5 \}$. The predicted salaries for these three groups are $1,000 \times e^{5.107} = 165,174$, $1,000 \times e^{5.999} = 402,834$, and $1,000 \times e^{6.740} = 845,346$ respectively.
 
@@ -47,13 +47,15 @@ Roughly speaking, there are two steps:
 
 1. We divide the predictor space - that is, the set of possible values for $X_1, X_2, ... , X_p$ - into $J$ distinct and non-overlapping regions, $R_1, R_2, ... , R_J$.
 
-2. For every observation that falls into the region $R_j$, we make the sameprediction, which is simply the mean of the response values for the training observations in $R_j$.
+2. For every observation that falls into the region $R_j$, we make the same prediction, which is simply the mean of the response values for the training observations in $R_j$.
 
 How do we construct the regions $R_1, ... , R_J$? In theory, the goal is to find boxes $R_1, ... , R_J$ that minimize the $RSS$, given by
 
 $$ \sum\limits_{j=1}^J \sum\limits_{i \in R_j} (y_i - \hat{y}_{R_j})^2 , $$
 
-Unfortunately, it is computationally infeasible to consider every possible partition of the feature space into $J$ boxes. For this reason, we take a **top-down, greedy** approach that is known as recursive binary splitting. The approach is **top-down** because it begins at the top of the tree (at which point all observations belong to a single region) and then successively splits the predictor space; each split is indicated via two new branches further down on the tree. It is **greedy** because at each step of the tree-building process, the best split is made at that particular step, rather than looking ahead and picking a split that will lead to a better tree in some future steps.
+Unfortunately, it is computationally infeasible to consider every possible partition of the feature space into $J$ boxes. For this reason, we take a top-down and greedy approach that is known as **recursive binary splitting**. 
+- The approach is **top-down** because it begins at the top of the tree (at which point all observations belong to a single region) and then successively splits the predictor space; each split is indicated via two new branches further down on the tree. 
+- It is **greedy** because at each step of the tree-building process, the best split is made at that particular step, rather than looking ahead and picking a split that will lead to a better tree in some future steps.
 
 In order to perform recursive binary splitting:
 - We first select the predictor $X_j$ and the cutpoint $s$ such that splitting the predictor space into the regions $ \{ X \| X_j < s \}$ and $ \{ X \| X_j ≥ s \}$ leads to the greatest possible reduction in $RSS$. That is, we consider all predictors $X_1, ... , X_p$, and all possible values of the cutpoint $s$ for each of the predictors, and then choose the predictor and cutpoint such that there sulting tree has the lowest $RSS$.
@@ -90,7 +92,7 @@ An alternative to the Gini index is **entropy**, given by
 
 $$ D = -\sum\limits_{k=1}^K  \hat{p}_{mk}log(\hat{p}_{mk}) .$$
 
-One can show that the entropy will take on a value near zero if the $\hat{p}_{mk}$’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the $m^{th}$ node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
+One can show that the entropy will take on a value near zero if the $\hat{p}_{mk}$’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the $m^{th}$ node is pure. **In fact, it turns out that the Gini index and the entropy are quite similar numerically**.
 
 # Advantages and Disadvantages of Trees
 
