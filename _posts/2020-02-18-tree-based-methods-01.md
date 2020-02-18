@@ -5,14 +5,15 @@ date:   2020-02-18
 permalink: /2020/02/18/tree-based-01/
 excerpt: ""
 categories: 
-- Projects
+- Machine Learning
 tags:
 - tree-based
 - decision tree
+- algorithms
 classes: wide
-# toc: true
-# toc_label: "Table of Contents"
-# toc_icon: "cog"
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "cog"
 ---
 
 # Introduction
