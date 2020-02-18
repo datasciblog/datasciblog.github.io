@@ -51,7 +51,9 @@ Roughly speaking,there are two steps.
 
 How do we construct the regions R1, . . . , RJ? In theory, the goal is to find boxes R1, . . . , RJ that minimize the RSS, given by
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0488a1d6-5041-4a85-8720-3658deaac416/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0488a1d6-5041-4a85-8720-3658deaac416/Untitled.png)
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/3.png?raw=true">
+</figure>
 
 Unfortunately, it is computationally infeasible to consider every possible partition of the feature space into J boxes. For this reason, we take a **top-down, greedy** approach that is known as recursive binary splitting. The approach is **top-down** because it begins at the top of the tree (at which pointall observations belong to a single region) and then successively splits thepredictor space; each split is indicated via two new branches further downon the tree. It is **greedy** because at each step of the tree-building process, the best split is made at that particular step, rather than looking ahead and picking a split that will lead to a better tree in some future step.
 
@@ -65,7 +67,9 @@ Once the regions R1, . . . , RJ have been created, we predict the response for a
 
 A five-region example of this approach is shown in Figure 8.3.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51d5f902-d69e-4d87-aa5c-994e553f232e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51d5f902-d69e-4d87-aa5c-994e553f232e/Untitled.png)
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/4.png?raw=true">
+</figure>
 
 FIGURE 8.3. Top Left: A partition of two-dimensional feature space that could not result from recursive binary splitting. Top Right: The output of recursivebinary splitting on a two-dimensional example. Bottom Left: A tree correspondingto the partition in the top right panel. Bottom Right: A perspective plot of theprediction surface corresponding to that tree.
 
@@ -75,19 +79,25 @@ Recall that for a regression tree, the predicted response for an observation is 
 
 Just as in the regression setting, we use recursivebinary splitting to grow a classification tree. However, in the classificationsetting, RSS cannot be used as a criterion for making the binary splits. A natural alternative to RSS is the **classification error rate**. Since we plan to assign an observation in a given region to the most commonly occurring class of training observations in that region, the classification error rate issimply the fraction of the training observations in that region that do not belong to the most common class:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e68d5440-a296-43f5-a444-b347252930d2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e68d5440-a296-43f5-a444-b347252930d2/Untitled.png)
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/5.png?raw=true">
+</figure>
 
 Here ˆ pmk represents the proportion of training observations in the mthregion that are from the kth class. However, it turns out that classification error is not sufficiently sensitive for tree-growing, and in practice two other measures are preferable. 
 
 The Gini index is defined by
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e8f92d2-a1c0-4a88-ac67-751d850e8697/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e8f92d2-a1c0-4a88-ac67-751d850e8697/Untitled.png)
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/6.png?raw=true">
+</figure>
 
 a measure of total variance across the K classes. It is not hard to see that the Gini index takes on a small value if all of the ˆ pmk’s are close tozero or one. For this reason the Gini index is referred to as a measure of node **purity**—a small value indicates that a node *contains predominantly observations from a single class*.
 
 An alternative to the Gini index is entropy, given by
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/06269d9c-a520-400e-bb12-581d48845968/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/06269d9c-a520-400e-bb12-581d48845968/Untitled.png)
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/7.png?raw=true">
+</figure>
 
 One can show that the entropy will take on a value near zero if the pˆmk’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the mth node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
 
