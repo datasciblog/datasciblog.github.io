@@ -57,7 +57,7 @@ Unfortunately, it is computationally infeasible to consider every possible parti
 
 In order to perform recursive binary splitting:
 - We first select the predictor $X_j$ and the cutpoint $s$ such that splitting the predictor space into the regions $ \big{ X \| X_j < s \big}$ and $ \big{ X \| X_j ≥ s \big}$ leads to the greatest possible reduction in $RSS$. That is, we consider all predictors $X_1, ... , X_p$, and all possible values of the cutpoint $s$ for each of the predictors, and then choose the predictor and cutpoint such that there sulting tree has the lowest $RSS$.
-- Next, we repeat the process, looking for the best predictor and best cutpoint in order to split the data further so as to **minimize the $RSS$ within each of the resulting regions**. 
+- Next, we repeat the process, looking for the best predictor and best cutpoint in order to split the data further so as to minimize the $RSS$ within each of the resulting regions. 
 
 The process continues until a stopping criterion is reached; for instance, we may continue until no region contains more than five observations.
 
@@ -94,9 +94,9 @@ One can show that the entropy will take on a value near zero if the $\hat{p}_{mk
 
 # Advantages and Disadvantages of Trees
 
-- Very easy to interpret and explain. In fact, they are even easier to explain than linear regression.
-- More closely mirror human decision-making than other approaches.
-- Easily to handle qualitative predictors (categorical features).
+- Very easy to **interpret and explain**. In fact, they are even easier to explain than linear regression.
+- More closely **mirror human decision-making** than other approaches.
+- Easily to handle **qualitative predictors** (categorical features).
 - Unfortunately, they are generally low at predictive accuracy. Trees can also be very **non-robust**. In other words, a small change in the data can lead to a large change in the final tree.
 - However, by aggregating many decision trees, using methods like **bagging**, **random forests**, and **boosting**, the predictive performance of trees can be substantially improved.
 
