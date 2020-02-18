@@ -80,21 +80,17 @@ Just as in the regression setting, we use recursive binary splitting to grow a c
 
 $$ E = 1 - max_k(\hat{p}_{mk}) $$
 
-<figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/5.png?raw=true">
-</figure>
-
-Here $\hat{p}_{mk}$ represents the proportion of training observations in the $m^{th}$ region that are from the $k_{th}$ class. However, it turns out that classification error is not sufficiently sensitive for tree-growing, and in practice two other measures are preferable. 
+Here $\hat{p}_{mk}$ represents the proportion of training observations in the $m^{th}$ region that are from the $k^{th}$ class. However, it turns out that classification error is not sufficiently sensitive for tree-growing, and in practice two other measures are preferable. 
 
 The **Gini index** is defined by
 
 $$ G = \sum\limit_{k=1}_^K  \hat{p}_{mk}(1-\hat{p}_{mk}) ,$$
 
-a measure of total variance across the K classes. It is not hard to see that the Gini index takes on a small value if all of the $\hat{p}_{mk}$’s are close to zero or one. For this reason the Gini index is referred to as a measure of node **purity**—*a small value indicates that a node contains predominantly observations from a single class*.
+a measure of total variance across the K classes. It is not hard to see that the Gini index takes on a small value if all of the $\hat{p}_{mk}$’s are close to zero or one. For this reason the Gini index is referred to as a measure of node **purity** - *the value indicates that a node contains predominantly observations from a single class*.
 
-An alternative to the Gini index is entropy, given by
+An alternative to the Gini index is **entropy**, given by
 
-$$ D = -\sum\limit_{k=1}_^K  \hat{p}_{mk}log(\hat{p}_{mk}) .$$
+$$ D = -\sum\limit_{k=1}_^K  \hat{p}_{mk}log(\hat{p}_{mk}).$$
 
 One can show that the entropy will take on a value near zero if the $\hat{p}_{mk}$’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the $m_{th}$ node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
 
@@ -102,6 +98,6 @@ One can show that the entropy will take on a value near zero if the $\hat{p}_{mk
 
 - Very easy to interpret and explain. In fact, they are even easier to explain than linear regression.
 - More closely mirror human decision-making than other approaches.
-- Easily to handle qualitative predictors
+- Easily to handle qualitative predictors (categorical features).
 - Unfortunately, they are generally low at predictive accuracy. Trees can also be very **non-robust**. In other words, a small change in the data can lead to a large change in the final tree.
 - However, by aggregating many decision trees, using methods like bagging,random forests, and boosting, the predictive performance of trees can besubstantially improved.
