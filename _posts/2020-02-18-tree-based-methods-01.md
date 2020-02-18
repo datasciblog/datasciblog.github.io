@@ -37,7 +37,7 @@ The example shows how to use a decision tree to predict the *log* salary of a ba
 
 Overall, the tree segments all players into three groups (or leaves): $R1 ={X \| Years<4.5}$, $R2 ={X \| Years>=4.5,Hits<117.5}$, and $R3 ={X \| Years>=4.5, Hits>=117.5}$. The predicted salaries for these three groups are $1,000 \times e^5.107 = 165,174$, $1,000 \times e^5.999 = 402,834$, and $1,000 \times e^6.740 = 845,346$ respectively.
 
-### Interpretation of the Regression Tree
+### The Interpretation of a Regression Tree
 We might interpret the regression tree as follows: 
 - Years is the most important factor in determining Salary, and players withless experience earn lower salaries than more experienced players. 
 - Given that a player is less experienced, the number of hits that he made in the previous year seems to play little role in his salary. But among players who have been in the major leagues for five or more years, the number of hit smade in the previous year does affect salary, and players who made more hits last year tend to have higher salaries. 
