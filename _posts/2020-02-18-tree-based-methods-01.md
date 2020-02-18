@@ -53,13 +53,15 @@ Roughly speaking,there are two steps.
 
 How do we construct the regions $R_1, ... , R_J$? In theory, the goal is to find boxes $R_1, ... , R_J$ that minimize the RSS, given by
 
+$$ \sum\limits_{j=1}^J \sum\limits_{i \in R_j} (y_i - \hat{y}_{R_j})^2 , $$
+
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/3.png?raw=true">
 </figure>
 
 Unfortunately, it is computationally infeasible to consider every possible partition of the feature space into J boxes. For this reason, we take a **top-down, greedy** approach that is known as recursive binary splitting. The approach is **top-down** because it begins at the top of the tree (at which pointall observations belong to a single region) and then successively splits thepredictor space; each split is indicated via two new branches further downon the tree. It is **greedy** because at each step of the tree-building process, the best split is made at that particular step, rather than looking ahead and picking a split that will lead to a better tree in some future step.
 
-In order to perform recursive binary splitting, we first select the predictor Xj and the cutpoint s such that splitting the predictor space intothe regions ${X|X_j < s} and {X|X_j ≥ s}$ leads to the greatest possiblereduction in RSS. That is, we consider allpredictors $X_1, . . . , X_p$, and all possible values of the cutpoint s for each ofthe predictors, and then choose the predictor and cutpoint such that theresulting tree has the lowest RSS.
+In order to perform recursive binary splitting, we first select the predictor Xj and the cutpoint s such that splitting the predictor space intothe regions ${X|X_j < s} and {X|X_j ≥ s}$ leads to the greatest possiblereduction in RSS. That is, we consider allpredictors $X_1, ... , X_p$, and all possible values of the cutpoint s for each ofthe predictors, and then choose the predictor and cutpoint such that theresulting tree has the lowest RSS.
 
 Next, we repeat the process, looking for the best predictor and best cutpoint in order to split the data further so as to **minimize the RSS within each of the resulting regions**. 
 
@@ -67,14 +69,12 @@ The process continues until a stopping criterion is reached; for instance, we ma
 
 Once the regions $R_1, ... , R_J$ have been created, we predict the response for a given test observation using the mean of the training observations in the region to which that test observation belongs.
 
-A five-region example of this approach is shown in Figure 8.3.
+A five-region example of this approach is shown below.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/4.png?raw=true">
-    <figcaption>The simulated model $f(X)$ is the blue surface</figcaption>
+    <figcaption>Top Left: A partition of two-dimensional feature space that could not result from recursive binary splitting. Top Right: The output of recursivebinary splitting on a two-dimensional example. Bottom Left: A tree correspondingto the partition in the top right panel. Bottom Right: A perspective plot of theprediction surface corresponding to that tree.</figcaption>
 </figure>
-
-FIGURE 8.3. Top Left: A partition of two-dimensional feature space that could not result from recursive binary splitting. Top Right: The output of recursivebinary splitting on a two-dimensional example. Bottom Left: A tree correspondingto the partition in the top right panel. Bottom Right: A perspective plot of theprediction surface corresponding to that tree.
 
 ## Classification Trees
 
@@ -86,7 +86,7 @@ Just as in the regression setting, we use recursivebinary splitting to grow a cl
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/5.png?raw=true">
 </figure>
 
-Here ˆ pmk represents the proportion of training observations in the $m^{th}$ region that are from the kth class. However, it turns out that classification error is not sufficiently sensitive for tree-growing, and in practice two other measures are preferable. 
+Here $\hat{p}_{mk}$ represents the proportion of training observations in the $m^{th}$ region that are from the kth class. However, it turns out that classification error is not sufficiently sensitive for tree-growing, and in practice two other measures are preferable. 
 
 The Gini index is defined by
 
@@ -94,7 +94,7 @@ The Gini index is defined by
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/6.png?raw=true">
 </figure>
 
-a measure of total variance across the K classes. It is not hard to see that the Gini index takes on a small value if all of the ˆ pmk’s are close tozero or one. For this reason the Gini index is referred to as a measure of node **purity**—a small value indicates that a node *contains predominantly observations from a single class*.
+a measure of total variance across the K classes. It is not hard to see that the Gini index takes on a small value if all of the $\hat{p}_{mk}$’s are close to zero or one. For this reason the Gini index is referred to as a measure of node **purity**—*a small value indicates that a node contains predominantly observations from a single class*.
 
 An alternative to the Gini index is entropy, given by
 
@@ -102,7 +102,7 @@ An alternative to the Gini index is entropy, given by
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/7.png?raw=true">
 </figure>
 
-One can show that the entropy will take on a value near zero if the pˆmk’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the mth node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
+One can show that the entropy will take on a value near zero if the $\hat{p}_{mk}$’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the mth node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
 
 # Advantages and Disadvantages of Trees
 
