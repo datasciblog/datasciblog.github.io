@@ -57,8 +57,8 @@ $$ \sum\limits_{j=1}^J \sum\limits_{i \in R_j} (y_i - \hat{y}_{R_j})^2 , $$
 
 Unfortunately, it is computationally infeasible to consider every possible partition of the feature space into $J$ boxes. For this reason, we take a **top-down, greedy** approach that is known as recursive binary splitting. The approach is **top-down** because it begins at the top of the tree (at which point all observations belong to a single region) and then successively splits the predictor space; each split is indicated via two new branches further downon the tree. It is **greedy** because at each step of the tree-building process, the best split is made at that particular step, rather than looking ahead and picking a split that will lead to a better tree in some future steps.
 
-In order to perform recursive binary splitting, we 
-- First select the predictor $X_j$ and the cutpoint $s$ such that splitting the predictor space intothe regions ${X \| X_j < s} and {X \| X_j ≥ s}$ leads to the greatest possible reduction in $RSS$. That is, we consider all predictors $X_1, ... , X_p$, and all possible values of the cutpoint s for each ofthe predictors, and then choose the predictor and cutpoint such that there sulting tree has the lowest $RSS$.
+In order to perform recursive binary splitting:
+- We first select the predictor $X_j$ and the cutpoint $s$ such that splitting the predictor space into the regions ${X \| X_j < s}$ and ${X \| X_j ≥ s}$ leads to the greatest possible reduction in $RSS$. That is, we consider all predictors $X_1, ... , X_p$, and all possible values of the cutpoint s for each of the predictors, and then choose the predictor and cutpoint such that there sulting tree has the lowest $RSS$.
 - Next, we repeat the process, looking for the best predictor and best cutpoint in order to split the data further so as to **minimize the $RSS$ within each of the resulting regions**. 
 
 The process continues until a stopping criterion is reached; for instance, we may continue until no region contains more than five observations.
@@ -69,7 +69,10 @@ A five-region example of this approach is shown below.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/4.png?raw=true">
-    <figcaption>**Top Left**: A partition of two-dimensional feature space that could not result from recursive binary splitting. **Top Right**: The output of recursivebinary splitting on a two-dimensional example. **Bottom Left**: A tree correspondingto the partition in the top right panel. **Bottom Right**: A perspective plot of theprediction surface corresponding to that tree.</figcaption>
+    <figcaption>- Top Left: A partition of two-dimensional feature space that could not result from recursive binary splitting. 
+    - Top Right: The output of recursivebinary splitting on a two-dimensional example. 
+    - Bottom Left: A tree correspondingto the partition in the top right panel. 
+    - Bottom Right: A perspective plot of theprediction surface corresponding to that tree.</figcaption>
 </figure>
 
 ## Classification Trees
@@ -84,13 +87,13 @@ Here $\hat{p}_{mk}$ represents the proportion of training observations in the $m
 
 The **Gini index** is defined by
 
-$$ G = \sum\limit_{k=1}_^K  \hat{p}_{mk}(1-\hat{p}_{mk}) ,$$
+$$ G = \sum\limit_{k=1}^K \hat{p}_{mk}(1-\hat{p}_{mk}) ,$$
 
 a measure of total variance across the K classes. It is not hard to see that the Gini index takes on a small value if all of the $\hat{p}_{mk}$’s are close to zero or one. For this reason the Gini index is referred to as a measure of node **purity** - *the value indicates that a node contains predominantly observations from a single class*.
 
 An alternative to the Gini index is **entropy**, given by
 
-$$ D = -\sum\limit_{k=1}_^K  \hat{p}_{mk}log(\hat{p}_{mk}) .$$
+$$ D = -\sum\limit_{k=1}^K  \hat{p}_{mk}log(\hat{p}_{mk}) .$$
 
 One can show that the entropy will take on a value near zero if the $\hat{p}_{mk}$’s are all near zero or near one. Therefore, like the Gini index, the entropy will take on a small value if the $m^{th}$ node is pure. In fact, **it turns out that the Gini index and the entropy are quite similar numerically**.
 
