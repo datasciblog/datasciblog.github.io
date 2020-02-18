@@ -37,6 +37,7 @@ Overall, the tree segments all players into three groups (or leaves):
 - $R1 = \{ X \| Years<4.5 \}$
 - $R2 = \{ X \| Years>=4.5,Hits<117.5 \}$
 - $R3 = \{ X \| Years>=4.5, Hits>=117.5 \}$
+
 The predicted salaries for these three groups are $1,000 \times e^{5.107} = 165,174$, $1,000 \times e^{5.999} = 402,834$, and $1,000 \times e^{6.740} = 845,346$ respectively.
 
 ## The Interpretation of a Regression Tree
