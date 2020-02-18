@@ -28,12 +28,9 @@ toc_icon: "cog"
 
 ### Example
 
-<figure>
+<figure class="half">
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/1.png?raw=true">
-</figure>
-
-<figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/2.png?raw=true">
+    <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/2.png?raw=true">
 </figure>
 
 The example shows how to use a decision tree to predict the (log) salary of a baseball player based on **Years** (the number of years that he has played in the major leagues) and **Hits** (the number of hits that he made in the previous year). The tree has two **internal nodes (**The points along the tree where the predictor space is split) and three **terminal nodes (leaves)**. The number in each leaf is the mean of the response for the observations that fall there.
@@ -54,6 +51,7 @@ How do we construct the regions R1, . . . , RJ? In theory, the goal is to find b
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/3.png?raw=true">
+    <figcaption>The simulated model $f(X)$ is the blue surface</figcaption>
 </figure>
 
 Unfortunately, it is computationally infeasible to consider every possible partition of the feature space into J boxes. For this reason, we take a **top-down, greedy** approach that is known as recursive binary splitting. The approach is **top-down** because it begins at the top of the tree (at which pointall observations belong to a single region) and then successively splits thepredictor space; each split is indicated via two new branches further downon the tree. It is **greedy** because at each step of the tree-building process, the best split is made at that particular step, rather than looking ahead and picking a split that will lead to a better tree in some future step.
