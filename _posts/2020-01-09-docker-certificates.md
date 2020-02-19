@@ -7,7 +7,7 @@ excerpt: ""
 categories: 
 - Deployment
 tags:
-- dockers
+- docker
 classes: wide
 # toc: true
 # toc_label: "Table of Contents"
