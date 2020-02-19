@@ -5,7 +5,7 @@ date:   2019-07-08
 permalink: /2019/07/08/model-selection-and-bias-variance-tradeoff/
 excerpt: ""
 categories: 
-- Statistical Learning
+- Machine Learning
 tags:
 - model selection
 - bias-variance tradeoff
