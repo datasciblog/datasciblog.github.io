@@ -44,7 +44,7 @@ Recall that given a set of $n$ independent observations $Z_1, ... , Z_n$, each w
 
 Of course, this is not practical because we generally do not have access to multiple training sets. Instead, we can bootstrap, by taking repeated samples from the (single) training data set. In this approach we generate $B$ different bootstrapped training data sets. We then train our method on the $b^{th}$ bootstrapped training set in order to get $\hat{tree}(X_{b^{th}})$, and finally average all the predictions, to obtain
 
-$$ \hat{bagging_tree} = \frac{1}{X} \sum\limits_{b=1}^B \hat{tree}(X_{b^{th}}) $$
+$$ \hat{bagging_tree} = \frac{1}{B} \sum\limits_{b=1}^B \hat{tree}(X_{b^{th}}) $$
 
 
 
