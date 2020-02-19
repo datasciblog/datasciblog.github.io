@@ -1,10 +1,4 @@
 # main links
 main:
-  #- title: "Blogs"
-  #  url: /blogs/
-  - title: "📚 Categories"
-    url: /categories/
-  - title: "🏆 My Projects"
-    url: /categories/#projects
   - title: "📝 My CV"
     url: https://drive.google.com/file/d/11k7W5RAJl0KyTpGnIoLBqGe1aJ1m2N6N/view
