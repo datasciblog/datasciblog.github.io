@@ -5,7 +5,7 @@ date:   2019-07-04
 permalink: /2019/07/04/introduction-to-regression-models/
 excerpt: ""
 categories: 
-- Statistical Learning
+- Machine Learning
 tags:
 - regression
 - linear models
