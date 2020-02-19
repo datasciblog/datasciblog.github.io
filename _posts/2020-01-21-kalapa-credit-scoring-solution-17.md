@@ -5,7 +5,7 @@ date:   2020-01-21
 permalink: /2020/01/21/kalapa-credit-scoring-solution-17/
 excerpt: ""
 categories: 
-- Projects
+- Competitions
 tags:
 - lightGBM
 - competition
