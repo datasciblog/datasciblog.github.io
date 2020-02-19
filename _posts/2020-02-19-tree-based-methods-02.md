@@ -36,17 +36,13 @@ Decision trees suffer from **high variance**. To reduce the variance, hence incr
 </figure>
 
 
-Recall that given a set of $n$ independent observations $Z_1, ... , Z_n$, each with variance $σ^2$, the variance of the mean $\hat{Z}$ of the observations is given by $σ^2/n$. In other words, **averaging a set of observations reduces variance**. Hence a natural way to reduce the variance and hence increase the prediction accuracy of decision trees is to 
+Recall that given a set of $n$ independent observations $Z_1, ... , Z_n$ each with variance $σ^2$, the variance of the mean $\hat{Z}$ of the observations is given by $σ^2/n$. In other words, **averaging a set of observations reduces variance**. Hence a natural way to reduce the variance and hence increase the prediction accuracy of decision trees is to 
 
 - take many training sets from the population,
 - build a separate decision tree using each training set, and
 - average the resulting predictions.
 
-Of course, this is not practical because we generally do not have access to multiple training sets. Instead, we can bootstrap, by taking repeated samples from the (single) training data set. In this approach we generate $B$ different bootstrapped training data sets. We then train our method on the $b^{th}$ bootstrapped training set in order to get $\hat{tree}(X_{b^{th}})$, and finally average all the predictions, to obtain
-
-$$ \hat{bagging_tree} = \frac{1}{B} \sum\limits_{b=1}^B \hat{tree}(X_{b^{th}}) $$
-
-
+Of course, this is not practical because we generally do not have access to multiple training sets. Instead, we can bootstrap, by taking repeated samples from the (single) training data set. In this approach we generate $B$ different bootstrapped training data sets. We then train our method on the $b^{th}$ bootstrapped training set in order to get $\hat{tree}(X_b)$, and finally average all the predictions, to obtain $\frac{1}{B} \sum\limits_{b=1}^B \hat{tree}(X_b) $
 
  This is called **Bootstrap aggregation,** or **bagging**.
 
