@@ -42,9 +42,9 @@ Recall that given a set of $n$ independent observations $Z_1, ... , Z_n$, each w
 - build a separate decision tree using each training set, and
 - average the resulting predictions.
 
-Of course, this is not practical because we generally do not have access to multiple training sets. Instead, we can bootstrap, by taking repeated samples from the (single) training data set. In this approach we generate $B$ different bootstrapped training data sets. We then train our method on the $b^{th}$ bootstrapped training set in order to get $treeˆ∗b(x)$, and finally average all the predictions, to obtain
+Of course, this is not practical because we generally do not have access to multiple training sets. Instead, we can bootstrap, by taking repeated samples from the (single) training data set. In this approach we generate $B$ different bootstrapped training data sets. We then train our method on the $b^{th}$ bootstrapped training set in order to get $treeˆ(X_b)$, and finally average all the predictions, to obtain
 
-$$ \hat{tree}_{avg}(X) = \frac{1}{X} \sum\limits_{b=1}^B \hat{tree}_b(X_b} $$
+$$ \hat{tree}__avg(X) = \frac{1}{X} \sum\limits_{b=1}^B \hat{tree}_b(X_b} $$
 
 
 
