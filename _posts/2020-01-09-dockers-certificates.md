@@ -15,7 +15,7 @@ classes: wide
 ---
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-09-dockers-certificates/1.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-09-dockers-certificates/1.jpg?raw=true">
 </figure>
 
 <figure>
