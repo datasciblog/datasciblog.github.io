@@ -28,11 +28,13 @@ toc_icon: "cog"
 
 # Bagging
 
+## The Approach
+
 Decision trees suffer from **high variance**. To reduce the variance, hence increace the test prediction accuracy, we might use a simple but extremely powerful idea - the **bootstrap** method.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/1.png?raw=true">
-    <figcaption>Source: blogs.sas.com</figcaption>
+  <figcaption>Source: blogs.sas.com</figcaption>
 </figure>
 
 Recall that given a set of $n$ independent observations $Z_1, ... , Z_n$ each with variance $σ^2$, the variance of the mean $\bar{Z}$ of the observations is given by $σ^2/n$. In other words, **averaging a set of observations reduces variance**. Hence a natural way to reduce the variance and hence increase the prediction accuracy of decision trees is to 
@@ -49,9 +51,21 @@ or take the majority vote (for classification trees).
 
 This is called **Bootstrap aggregation,** or **bagging**.
 
+## Variable Importance Measures
+
+As we have known, bagging typically results in improved accuracy over prediction using a single tree. Unfortunately, it can be difficult to interpret the resulting model after combining hundreds or even thousands of trees.
+
+There is one way to obtain an overall sumarry of the importance of each predictor using the RSS (for regression trees) or the Gini index (for classification trees).
+
+- In the case of bagging regression trees, we can record the total amount that the RSS is decreased due to splits over a given predictor, averaged over all B trees. A large value indicates an important predictor.
+- Similarly, in the context of bagging classification trees, we can add up the total amount that the Gini index is decreased by splits over a given predictor, averaged over all B trees.
+
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/2.png?raw=true">
+  <figcaption>An example of variable importance plot. Variable importance is computed using the mean decrease in Gini index, and expressed relative to the maximum.</figcaption>
+</figure>
+
 # Random Forests
-
-
 
 # References
 
