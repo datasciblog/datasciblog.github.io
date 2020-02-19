@@ -26,6 +26,10 @@ toc_icon: "cog"
 - However, when trees are used as building blocks of bagging, random forests and boosting methods, we will have very powerful prediction models.
 - In fact, **XGBoost** and **LightGBM** - the implementations of gradient boosted decision trees - are the two most popular methods for competitions with structured data in Kaggle.
 
+<Tooltip Text="Hello tooltip">
+    <Button Color="Color.Primary">Hover me</Button>
+</Tooltip>
+
 # Bagging
 
 Decision trees suffer from **high variance**. To reduce the variance, hence increace the test prediction accuracy, we might use a simple but extremely powerful idea - the **boostrap** method.
