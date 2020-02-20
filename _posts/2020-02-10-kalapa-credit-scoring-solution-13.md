@@ -16,6 +16,18 @@ classes: wide
 # toc_icon: "cog"
 ---
 
+This was my second solution for the [Credit Scoring Challenge](https://challenge.kalapa.vn/) hosted by [Kalapa](https://kalapa.vn/en/home-en/) with the first prize is up to AUD$6000.
+
+After the first solution was [published](https://datasciblog.github.io/2020/01/21/kalapa-credit-scoring-solution-17/) and get some credit, I kept improving my baseline and achieved a better result.
+
+The post was originally written in Vietnamese and published on [the largest machine learning forum in Vietnam](https://forum.machinelearningcoban.com/t/kalapa-s-credit-scoring-challenge-13-solution-02-02-0-2729-gini-score/7139/12).
+
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/3.png?raw=true">
+</figure>
+
+The English version will come soon!
+
 # Giới thiệu
 
 Dưới đây là lời giải phần 2 của mình cho cuộc thi [Kalapa’s Credit Scoring Challenge](https://challenge.kalapa.vn/) với nhiều thay đổi trong **Feature Engineering** và **Modelling** kể từ lời giải [phần 1](https://forum.machinelearningcoban.com/t/kalapas-credit-scoring-challenge-17-solution-21-01-0-22737-gini-score/7071). Lời giải này đã đưa mình lên vị trí thứ 13 vào ngày 02/02/2020 với Gini Score 0.2729.
