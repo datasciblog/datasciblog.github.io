@@ -85,22 +85,23 @@ The figure below illustrates the test error when using random forests with diffe
 
 # Boosting
 
-Recall that bagging involves creating multiple bootstrapped training data samples from the original training data set and fitting a seperate decision tree to each of the samples, then combining all of the trees to create a single predictive model. Notably, these trees are independent of each other.
+Recall that bagging involves creating multiple bootstrapped training data samples from the original training data set and fitting a seperate decision tree to each of the samples, then combining all of the trees to create a single predictive model. Notably, these trees are **independent** of each other.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/4.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/5.png?raw=true">
+  <figcaption>Source: kdnuggets.com</figcaption>
 </figure>
 
-Boosting works in a similar way, except that the trees are grown **sequentially and dependently**: each tree is grown using information from previously grown trees.
+Boosting works in a similar way, except that the trees are grown **sequentially and dependently**: each tree is grown using information from previously grown trees. Boosting does not involve bootstrap sampling, instead each tree is fit on a modified version of the original data set.
 
-Here is how the boosted model is built:
+Here is how a boosted model is built:
 
 - Build trees one-by-one
 - Then the prediction of each tree are summed:
 
     $$ D_t(x) = \lambda tree_1(x) + \lambda tree_2(x) + ... + \lambda tree_t(x)$$
 
-- The next tree tries to reconstruct the residuals of the target function $f(x)$ and the current ensemble prediction $D_t(x)$:
+- The next tree tries to reconstruct the residuals of the target function $f(x)$ and the current model $D_t(x)$:
 
     $$ tree_{t+1}(x) \approx f(x) - D_t(x)$$
 
