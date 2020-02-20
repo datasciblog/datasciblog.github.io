@@ -67,6 +67,16 @@ There is one way to obtain an overall sumarry of the importance of each predicto
 
 # Random Forests
 
+One problem of the bagging approach is that if there is one very strong predictor in the data set, along with a number of other moderately strong predictors. Then in the collection of bagged trees, most or all of the trees will use this strong predictor in the top split. Consequently, all of the trees will *look quite similar to each other*. Hence the predictions from the bagged trees will be **highly correlated** which diminishes the effect in reducing the variance of bootstrap method.
+
+Random forests provide an improvement over bagged trees by way of a random small tweak that **decorrelates** the trees. As in bagging, we build a number of decision trees on bootstrapped training samples. But to overcome the problem, random forests force each split of a tree to **consider only a random sample of $m$ predictors**. Typically, we choose $m = \sqrt{p}$ - that is, the number of predictors considered at each split is approximately equal to the square root of the total number of predictors. We can think of this process as *decorrelating* the trees, thereby making the average of the resulting trees less variable and hence more reliable.
+
+The figure below illustrates the test error when using random forests with different values of m with respect to the number of trees. As we can see, when $m=p$, random forests are just bagging. The choice $m = \sqrt{p}$ gave a small improvement in test error over bagging. The error rate of a single tree is about 45% while it is only 20% to 25% for bagging and random forests.
+
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/3.png?raw=true">
+</figure>
+
 # References
 
   James, G., Witten, Daniela, author, Hastie, Trevor, author, & Tibshirani, Robert, author. (2015). An introduction to statistical learning : with applications in R.
