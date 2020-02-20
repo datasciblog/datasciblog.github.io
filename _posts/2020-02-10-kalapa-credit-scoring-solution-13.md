@@ -16,17 +16,13 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-This was my second solution for the [Credit Scoring Challenge](https://challenge.kalapa.vn/) hosted by [Kalapa](https://kalapa.vn/en/home-en/) with the first prize is up to AUD$6000.
+This was my second solution for the [Credit Scoring Challenge](https://challenge.kalapa.vn/) hosted by [Kalapa](https://kalapa.vn/en/home-en/) with the first prize is up to AUD$6000. After the first solution was [published](https://datasciblog.github.io/2020/01/21/kalapa-credit-scoring-solution-17/) and get some credit, I kept improving my baseline and achieved a better result. 
 
-After the first solution was [published](https://datasciblog.github.io/2020/01/21/kalapa-credit-scoring-solution-17/) and get some credit, I kept improving my baseline and achieved a better result.
-
-The post was originally written in Vietnamese and published on [the largest machine learning forum in Vietnam](https://forum.machinelearningcoban.com/t/kalapa-s-credit-scoring-challenge-13-solution-02-02-0-2729-gini-score/7139/12).
+The post was originally written in Vietnamese and published on [the largest machine learning forum in Vietnam](https://forum.machinelearningcoban.com/t/kalapa-s-credit-scoring-challenge-13-solution-02-02-0-2729-gini-score/7139/12). The English version will come soon!
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/3.png?raw=true">
 </figure>
-
-The English version will come soon!
 
 # Giới thiệu
 
