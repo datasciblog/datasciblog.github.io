@@ -102,7 +102,7 @@ Here is how the boosted model is built:
 
 - The next tree tries to reconstruct the residuals of the target function $f(x)$ and the current ensemble prediction $D_t(x)$:
 
-    $$ tree_t+1(x) \approx f(x) - D_t(x)$$
+    $$ tree_{t+1}(x) \approx f(x) - D_t(x)$$
 
 Unlike fitting the training data set with a single tree which tries to **learn hard** and potentially be overfitted, the boosting approach instead **learns slowly**. The shrinkage parameter $\lambda$ slows the process down even further, allowing more and different shaped trees to attack the residuals.
 
