@@ -100,18 +100,18 @@ Here is how a boosted model is built:
 
     $$ D_b(x) = \lambda tree_1(x) + \lambda tree_2(x) + ... + \lambda tree_b(x)$$
 
-- The next tree tries to reconstruct the residuals of the target function $f(x)$ and the current model $D_t(x)$:
+- The next tree tries to reconstruct the residuals of the target $f(x)$ and the current prediction $D_b(x)$:
 
     $$ tree_{b+1}(x) \approx f(x) - D_b(x)$$
   
-- The final boosted model is:
+- The final boosted prediction is:
     $$ D_B(x) = \lambda tree_1(x) + \lambda tree_2(x) + ... + \lambda tree_B(x)$$
 
 Boosting has three tuning parameters:
 
-1. The number of trees $B$. Unlike bagging and random forests, boosting can overfit if B is too large, although this overfitting tends to occur slowly if at all. We use cross-validation to select $B$.
+1. The number of trees $B$. Unlike bagging and random forests, boosting can overfit if $B$ is too large, although this overfitting tends to occur slowly if at all. We use cross-validation to select $B$.
 
-2. The shrinkage parameter \lambda, a small positive number. This controls the rate at which boosting learns. Typical values are 0.01 or 0.001, and the right choice can depend on the problem. Very small \lambdaλ can require using a very large value of B in order to achieve good performance.
+2. The shrinkage parameter $\lambda$, a small positive number. This controls the rate at which boosting learns. Typical values are 0.01 or 0.001, and the right choice can depend on the problem. Very small $\lambda$ can require using a very large value of $B$ in order to achieve good performance.
 
 3. The number $d$ of splits in each tree, which controls the complexity of the boosted ensemble.
 
