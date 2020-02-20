@@ -9,7 +9,7 @@ categories:
 tags:
 - tree-based
 - decision tree
-- algorithms
+- algorithm
 classes: wide
 toc: true
 toc_label: "Table of Contents"

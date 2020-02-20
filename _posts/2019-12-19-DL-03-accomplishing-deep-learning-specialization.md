@@ -8,7 +8,9 @@ categories:
 - Deep Learning
 tags:
 - deep learning specialization
+- deep learning
 - coursera
+- certificate
 classes: wide
 #toc: true
 #toc_label: "Table of Contents"

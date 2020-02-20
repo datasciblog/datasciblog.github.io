@@ -9,11 +9,12 @@ categories:
 tags:
 - tree-based
 - decision tree
+- bootstrap
 - bagging
 - random forests
 - boosting
 - ensemble
-- algorithms
+- algorithm
 classes: wide
 toc: true
 toc_label: "Table of Contents"

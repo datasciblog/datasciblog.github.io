@@ -8,6 +8,7 @@ categories:
 - Deployment
 tags:
 - deep learning
+- image classification
 - deployment
 - streamlit
 - heroku
