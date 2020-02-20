@@ -83,6 +83,29 @@ The figure below illustrates the test error when using random forests with diffe
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/3.png?raw=true">
 </figure>
 
+# Boosting
+
+Recall that bagging involves creating multiple bootstrapped training data samples from the original training data set and fitting a seperate decision tree to each of the samples, then combining all of the trees to create a single predictive model. Notably, these trees are independent of each other.
+
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/4.png?raw=true">
+</figure>
+
+Boosting works in a similar way, except that the trees are grown **sequentially and dependently**: each tree is grown using information from previously grown trees.
+
+Here is how the boosted model is built:
+
+- Build trees one-by-one
+- Then the prediction of each tree are summed:
+
+    $$ D_t(x) = \lambda tree_1(x) + \lambda tree_2(x) + ... + \lambda tree_t(x)$$
+
+- The next tree tries to reconstruct the residuals of the target function $f(x)$ and the current ensemble prediction $D_t(x)$:
+
+    $$ tree_t+1(x) \approx f(x) - D_t(x)$$
+
+Unlike fitting the training data set with a single tree which tries to **learn hard** and potentially be overfitted, the boosting approach instead **learns slowly**. The shrinkage parameter $\lambda$ slows the process down even further, allowing more and different shaped trees to attack the residuals.
+
 # References
 
   James, G., Witten, Daniela, author, Hastie, Trevor, author, & Tibshirani, Robert, author. (2015). An introduction to statistical learning : with applications in R.
