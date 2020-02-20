@@ -51,8 +51,8 @@ $$\frac{1}{B} \sum\limits_{b=1}^B \hat{tree_b}(x)$$
 or take the majority vote (for classification trees).
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/4.png?raw=true">
-  <figcaption>Source: medium.com</figcaption>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/0.png?raw=true">
+  <figcaption>An illustration of bagging for classification. Source: researchgate.net</figcaption>
 </figure>
 
 This is called **Bootstrap aggregation,** or **bagging**.
