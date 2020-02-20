@@ -50,6 +50,11 @@ $$\frac{1}{B} \sum\limits_{b=1}^B \hat{tree_b}(x)$$
 
 or take the majority vote (for classification trees).
 
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/4.png?raw=true">
+  <figcaption>Source: medium.com</figcaption>
+</figure>
+
 This is called **Bootstrap aggregation,** or **bagging**.
 
 ## Variable Importance Measures
