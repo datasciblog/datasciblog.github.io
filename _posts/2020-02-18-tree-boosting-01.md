@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Tree-based-01: The Basics of Decision Trees"
+title:  "Tree-Boosting-01: The Basics of Decision Trees"
 date:   2020-02-18
 permalink: /2020/02/18/tree-based-01/
 excerpt: ""
@@ -27,8 +27,8 @@ toc_icon: "cog"
 ## An Example of Regression Trees
 
 <figure class="half">
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/1.png?raw=true">
-    <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/2.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-boosting-01/1.png?raw=true">
+    <img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-boosting-01/2.png?raw=true">
 </figure>
 
 The example shows how to use a decision tree to predict the *log* salary of a baseball player based on *Years* - the number of years that he has played in the major leagues and *Hits* - the number of hits that he made in the previous year. The tree has two **internal nodes** - the points along the tree where the predictor space is split (i.e. $Years < 4.5$ and $Hits < 117.5$) and three **terminal nodes (leaves)**. The number in each leaf is the **mean** of the response for the observations that fall there.
@@ -73,7 +73,7 @@ Once the regions $R_1, ... , R_J$ have been created, we predict the response for
 A five-region example of this approach is shown below.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-based-methods-01/4.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-18-tree-boosting-01/4.png?raw=true">
     <figcaption>Top Left: A partition of two-dimensional feature space that could not result from recursive binary splitting. Top Right: The output of recursivebinary splitting on a two-dimensional example. Bottom Left: A tree correspondingto the partition in the top right panel. Bottom Right: A perspective plot of theprediction surface corresponding to that tree.</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ One can show that the entropy will take on a value near zero if the $\hat{p}_{mk
 - More closely **mirror human decision-making** than other approaches.
 - Easily to handle **qualitative predictors** (categorical features).
 - Unfortunately, they are generally low at predictive accuracy. Trees can also be very **non-robust**. In other words, a small change in the data can lead to a large change in the final tree.
-- However, by aggregating many decision trees, using methods like [**bagging**, **random forests**, and **boosting**](https://datasciblog.github.io/2020/02/19/tree-based-02/), the predictive performance of trees can be substantially improved.
+- However, by aggregating many decision trees, using methods like [**bagging**, **random forests**, and **boosting**](https://datasciblog.github.io/2020/02/19/tree-boosting-02/), the predictive performance of trees can be substantially improved.
 
 # References
 

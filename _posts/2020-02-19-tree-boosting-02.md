@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "Tree-based-02: Bagging, Random Forests and Boosting"
+title:  "Tree-Boosting-02: Bagging, Random Forests and Boosting"
 date:   2020-02-19
-permalink: /2020/02/19/tree-based-02/
+permalink: /2020/02/19/tree-boosting-02/
 excerpt: ""
 categories: 
 - Machine Learning
@@ -34,7 +34,7 @@ toc_icon: "cog"
 Decision trees suffer from **high variance**. To reduce the variance, hence increace the test prediction accuracy, we might use a simple but extremely powerful idea - the **bootstrap** method.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/1.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-boosting-02/1.png?raw=true">
   <figcaption>Source: blogs.sas.com</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ $$\frac{1}{B} \sum\limits_{b=1}^B \hat{tree_b}(x)$$
 or take the majority vote (for classification trees).
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/0.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-boosting-02/0.png?raw=true">
   <figcaption>An illustration of bagging for classification. Source: researchgate.net</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ There is one way to obtain an overall sumarry of the importance of each predicto
 - Similarly, in the context of bagging classification trees, we can add up the total amount that the Gini index is decreased by splits over a given predictor, averaged over all B trees.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/2.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-boosting-02/2.png?raw=true">
   <figcaption>An example of variable importance plot. Variable importance is computed using the mean decrease in Gini index, and expressed relative to the maximum.</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ Random forests provide an improvement over bagged trees by way of a random small
 The figure below illustrates the test error when using random forests with different values of m with respect to the number of trees. As we can see, when $m=p$, random forests are just bagging. The choice $m = \sqrt{p}$ gave a small improvement in test error over bagging. The error rate of a single tree was about 45% while it was only 20% to 25% for bagging and random forests.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/3.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-boosting-02/3.png?raw=true">
 </figure>
 
 # Boosting
@@ -88,7 +88,7 @@ The figure below illustrates the test error when using random forests with diffe
 Recall that bagging involves creating multiple bootstrapped training data samples from the original training data set and fitting a seperate decision tree to each of the samples, then combining all of the trees to create a single predictive model. Notably, these trees are **independent** of each other.
 
 <figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-based-methods-02/5.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-19-tree-boosting-02/5.png?raw=true">
   <figcaption>Source: kdnuggets.com</figcaption>
 </figure>
 
