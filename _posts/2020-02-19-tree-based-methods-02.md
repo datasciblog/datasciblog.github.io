@@ -98,14 +98,14 @@ Here is how a boosted model is built:
 
 - Build trees one-by-one with the number of $d$ splits in each tree. Then the prediction of each tree are summed up:
 
-    $$ D_b(x) = \lambda tree_1(x) + \lambda tree_2(x) + ... + \lambda tree_b(x)$$
+    $$ \hat{f}_b(x) = \lambda tree_1(x) + \lambda tree_2(x) + ... + \lambda tree_b(x)$$
 
-- The next tree tries to reconstruct the residuals of the target $f(x)$ and the current prediction $D_b(x)$:
+- The next tree tries to reconstruct the residuals of the target $f(x)$ and the current prediction $\hat{f}_b(x)$:
 
-    $$ tree_{b+1}(x) \approx f(x) - D_b(x)$$
+    $$ tree_{b+1}(x) \approx f(x) - \hat{f}_b(x)$$
   
 - The final boosted prediction is:
-    $$ D_B(x) = \lambda tree_1(x) + \lambda tree_2(x) + ... + \lambda tree_B(x)$$
+    $$ \hat{f}_B(x) = \lambda tree_1(x) + \lambda tree_2(x) + ... + \lambda tree_B(x)$$
 
 Boosting has three tuning parameters:
 
