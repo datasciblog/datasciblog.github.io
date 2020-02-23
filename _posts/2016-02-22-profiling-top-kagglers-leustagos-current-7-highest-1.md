@@ -30,7 +30,7 @@ Check the dataset to understand how to build a validation set.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2016-02-22-profiling-top-kagglers-leustagos-current-7-highest-1/1.png?raw=true">
-  <figcaption>Source: blogs.sas.com</figcaption>
+  <figcaption>LEUSTAGOS' TOP 8 FINISHES</figcaption>
 </figure>
 
 ## What does your iteration cycle look like?
