@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "Profiling Top Kagglers: Bestfitting, Currently #1 in the World"
-date:   2020-02-24
-permalink: /2020/02/24/profiling-top-kagglers-bestfitting/
+date:   2018-05-07
+permalink: /2018/05/07/profiling-top-kagglers-bestfitting-currently-1-in-the-world/
 excerpt: ""
 categories: 
 - Profiling Top Kagglers
@@ -14,23 +14,27 @@ classes: wide
 # toc_icon: "cog"
 ---
 
+Original Post: http://blog.kaggle.com/2018/05/07/profiling-top-kagglers-bestfitting-currently-1-in-the-world/
+
+---
+
 We have a new #1 on our leaderboard — a competitor who surprisingly joined the platform just two years ago. Shubin Dai, better known as [Bestfitting](https://www.kaggle.com/bestfitting) on Kaggle or Bingo by his friends, is a data scientist and engineering manager living in Changsha, China. He currently leads a company he founded that provides software solutions to banks. Outside of work, and off Kaggle, Dai’s an avid mountain biker and enjoys spending time in nature. Here’s Bestfitting:
 
-### Can you tell us a little bit about yourself and your background?
+## Can you tell us a little bit about yourself and your background?
 
 I majored in computer science and have more than 10 years of experience in software development. For work, I currently lead a team that provides data processing and analyzing solution for banks.
 
 Since college, I’ve been interested in using math to building programs that solve problems. I continually read all kinds of computer science books and papers, and am very lucky to have followed the progress made on machine learning and deep learning within the past decade.
 
-### How did you start with Kaggle competitions?
+## How did you start with Kaggle competitions?
 
 As mentioned before, I’ve been reading a lot of books and papers about machine learning and deep learning, but found it always hard to apply the algorithms I learned on small datasets that are readily available. So I found Kaggle a great platform with all sorts of interesting datasets, kernels, and great discussions. I couldn’t wait to try something, and first entered the “Predicting Red Hat Business Value” competition.
 
-### What is your first plan of action when working on a new competition?
+## What is your first plan of action when working on a new competition?
 
 Within the first week of a competition launch, I create a solution document which I follow and update as the competition continues on. To do so, I must first try to get an understanding of the data and the challenge at hand, then research similar Kaggle competitions and all related papers.
 
-### What does your iteration cycle look like?
+## What does your iteration cycle look like?
 
 1. Read the overview and data description of the competition carefully
 2. Find similar Kaggle competitions. As a relatively new comer, I have collected and done a basic analysis of all Kaggle competitions.
@@ -43,22 +47,22 @@ Within the first week of a competition launch, I create a solution document whic
 9. Based on data analysis and result analysis, design models to add diversities or solve hard samples.
 10. Return to a former step if necessary.
 
-### What are your favorite machine learning algorithms?
+## What are your favorite machine learning algorithms?
 
 I choose algorithms case by case, but I prefer to use simple algorithms such as ridge regression when ensemble, and I always like starting from resnet-50 or designing similar structure in deep learning competitions.
 
-### What are your favorite machine learning libraries?
+## What are your favorite machine learning libraries?
 
 I like pytorch in computer vision competitions very much. I use tensorflow or keras in NLP or time-series competitions. I use seaborn and products in the scipy family when doing analysis. And, scikit-learn and XGB are always good tools.
 
-### What is your approach to hyper-tuning parameters?
+## What is your approach to hyper-tuning parameters?
 
 I try to tune parameters based on my understanding of the data and the theory behind an algorithm, I won’t feel safe if I can’t explain why the result is better or worse.
 
 In a deep learning competition, I often search related papers and try to find what the authors did in a similar situation.
 And, I will compare the result before and after making parameter changes, such as the prediction distribution, the examples affected, etc.
 
-### What is your approach to solid cross-validation/final submission selection and LB fit?
+## What is your approach to solid cross-validation/final submission selection and LB fit?
 
 A good CV is half of success. I won’t go to the next step if I can’t find a good way to evaluate my model.
 
@@ -68,17 +72,17 @@ In some time series competitions, I set aside data for a period of time as a val
 
 I often choose my final submissions in a conservative way, I always choose a weighted average ensemble of my safe models and select a relatively risky one (in my opinion, more parameters equate to more risks). But, I never chose a submission I can’t explain, even with high public LB scores.
 
-### In a few words, what wins competitions?
+## In a few words, what wins competitions?
 
 Good CV, learning from other competitions and reading related papers, discipline and mental toughness.
 What is your favorite Kaggle competition and why?
 Nature protection and medical related competitions are my favorite ones. I feel I should, and perhaps can, do something to make our lives and planet better.
 
-### What field in machine learning are you most excited about?
+## What field in machine learning are you most excited about?
 
 I am interested in all kinds of progress in deep learning. I want to use deep learning to solve problems besides computer vision or NLP, so I try to use them in competitions I enter and in my regular occupation.
 
-### How important is domain expertise for you when solving data science problems?
+## How important is domain expertise for you when solving data science problems?
 
 To be frank, I don’t think we can benefit from domain expertise too much, the reasons are as follows:
 
@@ -88,17 +92,17 @@ To be frank, I don’t think we can benefit from domain expertise too much, the 
 
 But, there are some exceptions. For example, in the Planet Amazon competition, I did get ideas from my personal rainforest experiences, but those experiences might not technically be called domain expertise.
 
-### What do you consider your most creative trick/find/approach?
+## What do you consider your most creative trick/find/approach?
 
 I think it is to prepare the solution document in the very beginning. I force myself to make a list that includes the challenges we faced, the solutions and papers I should read, possible risks, possible CV strategies, possible data augmentations, and the way to add model diversities. And, I keep updating the document. Fortunately, most of these documents turned out to be winning solutions I provided to the competition hosts.
 
-### How are you currently using data science at work and does competing on Kaggle help with this?
+## How are you currently using data science at work and does competing on Kaggle help with this?
 
 We try to use machine learning in all kinds of problems in banking: to predict visitors of bank outlets, to predict cash we should prepare for ATMs, product recommendation, operation risk control, etc.
 
 Competing on Kaggle also changed the way I work, when I want to find a solution to solve a problem, I will try to find similar Kaggle competitions as they are precious resources, and I also suggest to my colleagues to study similar, winning solutions so that we can glean ideas from them.
 
-### What is your opinion on the trade-off between high model complexity and training/test runtime?
+## What is your opinion on the trade-off between high model complexity and training/test runtime?
 
 Here are my opinions:
 
@@ -107,17 +111,17 @@ Here are my opinions:
 3. In my own experiences, I may design models in a competition to explore the upper limitation of this problem, and it’s not too difficult to then choose a simple one to make it feasible in a real situation. I always try my best to provide a simple one to organizers and discuss with them in the winner’s call. I found some organizers even use our solutions and ideas to solve other problems they face.
 4. We can find that Kaggle has a lot of mechanisms to ensure the performance when the training/test runtime is important: kernel competitions, team size limitation, adding more data that aren’t calculated while scoring, etc. I am sure Kaggle will also improve the rules according to the goal of the challenge.
 
-### How did you get better at Kaggle competitions?
+## How did you get better at Kaggle competitions?
 
 Interesting competitions and great competitors on Kaggle make me better.
 
 With so many great competitors here, winning a competition is very difficult, they pushed me to my limit. I tried to finish my competitions solo as many times as possible last year, and I must guess what all other competitors would do. To do this, I had to read a lot of materials and build versatile models. I read all the solutions from other competitors after a competition.
 
-### Is there any recent or ongoing machine learning research that you are excited about?
+## Is there any recent or ongoing machine learning research that you are excited about?
 
 I hope I can enter a deep reinforcement learning competition on Kaggle this year.
 
-### You moved up the leaderboard to take the number 1 spot very quickly (in just 15 months). How did you do it?
+## You moved up the leaderboard to take the number 1 spot very quickly (in just 15 months). How did you do it?
 
 First of all, №1 is a measurement of how much I learned on Kaggle and how lucky I was.
 
@@ -132,7 +136,7 @@ I think I benefited from the Kaggle platform, I learned so much from others and 
 
 However, I’m here not for a good rank. I always treat every competition as an opportunity to learn, so I try to select competitions from the field I am not so familiar with, which forced myself to read hundreds of papers last year.
 
-### You’ve mentioned before that you enjoy reading top-scoring competition solutions from past competitions. Are there any you would highlight as being particularly insightful?
+## You’ve mentioned before that you enjoy reading top-scoring competition solutions from past competitions. Are there any you would highlight as being particularly insightful?
 
 I respect all the winners and wonderful solution contributors, I know how much effort they put into it. I always read the solutions with an admirable attitude.
 
