@@ -54,11 +54,11 @@ Good feature engineering, strong ensembling skills and, many times, team work.
 
 ### What is your favourite Kaggle competition and why?
 
-Global Energy Forecasting Competition 2012 – Wind Forecasting. It was the first competition that I was a prize winner and  1st place at that. It felt so good!
+[Global Energy Forecasting Competition 2012 – Wind Forecasting](https://www.kaggle.com/c/GEF2012-wind-forecasting). It was the first competition that I was a prize winner and  1st place at that. It felt so good!
 
 ### Have you ever hit a plateau during a competition? What, if anything, helped you move beyond this?
 
-Many times! I usually try to take another look at the dataset to check for other angles. Seek information in the forums, scripts, and more importantly, when this happens I try and brainstorm with my fellow teammates if I’m on a team. If I’m not, and none of the previous options worked, I look for a team.
+Many times! I usually try to take another look at the dataset to check for other angles. Seek information in the [forums](https://www.kaggle.com/forums), [scripts](https://www.kaggle.com/scripts), and more importantly, when this happens I try and brainstorm with my fellow teammates if I’m on a team. If I’m not, and none of the previous options worked, I look for a team.
 
 ### What field in machine learning are you most excited about?
 
