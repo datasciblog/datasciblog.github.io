@@ -14,7 +14,7 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-Original Post: https://web.archive.org/web/20180628130607/http://blog.kaggle.com/2015/11/09/profiling-top-kagglers-gilberto-titericz-new-1-in-the-world
+Original Post: https://web.archive.org/web/20180628130607/http://blog.kaggle.com/2015/11/09/profiling-top-kagglers-gilberto-titericz-new-1-in-the-world/
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "Profiling Top Kagglers: KazAnova, Currently #2 in the World"
-date:   2015-05-07
-permalink: /2015/05/07/profiling-top-kagglers-kazanovacurrently-2-in-the-world/
+title:  "Profiling Top Kagglers: KazAnova, New #1 in the World"
+date:   2016-02-10
+permalink: /2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/
 excerpt: ""
 categories: 
 - Profiling Top Kagglers
@@ -14,15 +14,16 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-Original Post: https://web.archive.org/web/20180620212056/http://blog.kaggle.com/2015/05/07/profiling-top-kagglers-kazanovacurrently-2-in-the-world/
+Original Post: https://web.archive.org/web/20180621213051/http://blog.kaggle.com/2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/
 
 ---
 
+This blog was originally published on May 7, 2015 when Marios Michailidis was ranked #2. Marios is now the number 1 data scientist out of 465,000 data scientists! We wanted to re-share the original post, with a few additions and updates from Marios. We've also just published a post from Marios on his experience chasing the #1 spot on Kaggle, and what he's taken away from the experience. 
+
+ 
 There are Kagglers, there are Master Kagglers, and then there are top 10 Kagglers. Who are these people who consistently win Kaggle competitions? In this series we try to find out how they got to the top of the leaderboards.
 
-First up is KazAnova -- Marios Michailidis -- the current number 2 out of nearly 300,000 data scientists. Marios is a PhD student in machine learning at UCL and a senior data scientist at dunnhumby (organizer of the Kaggle competitions 'Shopper Challenge' and 'Product Launch Challenge').
-
-kazanova
+First up is KazAnova -- Marios Michailidis -- the current number 2 (now #1) out of nearly 300,000 (now 465,000+) data scientists. Marios is a PhD student in machine learning at UCL and a Manager of Data Science at dunnhumby (organizer of the Kaggle competitions 'Shopper Challenge' and 'Product Launch Challenge').
 
 Marios Michailidis Q&A
 How did you start with Kaggle competitions?
@@ -79,7 +80,7 @@ I do this very manually.
 
 I have only tried once to use something like Gridsearch. I feel I learn more about the algorithms and why they work the way they do by doing this manually. At the same time I feel that "I do something, it's not only the machine!".
 
-After 40+ competitions I've found that I can get to the top 90% of the best hyper parameters with the first try, so the manual approach has paid off!
+After 60+ competitions I've found that I can get to the top 90% of the best hyper parameters with the first try, so the manual approach has paid off!
 
 What is your approach to solid CV/final submission selection and LB fit?
 In regards to CV, I try to best resemble what I am being tested on.
@@ -148,7 +149,7 @@ I guess there is a trade-off, but there needs to be an understanding that better
 
 I guess the optimum solution should be somewhere in the middle (e.g. not an ensemble of 100 models nor Naive Bayes)
 
-The best 8 finishes for KazAnova.
+
 THE BEST 8 FINISHES FOR KAZANOVA.
 
 How did you get better at Kaggle competitions?
@@ -188,8 +189,13 @@ TVS to avoid over-fitting
 Bluefool (or Domcastro) 1st derivatives and BART
 Mike, Python!
 Giulio, competition management and Lasagne.
+I am SO PROUD that I had the honour/chance/opportunity to play, learn and exchange bits and bytes with Kagglers, like:
+
+Gert, Triskelion, Yan Xu, SRK, Rafael, Faron, Clobber, Bluefool, Mark Landry, Giulio, and Abhishek
+
+I would keep monitoring their progress 🙂 .
+
 Bio
-marios-michailidis
-Marios Michailidis is Senior Data Scientist in dunnhumby and part-time PhD in machine learning at University College London (UCL) with a focus on improving recommender systems. He has worked in both marketing and credit sectors in the UK Market and has led many analytics projects with various themes including: Acquisition, Retention, Uplift, fraud detection, portfolio optimization and more. In his spare time he has created KazAnova, a GUI for credit scoring 100% made in Java.
+Marios Michailidis marios-michailidisis Manager of Data science in dunnhumby and part-time PhD in machine learning at University College London (UCL) with a focus on improving recommender systems. He has worked in both marketing and credit sectors in the UK Market and has led many analytics projects with various themes including: Acquisition, Retention, Uplift, fraud detection, portfolio optimization and more. In his spare time he has created KazAnova, a GUI for credit scoring 100% made in Java.
 
 Marios loves competing on Kaggle and learning new machine learning tricks. He told us he will create something good for the ML community soon...

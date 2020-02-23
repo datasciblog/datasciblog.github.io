@@ -14,7 +14,7 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-Original Post: http://blog.kaggle.com/2016/02/22/profiling-top-kagglers-leustagos-current-7-highest-1/
+Original Post: https://web.archive.org/web/20180627031032/http://blog.kaggle.com/2016/02/22/profiling-top-kagglers-leustagos-current-7-highest-1/
 
 ---
 
