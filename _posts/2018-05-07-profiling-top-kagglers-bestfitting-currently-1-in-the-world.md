@@ -14,7 +14,7 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-Original Post: https://web.archive.org/web/20180710151413/http://blog.kaggle.com/2018/05/07/profiling-top-kagglers-bestfitting-currently-1-in-the-world/
+[Original Post](https://web.archive.org/web/20180710151413/http://blog.kaggle.com/2018/05/07/profiling-top-kagglers-bestfitting-currently-1-in-the-world/)
 
 ---
 
