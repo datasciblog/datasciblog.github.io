@@ -123,7 +123,7 @@ I hope I can enter a deep reinforcement learning competition on Kaggle this year
 
 ## You moved up the leaderboard to take the number 1 spot very quickly (in just 15 months). How did you do it?
 
-First of all, №1 is a measurement of how much I learned on Kaggle and how lucky I was.
+First of all, No.1 is a measurement of how much I learned on Kaggle and how lucky I was.
 
 In my first several competitions, I tried to turn the theories I learned in recent years into skills, and learned a lot from others.
 
