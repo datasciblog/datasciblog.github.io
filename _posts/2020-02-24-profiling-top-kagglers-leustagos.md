@@ -7,6 +7,7 @@ excerpt: ""
 categories: 
 - Profiling Top Kagglers
 tags:
+- kaggle
 classes: wide
 # toc: true
 # toc_label: "Table of Contents"
@@ -38,7 +39,7 @@ Gradient boosted trees by far! I like GBT because it gives pretty good results r
 
 ### What are your favorite machine learning libraries?
 
-xgboost, scikit-learn and pandas
+[xgboost](https://github.com/dmlc/xgboost), scikit-learn and pandas
 
 ### What is your approach to hyper-tuning parameters?
 
