@@ -14,11 +14,11 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-Original Post: https://web.archive.org/web/20180627031032/http://blog.kaggle.com/2016/02/22/profiling-top-kagglers-leustagos-current-7-highest-1/
+[Original Post](https://web.archive.org/web/20180627031032/http://blog.kaggle.com/2016/02/22/profiling-top-kagglers-leustagos-current-7-highest-1/)
 
 ---
 
-Next up in our series Profiling Top Kagglers is Lucas Eustaquio Gomes da Silva (better known as [Leustagos](https://www.kaggle.com/leustagos) on Kaggle). Leustagos is one of only 13 data scientists to ever hold the #1 spot on Kaggle, and he has been a consistent face at the top of our user rankings since joining the community four years ago. In this blog, Leustagos shares what he’s learned in his years competing, his typical approach to a new competition, and also how Kaggle has helped him develop professionally as a data scientist. Leustagos is currently busy kicking some serious cancer ass so we want to send him extra thanks for taking the time to share this interview with us.
+Next up in our series [Profiling Top Kagglers](https://datasciblog.github.io/#profiling-top-kagglers) is Lucas Eustaquio Gomes da Silva (better known as [Leustagos](https://www.kaggle.com/leustagos) on Kaggle). Leustagos is one of only 13 data scientists to ever hold the #1 spot on Kaggle, and he has been a consistent face at the top of our user rankings since joining the community four years ago. In this blog, Leustagos shares what he’s learned in his years competing, his typical approach to a new competition, and also how Kaggle has helped him develop professionally as a data scientist. Leustagos is currently busy [kicking some serious cancer ass](http://kickingcancerass.blogspot.com.br/) so we want to send him extra thanks for taking the time to share this interview with us.
 
 ## How did you start with Kaggle competitions?
 
@@ -27,6 +27,11 @@ I started back in the second half of 2011 just after doing the Andrew Ng Courser
 ## What is your first plan of action when working on a new competition?
 
 Check the dataset to understand how to build a validation set.
+
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2016-02-22-profiling-top-kagglers-leustagos-current-7-highest-1/1.png?raw=true">
+  <figcaption>Source: blogs.sas.com</figcaption>
+</figure>
 
 ## What does your iteration cycle look like?
 
@@ -107,4 +112,4 @@ I’ve learned how to do competitive machine learning, which is a bit different 
 
 ## Bio
 
-Lucas Eustaquio Gomes da SilvaLeustagos, also known as Leustagos, is a mostly self taught data scientist who graduated in control and automation engineering. He currently works in the data mining field using machine learning techniques to identify and alert clients about malicious traffic in corporate networks.
+**Lucas Eustaquio Gomes da Silva**, also known as Leustagos, is a mostly self taught data scientist who graduated in control and automation engineering. He currently works in the data mining field using machine learning techniques to identify and alert clients about malicious traffic in corporate networks.
