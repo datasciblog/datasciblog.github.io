@@ -16,6 +16,8 @@ classes: wide
 
 Original Post: http://blog.kaggle.com/2016/02/22/profiling-top-kagglers-leustagos-current-7-highest-1/
 
+---
+
 Next up in our series Profiling Top Kagglers is Lucas Eustaquio Gomes da Silva (better known as [Leustagos](https://www.kaggle.com/leustagos) on Kaggle). Leustagos is one of only 13 data scientists to ever hold the #1 spot on Kaggle, and he has been a consistent face at the top of our user rankings since joining the community four years ago. In this blog, Leustagos shares what he’s learned in his years competing, his typical approach to a new competition, and also how Kaggle has helped him develop professionally as a data scientist. Leustagos is currently busy kicking some serious cancer ass so we want to send him extra thanks for taking the time to share this interview with us.
 
 ## How did you start with Kaggle competitions?
