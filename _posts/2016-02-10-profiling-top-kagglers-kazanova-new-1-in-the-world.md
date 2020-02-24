@@ -14,7 +14,9 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-[Original Post](https://web.archive.org/web/20180621213051/http://blog.kaggle.com/2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/)
+As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on [Kaggle blog](http://blog.kaggle.com). Unfortainately, when the blog was moved to a [new address](https://medium.com/kaggle-blog), most of the posts seemed to be gone. It took me some time to find a website called [The Wayback Machine](https://web.archive.org/) where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.
+
+[Original Post](http://blog.kaggle.com/2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/)
 
 ---
 
