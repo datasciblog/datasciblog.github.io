@@ -78,9 +78,6 @@ I also usually choose 2 different models as final results -- one favors public L
 
 Luck + hard work + experience
 
-owen-results
-OWEN'S TOP 8 FINISHES
-
 ## What is your favourite Kaggle competition and why?
 
 Every competition is different and it is hard to pick a single favorite, so I will pick a few:
@@ -104,7 +101,7 @@ However I would be really excited if there is a “feature engineering” field.
 
 ## Which machine learning researchers do you study?
 
-I learned quite a bit by reading the book “[Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/”, and I also dabble in all the deep learning publications.
+I learned quite a bit by reading the book *[Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/)*, and I also dabble in all the deep learning publications.
 
 However I learned most from my fellow [Kagglers](https://www.kaggle.com/users).
 
@@ -139,8 +136,6 @@ Our company DataRobot’s product is built to help data scientists build general
 
 For example, if I find a particular approach is effective in certain modeling context, I would make a suggestions to the team to implement that as a feature in our product.
 
-datarobot
-
 ## What is your opinion on the trade-off between high model complexity and training/test runtime?
 
 I assume this is about the trade-off between complexity vs prediction performance. In Kaggle competitions there is no trade-off, we only care about accuracy.
@@ -149,6 +144,7 @@ However in reality we rarely implement the most complicated model, for at least 
 
 1. It takes too much effort to train/execute.
 2. More complicated models tend to be more brittle.
+
 On the other hand, even if we don’t implement the best performing/most complicated model, such a model still has inherent value:
 
 1. It can provide a benchmark to evaluate simplified models against,
@@ -171,10 +167,10 @@ I was definitely lucky. Learning from others on Kaggle certainly improves my ski
 
 Too many things to list, but here are a few that come to mind:
 
-Nothing is certain until the private leaderboard is revealed.
-There are always more things that I don’t know than I do.
-Relying on the public LB is dangerous.
-There is usually a simple elegant approach that does equally well.
+- Nothing is certain until the private leaderboard is revealed.
+- There are always more things that I don’t know than I do.
+- Relying on the public LB is dangerous.
+- There is usually a simple elegant approach that does equally well.
 
 ## Bio
 
