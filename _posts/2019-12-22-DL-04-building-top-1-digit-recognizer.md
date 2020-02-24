@@ -5,7 +5,7 @@ date:   2019-12-22
 permalink: /2019/12/22/building-top-1-digit-recognizer/
 excerpt: ""
 categories: 
-- Deep Learning
+- Competitions
 tags:
 - deep learning
 - kaggle
@@ -15,6 +15,8 @@ classes: wide
 #toc_label: "Table of Contents"
 #toc_icon: "cog"
 ---
+
+[Source Code](https://www.kaggle.com/trungha/pytorch-improved-lenet5-augmentation-ensemble)
 
 # Import Library
 
