@@ -262,9 +262,9 @@ Apart from reporting bugs, a great help would be for people to assist with makin
 
 General performance optimization advice is very welcome, too.
 
-## Acknowledgments
+# Acknowledgments
 
-### References to other similar work, projects, or blogs
+## References to other similar work, projects, or blogs
 
 - [Wolpert 1992](http://www.machine-learning.martinsewell.com/ensembles/stacking/Wolpert1992.pdf) Stacked generalization
 - [xcessiv](https://github.com/reiinakano/xcessiv)
@@ -272,7 +272,7 @@ General performance optimization advice is very welcome, too.
 - [Kaggle ensemble guide](https://mlwave.com/kaggle-ensembling-guide/)
 - [Kaggler’s practical ensemble guide](http://blog.kaggle.com/2016/12/27/a-kagglers-guide-to-model-stacking-in-practice/)
 
-### Special thanks to
+## Special thanks to
 
 Apart from my supervisors, I would like to thank:
 
@@ -286,6 +286,6 @@ Apart from my supervisors, I would like to thank:
   <figcaption></figcaption>
 </figure>
 
-## About the author
+# About the author
 
 Marios Michailidis | KazAnova is Research Data Scientist at H2O and part-time PhD student in machine learning at University College London (UCL) with a focus on ensemble modelling. He is the creator of StackNet and other freeware machine learning tools like KazAnova GUI. Marios is former Kaggle #1, having competed in over 100 Kaggle competitions to challenge himself, learn from the best, and improve his research work.
