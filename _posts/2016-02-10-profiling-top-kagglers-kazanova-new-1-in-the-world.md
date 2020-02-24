@@ -14,7 +14,7 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-[Original Post](http://blog.kaggle.com/2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/)
+[Original Post](https://web.archive.org/web/20180621213051/http://blog.kaggle.com/2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/)
 
 ---
 
