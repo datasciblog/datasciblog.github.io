@@ -20,8 +20,6 @@ classes: wide
 
 Next up in our series on top Kagglers is the #1: [Owen Zhang](https://www.kaggle.com/owenzhang1) (Zhonghua Zhang). Owen comes from an engineering background and currently works as the Chief Product Officer at DataRobot.
 
-owen-badge
-
 ## How did you start with Kaggle competitions?
 
 Back in 2011 I had just switched to analytics as a full time job (after several years working in IT), and was eager to improve my skills and to “prove myself”.
