@@ -18,8 +18,9 @@ classes: wide
 
 ---
 
-This blog was originally published on May 7, 2015 when Marios Michailidis was ranked #2. Marios is now the number 1 data scientist out of 465,000 data scientists! We wanted to re-share the original post, with a few additions and updates from Marios. We've also just published a post from Marios on his experience chasing the #1 spot on Kaggle, and what he's taken away from the experience. 
+*This blog was originally published on May 7, 2015 when Marios Michailidis was ranked #2. Marios is now the number 1 data scientist out of 465,000 data scientists! We wanted to re-share the original post, with a few additions and updates from Marios. We've also just published a post from Marios on his experience chasing the #1 spot on Kaggle, and what he's taken away from the experience.*
 
+---
  
 There are Kagglers, there are Master Kagglers, and then there are top 10 Kagglers. Who are these people who consistently win Kaggle competitions? In this series we try to find out how they got to the top of the leaderboards.
 
