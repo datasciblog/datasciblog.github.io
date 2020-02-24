@@ -17,8 +17,6 @@ classes: wide
 #toc_icon: "cog"
 ---
 
-[Source Code](https://www.kaggle.com/trungha/pytorch-improved-lenet5-augmentation-ensemble)
-
 # Import Library
 
 ```python
@@ -361,3 +359,4 @@ classes: wide
 	submit_df.to_csv('submission.csv', index=False)
 
 ```
+# [Source Code](https://www.kaggle.com/trungha/pytorch-improved-lenet5-augmentation-ensemble)
