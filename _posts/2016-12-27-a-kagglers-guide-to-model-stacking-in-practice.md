@@ -115,8 +115,8 @@ Create a dataset called `train_meta` with the same row Ids and fold Ids as the t
 | ID | FoldID | XCoord | YCoord | DistFromCenter | M1 | M2 | Competitor |
 |---|---|---|---|---|---|---|---|
 | 1 | 5 | 0.7 | 0.05 | 0.71 | NA | NA | Sue | 
-| 2 | 2 | -0.4 | -0.64 | 0.76	NA | NA | Bob | 
-| 3 | 4 | -0.14 | 0.82 | 0.83	NA | NA | Sue | 
+| 2 | 2 | -0.4 | -0.64 | 0.76 | NA | NA | Bob | 
+| 3 | 4 | -0.14 | 0.82 | 0.83 | NA | NA | Sue | 
 | … | … | … | … | … | … | … | … | 
 | 183 | 2 | -0.21 | -0.61 | 0.64 | NA | NA | Kate | 
 | 186 | 1 | -0.86 | -0.17 | 0.87 | NA | NA | Kate | 
@@ -128,7 +128,7 @@ Create a dataset called `train_meta` with the same row Ids and fold Ids as the t
 |---|---|---|---|---|---|---|
 | 6 | 0.06 | 0.36 | 0.36 | NA | NA | Mark |
 | 12 | -0.77 | -0.26 | 0.81 | NA | NA | Sue |
-| 22 | 0.18 | -0.54	0.57	NA | NA | Mark |
+| 22 | 0.18 | -0.54 | 0.57 | NA | NA | Mark |
 | … | … | … | … | … | … | … |
 | 178 | 0.01 | 0.83 | 0.83 | NA | NA | Sue |
 | 184 | 0.58 | 0.2 | 0.62 | NA | NA | Sue |
@@ -162,8 +162,8 @@ Create a dataset called `train_meta` with the same row Ids and fold Ids as the t
 | ID | FoldID | XCoord | YCoord | DistFromCenter | M1 | M2 | Competitor |
 |---|---|---|---|---|---|---|---|
 | 1 | 5 | 0.7 | 0.05 | 0.71 | NA | NA | Sue |
-| 2 | 2 | -0.4 | -0.64 | 0.76	NA | NA | Bob |
-| 3 | 4 | -0.14 | 0.82 | 0.83	NA | NA | Sue |
+| 2 | 2 | -0.4 | -0.64 | 0.76 | NA | NA | Bob |
+| 3 | 4 | -0.14 | 0.82 | 0.83 | NA | NA | Sue |
 | … | … | … | … | … | … | … | … |
 | 183 | 2 | -0.21 | -0.61 | 0.64 | NA | NA | Kate |
 | 186 | 1 | -0.86 | -0.17 | 0.87 | Bob | Bob | Kate |
@@ -176,7 +176,7 @@ Create a dataset called `train_meta` with the same row Ids and fold Ids as the t
 | ID | XCoord | YCoord | DistFromCenter | M1 | M2 | Competitor |
 |---|---|---|---|---|---|---|
 | 6 | 0.06 | 0.36 | 0.36 | Mark | Mark | Mark |
-| 12 | -0.77 | -0.26	0.81	Kate | Sue | Sue |
+| 12 | -0.77 | -0.26 | 0.81 | Kate | Sue | Sue |
 | 22 | 0.18 | -0.54 | 0.57 | Mark | Sue | Mark |
 | … | … | … | … | … | … | … | 
 | 178 | 0.01 | 0.83 | 0.83 | Sue | Sue | Sue |
