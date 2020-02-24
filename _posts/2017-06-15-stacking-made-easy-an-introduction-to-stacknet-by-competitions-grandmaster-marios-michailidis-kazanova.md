@@ -5,9 +5,10 @@ date:   2017-06-15
 permalink: /2017/06/15/stacking-made-easy-an-introduction-to-stacknet-by-competitions-grandmaster-marios-michailidis-kazanova/
 excerpt: ""
 categories: 
-- Profiling Top Kagglers
+- Stacking
 tags:
 - kaggle
+- ensemble
 classes: wide
 # toc: true
 # toc_label: "Table of Contents"
