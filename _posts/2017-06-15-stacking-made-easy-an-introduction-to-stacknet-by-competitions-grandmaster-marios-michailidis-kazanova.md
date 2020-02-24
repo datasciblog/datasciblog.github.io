@@ -288,4 +288,4 @@ Apart from my supervisors, I would like to thank:
 
 # About the author
 
-Marios Michailidis | KazAnova is Research Data Scientist at H2O and part-time PhD student in machine learning at University College London (UCL) with a focus on ensemble modelling. He is the creator of StackNet and other freeware machine learning tools like KazAnova GUI. Marios is former Kaggle #1, having competed in over 100 Kaggle competitions to challenge himself, learn from the best, and improve his research work.
+Marios Michailidis (KazAnova) is Research Data Scientist at H2O and part-time PhD student in machine learning at University College London (UCL) with a focus on ensemble modelling. He is the creator of StackNet and other freeware machine learning tools like KazAnova GUI. Marios is former Kaggle #1, having competed in over 100 Kaggle competitions to challenge himself, learn from the best, and improve his research work.
