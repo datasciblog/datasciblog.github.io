@@ -20,7 +20,7 @@ header:
 locale                   : "en-US"
 title                    : "Data Science Blog"
 title_separator          : "-"
-subtitle                 : #"What I Talk About When We Talk About Data" # site tagline that appears below site title in masthead
+subtitle                 : "Ancora imparo - I am still learning"
 name                     : "Ha NGUYEN"
 description              : # "What I Talk About When I Talk About Data"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
