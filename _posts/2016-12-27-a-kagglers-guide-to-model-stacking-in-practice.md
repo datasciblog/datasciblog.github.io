@@ -172,6 +172,7 @@ M2: Support Vector Machine (type = 4, cost = 1000)
 ## 4. Fit each base model to the full training dataset and make predictions on the test dataset. Store these predictions inside `test_meta`
 
 `test_meta`
+
 | ID | XCoord | YCoord | DistFromCenter | M1 | M2 | Competitor |
 |---|---|---|---|---|---|---|
 | 6 | 0.06 | 0.36 | 0.36 | Mark | Mark | Mark |
