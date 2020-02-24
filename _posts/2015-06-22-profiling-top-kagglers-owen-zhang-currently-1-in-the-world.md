@@ -46,9 +46,7 @@ My iteration cycle usually is short -- I rarely work on feature engineering that
 
 My personal experience is that very complicated features usually do not work well -- possibly because of my buggy code.
 
-https://www.youtube.com/watch?v=LgLcfZjNF44&feature=emb_title
-
-[Tips on Modeling Competitions on Kaggle](http://nycdatascience.com/news/featured-talk-1-kaggle-data-scientist-owen-zhang/) (2015) Owen Zhang, NYC Data Science Academy
+*[Tips on Modeling Competitions on Kaggle](http://nycdatascience.com/news/featured-talk-1-kaggle-data-scientist-owen-zhang/) (2015) Owen Zhang, NYC Data Science Academy*
 
 ## What are your favorite machine learning algorithms?
 
