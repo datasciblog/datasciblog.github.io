@@ -23,11 +23,10 @@ classes: wide
 
 ```python
 	# Import libraries
-	%matplotlib inline
-
 	import numpy as np
 	import pandas as pd
 	import matplotlib.pyplot as plt
+	%matplotlib inline
 	from sklearn.model_selection import train_test_split
 	import time
 
@@ -46,18 +45,17 @@ classes: wide
 	train_df = pd.read_csv('/kaggle/input/digit-recognizer/train.csv')
 	test_df = pd.read_csv('/kaggle/input/digit-recognizer/test.csv')
 	submit_df = pd.read_csv('/kaggle/input/digit-recognizer/sample_submission.csv')
-```
 
-```python
 	# Number of pixels
 	num_pixel = len(train_df.columns) - 1
-	num_pixel
+	print(num_pixel)
+
 ```
 
-# Argumentation, Datasets and DataLoaders
+# Agumentation, Datasets and DataLoaders
 
 ```python
-	# Transformers
+	# Create transformers with different settings
 	transform_0 = transforms.Compose([
 		transforms.ToPILImage(),
 		transforms.ToTensor(),
@@ -104,11 +102,9 @@ classes: wide
 ```python
 	# Write a class that transform a DataFrame to PyTorch Dataset
 	# The custom dataset inherits Dataset
-
 	class DataFrame_to_Dataset(Dataset):
-		
-		def __init__(self, df, transform=transform_0):
 
+		def __init__(self, df, transform=transform_0):
 			# Get features and labels
 			if len(df.columns) == num_pixel:
 				# Test dataset
@@ -118,7 +114,7 @@ classes: wide
 				# Train dataset
 				self.features = df.iloc[:,1:].values.reshape((-1,28,28)).astype(np.uint8)
 				self.labels = torch.from_numpy(df.label.values)
-			
+
 			# Transformer
 			self.transform = transform
 		
@@ -134,11 +130,10 @@ classes: wide
 ```
 
 ```python
+	# Create DataLoaders from custom datasets
 	def create_dataloaders(seed, test_size=0.1, df=train_df, batch_size=32):
 		# Create training set and validation set
-		train_data, valid_data = train_test_split(df,
-												test_size=test_size,
-												random_state=seed)
+		train_data, valid_data = train_test_split(df, test_size=test_size, random_state=seed)
 		
 		# Create Datasets
 		train_dataset_0 = DataFrame_to_Dataset(train_data)
@@ -148,7 +143,6 @@ classes: wide
 		train_dataset_4 = DataFrame_to_Dataset(train_data, transform_4)
 		train_dataset_5 = DataFrame_to_Dataset(train_data, transform_5)
 		train_dataset = ConcatDataset([train_dataset_0, train_dataset_1, train_dataset_2, train_dataset_3, train_dataset_4, train_dataset_5])
-
 		valid_dataset = DataFrame_to_Dataset(valid_data)
 		
 		# Create Dataloaders
@@ -169,7 +163,7 @@ classes: wide
 ![](https://pytorch.org/tutorials/_images/mnist.png)
 
 ```python
-	# Create a LeNet neural network
+	# Create an improved LeNet5 neural network
 	class Net(nn.Module):
 		def __init__(self):
 			# Super function. It inherits from nn.Module and we can access everythink in nn.Module
@@ -237,6 +231,7 @@ classes: wide
 ```
 
 ```python
+	# Train the net with a seed and a number of epochs
 	def train(seed, num_epochs):
 		
 		# Train and valid dataloaders
@@ -348,9 +343,9 @@ classes: wide
 
 	ensemble_df = submit_df.copy()
 
+	# Start training
 	num_models = 11
 	num_epochs = 6
-
 	for seed in range(num_models):
 		train(seed, num_epochs)
 ```
@@ -359,12 +354,10 @@ classes: wide
 
 ```python
 	# Final prediction
-		final_pred = ensemble_df.iloc[:,2:].mode(axis=1).iloc[:,0]
-		submit_df.Label = final_pred.astype(int)
-		submit_df.head()
-```
+	final_pred = ensemble_df.iloc[:,2:].mode(axis=1).iloc[:,0]
+	submit_df.Label = final_pred.astype(int)
 
-```python
 	# Create a submission file
 	submit_df.to_csv('submission.csv', index=False)
+
 ```
