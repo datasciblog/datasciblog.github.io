@@ -10,6 +10,7 @@ tags:
 - deep learning
 - kaggle
 - image classification
+- pytorch
 classes: wide
 #toc: true
 #toc_label: "Table of Contents"
