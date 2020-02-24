@@ -112,25 +112,27 @@ Create a dataset called `train_meta` with the same row Ids and fold Ids as the t
 
 `train_meta`
 
-ID	FoldID	XCoord	YCoord	DistFromCenter	M1	M2	Competitor
-1	5	0.7	0.05	0.71	NA	NA	Sue
-2	2	-0.4	-0.64	0.76	NA	NA	Bob
-3	4	-0.14	0.82	0.83	NA	NA	Sue
-…	…	…	…	…	…	…	…
-183	2	-0.21	-0.61	0.64	NA	NA	Kate
-186	1	-0.86	-0.17	0.87	NA	NA	Kate
-187	2	-0.73	0.08	0.73	NA	NA	Sue
+| ID | FoldID | XCoord | YCoord | DistFromCenter | M1 | M2 | Competitor |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 0.7 | 0.05 | 0.71 | NA | NA | Sue | 
+| 2 | 2 | -0.4 | -0.64 | 0.76	NA | NA | Bob | 
+| 3 | 4 | -0.14 | 0.82 | 0.83	NA | NA | Sue | 
+| … | … | … | … | … | … | … | … | 
+| 183 | 2 | -0.21 | -0.61 | 0.64 | NA | NA | Kate | 
+| 186 | 1 | -0.86 | -0.17 | 0.87 | NA | NA | Kate | 
+| 187 | 2 | -0.73 | 0.08 | 0.73 | NA | NA | Sue | 
 
 `test_meta`
 
-ID	XCoord	YCoord	DistFromCenter	M1	M2	Competitor
-6	0.06	0.36	0.36	NA	NA	Mark
-12	-0.77	-0.26	0.81	NA	NA	Sue
-22	0.18	-0.54	0.57	NA	NA	Mark
-…	…	…	…	…	…	…
-178	0.01	0.83	0.83	NA	NA	Sue
-184	0.58	0.2	0.62	NA	NA	Sue
-185	0.11	-0.45	0.46	NA	NA	Mark
+| ID | XCoord | YCoord | DistFromCenter | M1 | M2 | Competitor |
+|---|---|---|---|---|---|---|
+| 6 | 0.06 | 0.36 | 0.36 | NA | NA | Mark |
+| 12 | -0.77 | -0.26 | 0.81 | NA | NA | Sue |
+| 22 | 0.18 | -0.54	0.57	NA | NA | Mark |
+| … | … | … | … | … | … | … |
+| 178 | 0.01 | 0.83 | 0.83 | NA | NA | Sue |
+| 184 | 0.58 | 0.2 | 0.62 | NA | NA | Sue |
+| 185 | 0.11 | -0.45 | 0.46 | NA | NA | Mark |
 
 ## 3. For each test fold {fold1, fold2, … fold5}
 
@@ -138,14 +140,15 @@ ID	XCoord	YCoord	DistFromCenter	M1	M2	Competitor
 
 `train fold1`
 
-ID	FoldID	XCoord	YCoord	DistFromCenter	Competitor
-1	5	0.7	0.05	0.71	Sue
-2	2	-0.4	-0.64	0.76	Bob
-3	4	-0.14	0.82	0.83	Sue
-…	…	…	…	…	…
-181	5	-0.33	-0.57	0.66	Kate
-183	2	-0.21	-0.61	0.64	Kate
-187	2	-0.73	0.08	0.73	Sue
+| ID | FoldID | XCoord | YCoord | DistFromCenter | Competitor |
+|---|---|---|---|---|---|
+| 1 | 5 | 0.7 | 0.05 | 0.71 | Sue |
+| 2 | 2 | -0.4 | -0.64 | 0.76 | Bob |
+| 3 | 4 | -0.14 | 0.82 | 0.83 | Sue |
+| … | … | … | … | … | … |
+| 181 | 5 | -0.33 | -0.57 | 0.66 | Kate |
+| 183 | 2 | -0.21 | -0.61 | 0.64 | Kate |
+| 187 | 2 | -0.73 | 0.08 | 0.73 | Sue |
 
 ### 3.2 For each base model
 
@@ -156,27 +159,28 @@ M2: Support Vector Machine (type = 4, cost = 1000)
 
 `train_meta` with M1 and M2 filled in for `fold1`
 
-ID	FoldID	XCoord	YCoord	DistFromCenter	M1	M2	Competitor
-1	5	0.7	0.05	0.71	NA	NA	Sue
-2	2	-0.4	-0.64	0.76	NA	NA	Bob
-3	4	-0.14	0.82	0.83	NA	NA	Sue
-…	…	…	…	…	…	…	…
-183	2	-0.21	-0.61	0.64	NA	NA	Kate
-186	1	-0.86	-0.17	0.87	Bob	Bob	Kate
-187	2	-0.73	0.08	0.73	NA	NA	Sue
+| ID | FoldID | XCoord | YCoord | DistFromCenter | M1 | M2 | Competitor |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 0.7 | 0.05 | 0.71 | NA | NA | Sue |
+| 2 | 2 | -0.4 | -0.64 | 0.76	NA | NA | Bob |
+| 3 | 4 | -0.14 | 0.82 | 0.83	NA | NA | Sue |
+| … | … | … | … | … | … | … | … |
+| 183 | 2 | -0.21 | -0.61 | 0.64 | NA | NA | Kate |
+| 186 | 1 | -0.86 | -0.17 | 0.87 | Bob | Bob | Kate |
+| 187 | 2 | -0.73 | 0.08 | 0.73 | NA | NA | Sue |
 
 ## 4. Fit each base model to the full training dataset and make predictions on the test dataset. Store these predictions inside `test_meta`
 
 `test_meta`
-
-ID	XCoord	YCoord	DistFromCenter	M1	M2	Competitor
-6	0.06	0.36	0.36	Mark	Mark	Mark
-12	-0.77	-0.26	0.81	Kate	Sue	Sue
-22	0.18	-0.54	0.57	Mark	Sue	Mark
-…	…	…	…	…	…	…
-178	0.01	0.83	0.83	Sue	Sue	Sue
-184	0.58	0.2	0.62	Sue	Mark	Sue
-185	0.11	-0.45	0.46	Mark	Mark	Mark
+| ID | XCoord | YCoord | DistFromCenter | M1 | M2 | Competitor |
+|---|---|---|---|---|---|---|
+| 6 | 0.06 | 0.36 | 0.36 | Mark | Mark | Mark |
+| 12 | -0.77 | -0.26	0.81	Kate | Sue | Sue |
+| 22 | 0.18 | -0.54 | 0.57 | Mark | Sue | Mark |
+| … | … | … | … | … | … | … | 
+| 178 | 0.01 | 0.83 | 0.83 | Sue | Sue | Sue |
+| 184 | 0.58 | 0.2 | 0.62 | Sue | Mark | Sue |
+| 185 | 0.11 | -0.45 | 0.46 | Mark | Mark | Mark |
 
 ## 5. Fit a new model, S (i.e the stacking model) to `train_meta`, using M1 and M2 as features. Optionally, include other features from the original training dataset or engineered features
 
@@ -186,14 +190,15 @@ S: Logistic Regression (From LiblineaR package, type = 6, cost = 100). Fit to `t
 
 `test_meta` with stacked model predictions
 
-ID	XCoord	YCoord	DistFromCenter	M1	M2	Pred	Competitor
-6	0.06	0.36	0.36	Mark	Mark	Mark	Mark
-12	-0.77	-0.26	0.81	Kate	Sue	Sue	Sue
-22	0.18	-0.54	0.57	Mark	Sue	Mark	Mark
-…	…	…	…	…	…	…	…
-178	0.01	0.83	0.83	Sue	Sue	Sue	Sue
-184	0.58	0.2	0.62	Sue	Mark	Sue	Sue
-185	0.11	-0.45	0.46	Mark	Mark	Mark	Mark
+ | ID | XCoord | YCoord | DistFromCenter | M1 | M2 | Pred | Competitor |
+ |---|---|---|---|---|---|---|---|
+ | 6 | 0.06 | 0.36 | 0.36 | Mark | Mark | Mark | Mark | 
+ | 12 | -0.77 | -0.26 | 0.81 | Kate | Sue | Sue | Sue | 
+ | 22 | 0.18 | -0.54 | 0.57 | Mark | Sue | Mark | Mark | 
+ | … | … | … | … | … | … | … | … | 
+ | 178 | 0.01 | 0.83 | 0.83 | Sue | Sue | Sue | Sue | 
+ | 184 | 0.58 | 0.2 | 0.62 | Sue | Mark | Sue | Sue | 
+ | 185 | 0.11 | -0.45 | 0.46 | Mark | Mark | Mark | Mark | 
 
 The main point to take home is that we’re using the predictions of the base models as features (i.e. meta features) for the stacked model. So, the stacked model is able to discern where each model performs well and where each model performs poorly. It’s also important to note that the meta features in row i of train_meta are not dependent on the target value in row i because they were produced using information that excluded the target_i in the base models’ fitting procedure.
 
