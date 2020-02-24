@@ -152,8 +152,8 @@ Create a dataset called `train_meta` with the same row Ids and fold Ids as the t
 
 ### 3.2 For each base model
 
-M1: K-Nearest Neighbors (k = 1)
-M2: Support Vector Machine (type = 4, cost = 1000)
+- M1: K-Nearest Neighbors (k = 1)
+- M2: Support Vector Machine (type = 4, cost = 1000)
 
 #### 3.2.1 Fit the base model to the training fold and make predictions on the test fold. Store these predictions in train_meta to be used as features for the stacking model
 
@@ -201,7 +201,7 @@ S: Logistic Regression (From LiblineaR package, type = 6, cost = 100). Fit to `t
  | 184 | 0.58 | 0.2 | 0.62 | Sue | Mark | Sue | Sue | 
  | 185 | 0.11 | -0.45 | 0.46 | Mark | Mark | Mark | Mark | 
 
-The main point to take home is that we’re using the predictions of the base models as features (i.e. meta features) for the stacked model. So, the stacked model is able to discern where each model performs well and where each model performs poorly. It’s also important to note that the meta features in row i of train_meta are not dependent on the target value in row i because they were produced using information that excluded the target_i in the base models’ fitting procedure.
+The main point to take home is that we’re using the predictions of the base models as features (i.e. meta features) for the stacked model. So, the stacked model is able to discern where each model performs well and where each model performs poorly. It’s also important to note that the meta features in row i of `train_meta` are not dependent on the target value in row i because they were produced using information that excluded the target_i in the base models’ fitting procedure.
 
 Alternatively, we could make predictions on the test dataset using each base model immediately after it gets fit to each test fold. In our case this would generate test-set predictions for five K-Nearest Neighbors models and five SVM models. Then we would average the predictions per model to generate our M1 and M2 meta features. One benefit to this is that it’s less time consuming than the first approach (since we don’t have to retrain each model on the full training dataset). It also helps that our train meta features and test meta features should follow a similar distribution. However, the test metas M1 and M2 are likely more accurate in the first approach since each base model was trained on the full training dataset (as opposed to 80% of the training dataset, five times in the 2nd approach).
 
