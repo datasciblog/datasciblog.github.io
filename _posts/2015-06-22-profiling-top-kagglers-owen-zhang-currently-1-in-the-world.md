@@ -15,19 +15,8 @@ classes: wide
 ---
 
 <div class="notice--info">
-  <h4>Notice Headline:</h4>
-  
-<p>You can also add the <code class="language-plaintext highlighter-rouge">.notice</code> class to a <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> element.</p>
-
-<ul>
-  <li>Bullet point 1</li>
-  <li>Bullet point 2</li>
-</ul>
-
+As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on [Kaggle blog](http://blog.kaggle.com). Unfortainately, when the blog was moved to a [new address](https://medium.com/kaggle-blog), most of the posts seemed to be gone. It took me some time to find a website called [The Wayback Machine](https://web.archive.org/) where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.
 </div>
-
-*As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on [Kaggle blog](http://blog.kaggle.com). Unfortainately, when the blog was moved to a [new address](https://medium.com/kaggle-blog), most of the posts seemed to be gone. It took me some time to find a website called [The Wayback Machine](https://web.archive.org/) where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.*{: .notice--info}
----
 
 Next up in our series on top Kagglers is the #1: [Owen Zhang](https://www.kaggle.com/owenzhang1) (Zhonghua Zhang). Owen comes from an engineering background and currently works as the Chief Product Officer at DataRobot.
 
