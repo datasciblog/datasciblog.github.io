@@ -41,7 +41,7 @@ $$R(f) = E[L(Y, f(X))]$$
 
 The optimal/target function is now defined as 
 
-$$ f^{*} = argmin_f R(f) $$
+$$ f^{*} = \arg\min_{f} R(f) $$
 
 and we are going to estimate this target function.
 
