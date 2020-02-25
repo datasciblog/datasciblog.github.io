@@ -41,17 +41,18 @@ $$R(f) = E[L(Y, f(X))]$$
 
 The optimal/target function is now defined as 
 
-$$ f^{*} = \underset{f}{\arg\min} R(f) $$
+$$f^{*} = \underset{f}{\arg\min} R(f)$$
 
 and we are going to estimate this target function.
 
 Unfortunately, since we may never know the true risk $R(f)$, we need to rely on *empirical estimates* of risk when inferring our model.
 
-$$ \hat{R} = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
+$$\hat{R} = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
 
 By strong law of large numbers we have that
 
-$$ \underset{n -> \limit}{\lim} $$
+$$\lim_{x\to\infty} \hat{R}(x) = R(x)$$
+
 
 (...TO BE CONTINUED)
 
