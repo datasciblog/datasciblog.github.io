@@ -35,7 +35,7 @@ From now on, we will concern ourself with predictive modelling. In the statistic
 $$L(y, f(x))$$
 
 While the loss function measures the accuracy of a prediction after the outcome is observed. At the time we make the prediction however, the true outcome is still
-unknown, and the loss incurred is consequently a random variable $L(Y, f(x))$. The risk/cost of function $f$ is defined as the expected loss
+unknown, and the loss incurred is consequently a random variable $L(Y, f(x))$. The risk/cost of function $f$ is defined as the *expected loss*
 
 $$R(f) = E[L(Y, f(X))]$$
 
@@ -45,11 +45,13 @@ $$ f^{*} = \underset{f}{\arg\min} R(f) $$
 
 and we are going to estimate this target function.
 
-Unfortunately, since we may never know the true risk $R(f)$, we need to rely on empirical estimates of risk when inferring our model.
+Unfortunately, since we may never know the true risk $R(f)$, we need to rely on *empirical estimates* of risk when inferring our model.
 
 $$ \hat{R} = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
 
+By strong law of large numbers we have that
 
+$$ \underset{n -> \limit}{\lim} $$
 
 (...TO BE CONTINUED)
 
