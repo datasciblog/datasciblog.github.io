@@ -30,9 +30,20 @@ Supervised learning is a part of Machine Learning, which is concerned with **mod
 
 There are two kinds of modelling - **explanatory** and **predictive**. In explanatory modelling, we are interested in understanding the causal relationship between $X$ and $Y$, while predictive modelling is concerned with predicting $Y$ using $X$ as predictors.
 
-From now on, we will concern ourself with predictive modelling. In the statistical view, predictive modelling can be viewed as *a problem of function estimation*. The prediction accuracy of the function is measured using a **loss function**, which computes the discrepancy between a prediction and the true outcome.
+From now on, we will concern ourself with predictive modelling. In the statistical view, predictive modelling can be viewed as *a problem of function estimation*. The prediction accuracy of the function is measured using a **loss function**, which measures the discrepancy between a prediction and the true outcome.
 
 $$L(y, f(x))$$
+
+While the loss function measures the accuracy of a prediction after the outcome is observed. At the time we make the prediction however, the true outcome is still
+unknown, and the loss incurred is consequently a random variable $L(Y, f(x))$. The risk/cost of function $f$ is defined as the expected loss
+
+$$R(f) = E[L(Y, f(X))]$$
+
+The optimal/target function is now defined as 
+
+$$ f^{*} = arg min R(f) $$
+
+
 
 
 (...TO BE CONTINUED)
