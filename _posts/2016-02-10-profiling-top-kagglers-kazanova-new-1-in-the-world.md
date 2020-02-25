@@ -18,8 +18,6 @@ classes: wide
 As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on <a href="http://blog.kaggle.com">Kaggle blog</a>. Unfortainately, when the blog was moved to a <a href="https://medium.com/kaggle-blog">new address</a>, most of the posts seemed to be gone. It took me some time to find a website called <a href="https://web.archive.org/">The Wayback Machine</a> where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.
 </div>
 
----
-
 *This blog was originally published on May 7, 2015 when Marios Michailidis was ranked #2. Marios is now the number 1 data scientist out of 465,000 data scientists! We wanted to re-share the original post, with a few additions and updates from Marios.*
 
 ---

@@ -19,8 +19,6 @@ classes: wide
 As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on <a href="http://blog.kaggle.com">Kaggle blog</a>. Unfortainately, when the blog was moved to a <a href="https://medium.com/kaggle-blog">new address</a>, most of the posts seemed to be gone. It took me some time to find a website called <a href="https://web.archive.org/">The Wayback Machine</a> where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.
 </div>
 
----
-
 # Introduction
 
 Stacking (also called meta ensembling) is a model ensembling technique used to combine information from multiple predictive models to generate a new model. Often times the stacked model (also called 2nd-level model) will outperform each of the individual models due its smoothing nature and ability to highlight each base model where it performs best and discredit each base model where it performs poorly. For this reason, stacking is most effective when the base models are significantly different. Here I provide a simple example and guide on how stacking is most often implemented in practice.

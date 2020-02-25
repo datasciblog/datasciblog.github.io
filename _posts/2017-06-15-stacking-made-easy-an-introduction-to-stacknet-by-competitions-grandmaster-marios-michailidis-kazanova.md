@@ -19,8 +19,6 @@ classes: wide
 As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on <a href="http://blog.kaggle.com">Kaggle blog</a>. Unfortainately, when the blog was moved to a <a href="https://medium.com/kaggle-blog">new address</a>, most of the posts seemed to be gone. It took me some time to find a website called <a href="https://web.archive.org/">The Wayback Machine</a> where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.
 </div>
 
----
-
 You’ve probably heard the adage “two heads are better than one.” Well, it applies just as well to machine learning where the combination of diverse approaches leads to better results. And if you’ve followed Kaggle competitions, you probably also know that this approach, called stacking, has become a staple technique among top Kagglers.
 
 In this interview, [Marios Michailidis](https://www.kaggle.com/kazanova) (AKA Competitions Grandmaster KazAnova on Kaggle) gives an intuitive overview of stacking, including its rise in use on Kaggle, and how the resurgence of neural networks led to the genesis of his stacking library introduced here, StackNet. He shares how to make StackNet–a computational, scalable and analytical, meta-modeling framework–part of your toolkit and explains why machine learning practitioners shouldn’t always shy away from complex solutions in their work.

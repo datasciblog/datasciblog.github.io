@@ -18,8 +18,6 @@ classes: wide
 As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on <a href="http://blog.kaggle.com">Kaggle blog</a>. Unfortainately, when the blog was moved to a <a href="https://medium.com/kaggle-blog">new address</a>, most of the posts seemed to be gone. It took me some time to find a website called <a href="https://web.archive.org/">The Wayback Machine</a> where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.
 </div>
 
----
-
 We have a new #1 on our leaderboard — a competitor who surprisingly joined the platform just two years ago. Shubin Dai, better known as [Bestfitting](https://www.kaggle.com/bestfitting) on Kaggle or Bingo by his friends, is a data scientist and engineering manager living in Changsha, China. He currently leads a company he founded that provides software solutions to banks. Outside of work, and off Kaggle, Dai’s an avid mountain biker and enjoys spending time in nature. Here’s Bestfitting:
 
 ## Can you tell us a little bit about yourself and your background?
