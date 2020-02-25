@@ -35,8 +35,6 @@ From now on, we will concern ourself with predictive modelling. In the statistic
 $$L(y, f(x))$$
 
 
-
-
 (...TO BE CONTINUED)
 
 # References
