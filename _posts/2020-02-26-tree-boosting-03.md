@@ -49,13 +49,21 @@ Unfortunately, since we may never know the true risk $R(f)$, we need to rely on 
 
 $$\hat{R} = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
 
-By strong law of large numbers we have that
+By the strong law of large numbers we have that
 
-$$\lim_{x\to\infty} \hat{R}(x) = R(x)$$
+$$\lim_{x\to\infty} \hat{R}(x) = R(x)$$,
+
+almost surely.
 
 The problem of function estimation is now to estimate the **empirical target function**
 
 $$\hat{f} = \underset{f}{\arg\min} \hat{R}(f)$$
+
+
+**Empirical risk minimization** (ERM) is an induction principle which relies on minimization of the empirical risk. ERM is a criterion to select the optimal function $\hat{f}$ from a set of functions $\mathcal{F}$. The choice of $\mathcal{F}$ is of major importance.
+
+
+
 
 (...TO BE CONTINUED)
 
