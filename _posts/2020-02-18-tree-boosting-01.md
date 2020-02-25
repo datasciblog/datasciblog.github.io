@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Tree-Boosting-01: The Basics of Decision Trees"
+title:  "TreeBoosting-01: The Basics of Decision Trees"
 date:   2020-02-18
 permalink: /2020/02/18/tree-based-01/
 excerpt: ""

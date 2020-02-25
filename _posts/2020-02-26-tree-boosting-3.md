@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "Tree-Boosting-03: Tree Boosting With XGBoost - Why Does XGBoost Win "Every" Machine Learning Competition?"
+title:  "TreeBoosting-03: Tree Boosting With XGBoost - Why Does XGBoost Win "Every" Machine Learning Competition?"
 date:   2020-02-26
-permalink: /2020/02/26/tree-boosting-3/
+permalink: /2020/02/26/tree-boosting-03/
 excerpt: ""
 categories: 
 - Machine Learning

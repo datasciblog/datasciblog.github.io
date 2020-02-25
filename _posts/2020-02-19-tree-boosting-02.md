@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Tree-Boosting-02: Bagging, Random Forests and Boosting"
+title:  "TreeBoosting-02: Bagging, Random Forests and Boosting"
 date:   2020-02-19
 permalink: /2020/02/19/tree-boosting-02/
 excerpt: ""
