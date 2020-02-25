@@ -15,10 +15,11 @@ classes: wide
 # toc_label: "Table of Contents"
 # toc_icon: "cog"
 ---
+<div class="notice--info">
+This was my second solution for the <a href="https://challenge.kalapa.vn/">Credit Scoring Challenge</a> hosted by <a href="https://kalapa.vn/en/home-en/">Kalapa</a> with the first prize is up to AUD$6000. After the first solution was [published](https://datasciblog.github.io/2020/01/21/kalapa-credit-scoring-solution-17/) and get some credit, I kept improving my baseline and achieved a better result. 
 
-This was my second solution for the [Credit Scoring Challenge](https://challenge.kalapa.vn/) hosted by [Kalapa](https://kalapa.vn/en/home-en/) with the first prize is up to AUD$6000. After the first solution was [published](https://datasciblog.github.io/2020/01/21/kalapa-credit-scoring-solution-17/) and get some credit, I kept improving my baseline and achieved a better result. 
-
-The post was originally written in Vietnamese and published on [the largest machine learning forum in Vietnam](https://forum.machinelearningcoban.com/t/kalapa-s-credit-scoring-challenge-13-solution-02-02-0-2729-gini-score/7139/12). The English version will come soon!
+The post was originally written in Vietnamese and published on <a href="https://forum.machinelearningcoban.com/t/kalapa-s-credit-scoring-challenge-13-solution-02-02-0-2729-gini-score/7139"> the largest machine learning forum in Vietnam</a>. The English version of this post will come soon!
+</div>
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/3.png?raw=true">
