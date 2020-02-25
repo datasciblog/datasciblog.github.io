@@ -24,7 +24,7 @@ toc_icon: "cog"
 # Introduction
 
 - Decision trees are a weak learner in comparision with other machine learning algorithms.
-- However, when trees are used as building blocks of bagging, random forests and boosting methods, we will have very powerful prediction models.
+- However, when trees are used as building blocks of bagging, random forests and boosting methods, we will have very powerful prediction models with a cost of some **loss in the interpretability**.
 - In fact, **XGBoost** and **LightGBM** - the implementations of gradient boosted decision trees - are the two most popular methods for competitions with structured data in Kaggle.
 
 # Bagging
