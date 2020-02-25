@@ -23,11 +23,14 @@ This was my first solution for the <a href="https://challenge.kalapa.vn/">Credit
 The post was originally written in Vietnamese and published on <a href="https://forum.machinelearningcoban.com/t/kalapas-credit-scoring-challenge-17-solution-21-01-0-22737-gini-score/7071"> the largest machine learning forum in Vietnam</a>. I feel honored for having more than 2.3k views and many thanks for this baseline solution.
 
 The English version of this post will come soon!
-</div>
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-21-kalapa-credit-scoring-solution-17/0.png?raw=true">
 </figure>
+
+</div>
+
+
 
 
 # Giới thiệu
