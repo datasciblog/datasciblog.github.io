@@ -14,7 +14,7 @@ classes: wide
 # toc_icon: "cog"
 ---
 
-As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on [Kaggle blog](http://blog.kaggle.com). Unfortainately, when the blog was moved to a [new address](https://medium.com/kaggle-blog), most of the posts seemed to be gone. It took me some time to find a website called [The Wayback Machine](https://web.archive.org/) where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.
+*As a Machine Learning learner who have learnt a lot by taking part in competitions esspecially those from Kaggle, I always feel much of enjoyment reading sharing from Kaggle Masters on [Kaggle blog](http://blog.kaggle.com). Unfortainately, when the blog was moved to a [new address](https://medium.com/kaggle-blog), most of the posts seemed to be gone. It took me some time to find a website called [The Wayback Machine](https://web.archive.org/) where all the blog posts were captured. I used these captures to recover some of my favorite posts in the old Kaggle blog. I hope you will enjoy and learn from them as well.*{: .notice--primary} 
 
 [Original Post](http://blog.kaggle.com/2015/06/22/profiling-top-kagglers-owen-zhang-currently-1-in-the-world/)
 
