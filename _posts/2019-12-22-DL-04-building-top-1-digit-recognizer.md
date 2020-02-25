@@ -17,6 +17,17 @@ classes: wide
 #toc_icon: "cog"
 ---
 
+After [finishing the Deep Learning Specialization](https://datasciblog.github.io/2019/12/19/accomplishing-deep-learning-specialization/), I had a chance to apply what I learnt by participating a Deep Learning competition in Kaggle.
+
+Here is what I did:
+- Using `pytorch` to build a neural network architecture.
+- Understanding the concept of `Dataset` and `DataLoader` in `pytorch`.
+- Practicing data augmentation to increase the size of training dataset with different techniques.
+- Improving LeNet5 architecture (i.e. adding Batch Norm, Dropout, channels) in order to achieve a better result.
+- Impelementing a simple ensembling method.
+- Achieving a great score (0.99742 - top 1%) without using the original dataset.
+
+
 # Import Library
 
 ```python
@@ -50,7 +61,7 @@ classes: wide
 
 ```
 
-# Agumentation, Datasets and DataLoaders
+# Augmentation, Datasets and DataLoaders
 
 ```python
 	# Create transformers with different settings
