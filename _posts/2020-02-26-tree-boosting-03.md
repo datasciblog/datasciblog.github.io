@@ -35,11 +35,11 @@ From now on, we will concern ourself with predictive modelling. In the statistic
 $$L(y, f(x))$$
 
 While the loss function measures the accuracy of a prediction after the outcome is observed. At the time we make the prediction however, the true outcome is still
-unknown, and the loss incurred is consequently a random variable $L(Y, f(x))$. The *true risk* (cost) of function $f$ is defined as the *expected loss*
+unknown, and the loss incurred is consequently a random variable $L(Y, f(X))$. The *true risk* (cost) of function $f$ is defined as the *expected loss*
 
 $$R(f) = E[L(Y, f(X))]$$
 
-The optimal/target function is now defined as 
+The **optimal function** is now defined as 
 
 $$f^{*} = \underset{f}{\arg\min} R(f)$$
 
