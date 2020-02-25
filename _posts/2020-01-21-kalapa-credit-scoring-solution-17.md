@@ -17,6 +17,7 @@ classes: wide
 ---
 
 <div class="notice--info">
+
 This was my first solution for the <a href="https://challenge.kalapa.vn/">Credit Scoring Challenge</a> hosted by <a href="https://kalapa.vn/en/home-en/">Kalapa</a> with the first prize is up to AUD$6000. 
 
 The post was originally written in Vietnamese and published on <a href="https://forum.machinelearningcoban.com/t/kalapas-credit-scoring-challenge-17-solution-21-01-0-22737-gini-score/7071"> the largest machine learning forum in Vietnam</a>. I feel honored for having more than 2.3k views and many thanks for this baseline solution.
