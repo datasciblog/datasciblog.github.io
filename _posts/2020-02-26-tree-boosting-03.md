@@ -43,6 +43,11 @@ The optimal/target function is now defined as
 
 $$ f^{*} = arg min R(f) $$
 
+and we are going to estimate this target function.
+
+Unfortunately, since we may never know the true risk $R(f)$, we need to rely on empirical estimates of risk when inferring our model.
+
+$$ \hat{R} = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
 
 
 
