@@ -194,6 +194,10 @@ where $H_m$ is the Hessian matrix at the current estimate
 
 $$Hm = \nabla_{\theta}^2 R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
+The solution to this is given by
+
+$$θm = −H_m^{−1} g_m$$.
+
 (...TO BE CONTINUED)
 
 # References
