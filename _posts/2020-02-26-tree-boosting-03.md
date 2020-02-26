@@ -102,7 +102,7 @@ $$\hat{f} = \underset{f\in\mathcal{F}}{\arg\min} \hat{R}(f).$$
 
 The perhaps most popular model class is the class of linear models
 
-$$ \mathcal{F} = \{ f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j \} $$
+$$ \mathcal{F} = \{ f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j \} .$$
 
 
 ## The Learning Problem
@@ -125,8 +125,6 @@ One notable example of a model class which leads to a discrete optimization prob
 Boosting refers to a class of learning algorithms that fit the data by combining multiple simple models. Each simple model is learnt using a *base learner* or *weak learner* which tend to have a limited predictive ability, but when selected carefully
 using a boosting algorithm, they form a relatively more accurate model. This is the meaning of "boosting".
 
-The early work on boosting focused on binary classification. After that boosting algorithms were viewed as numerical optimization techniques. This led to the development of general boosting algorithms, e.g. **gradient boosting**, that allowed for optimization of any differentiable loss function. Boosting became applicable to general regression problems and not only classification.
-
 ## AdaBoost
 
  AdaBoost is regarded as the first practical boosting algorithm for binary classification. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
@@ -135,12 +133,28 @@ The resulting model can be written
 
 $$\hat{f}(x) \equiv \hat{f}^{(M)}(x) = \sum\limits_{m=1}^M \hat{\theta}_m \hat{c}_m(x)$$
 
-where $\hat{c}_m(x) \in \\{ −1, 1 \\} $ are the weak classifiers and crisp classifications are given by $\hat{c}_m(x) = sign(\hat{f}(x))$.
+where $\hat{c}_m(x) \in \\{ −1, 1 \\} $ are the weak classifiers and hard classifications are given by $\hat{c}_m(x) = sign(\hat{f}(x))$.
 
 In the statistical view of the algorithm, it has been shown
 that AdaBoost was actually minimizing the **exponential loss function**
 
 $$L(y,f(x)) = e^{−yf(x)}.$$
+
+## Numerical Optimization
+
+The early work on boosting focused on binary classification. After that, the view of boosting algorithms as numerical optimization techniques was developed. This led to the development of general boosting algorithms, e.g. **gradient boosting**, that allowed for optimization of any differentiable loss function. Boosting became applicable to general regression problems and not only classification.
+
+### Numerical Optimization in Parameter Space
+
+Assume that we are trying to fit a model $f(x) = f(x;\theta)$ parameterized by $\theta$ then the risk of the model can be written as
+
+$$R(\theta) = E[ L(Y,f(X;\theta)) ]$$
+
+
+
+
+
+
 
 
 (...TO BE CONTINUED)
