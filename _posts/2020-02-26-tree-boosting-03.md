@@ -217,7 +217,7 @@ where $f_0$ is an initial guess and $f_1$,..., $f_M$ are the successive "steps" 
 
 ### Gradient Descent in Function Space
 
-Similar to gradient descent in parameter space, we have the direction of steepest descent of the risk by taking the negative gradient
+We have the direction of steepest descent of the risk by taking the negative gradient
 
 $$−g_m(x) = − E [ \frac{\partial L(Y,f(x))}{\partial f(x)} | X=x ]_{f(x)=f^{(m−1)}(x)}$$
 
@@ -231,10 +231,15 @@ $$f_m(x) = −\rho_m g_m(x).$$
 
 Performing updates iteratively according to this yields the gradient descent algorithm in function space.
 
-
-
 ### Newton’s Method in Function Space
 
+The Newton "step" in function space is given by
+
+$$f_m (x) = − \frac{g_m(x)}{h_m(x)}$$
+
+where $h_m(x)$ is the Hessian at the current estimate
+
+$$h_m(x) = E [ \frac{\partial^2 L(Y,f(x))}{\partial f(x)^2} | X=x ]_{f(x)=f^{(m−1)}(x)}$$
 
 
 
