@@ -120,6 +120,19 @@ Different choices of model classes and loss functions will lead to different opt
 
 One notable example of *a model class which leads to a discrete optimization problem is tree models*. Most model classes does however lead to continuous optimization problems. There are numerous methods for continuous optimization problems. Two prominent methods that will be important for tree boosting implementation however, is the method of **gradient descent** and **Newton’s method**. **Gradient boosting** and **Newton boosting** are approximate *nonparametric* versions of these optimization algorithms.
 
+# Boosting
+
+Boosting refers to a class of learning algorithms that fit the data by combining multiple simple models. Each simple model is learnt using a *base learner* or *weak learner* which tend to have a limited predictive ability, but when selected carefully
+using a boosting algorithm, they form a relatively more accurate model. This is the meaning of "boosting".
+
+## AdaBoost
+
+The early work on boosting focused on binary classification. AdaBoost is regarded as the first practical boosting algorithm. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
+
+The resulting model can be written
+
+$$\hat{f}(x) ≡ \hat{f}^{(M)}(x) = \sum\limit_{m=1}^M \hat{\theta}_m \hat(c)_m(x)$$
+
 
 (...TO BE CONTINUED)
 
