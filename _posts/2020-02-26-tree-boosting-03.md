@@ -253,6 +253,11 @@ $$f(x) = \theta_0 + \sum\limits_{m=1}^M \theta_m \phi_m(x),$$
 
 where $f_0(x) = \theta_0$ and $f_m(x) = \theta_m \phi_m(x)$ for $m = 1, ...M$.
 
+Most boosting algorithms can be seen to solve
+
+$$\\{ \hat{\theta}_m, \hat{\phi}_m \\} = \underset{ \\{ \theta_m, \phi_m}{\arg\min\\} } \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(_xi) + \theta_m \phi_m(x_i))$$
+
+either exactly or approximately at each iteration.
 
 ## AdaBoost
 
