@@ -160,7 +160,7 @@ where $\theta_m$ is the step taken at iteration $m$.
 
 The resulting estimate of $\theta$ after $M$ iterations can be written as a sum
 
-$$\theta$ \equiv \theta^{(M)} = \sum\limits_{m=0}^M \theta_m,$$
+$$\theta \equiv \theta^{(M)} = \sum\limits_{m=0}^M \theta_m,$$
 
 where $\theta_0$ is an initial guess and $\theta_1$, ..., $\theta_M$ are the successive steps taken by the optimization algorithm.
 
@@ -170,7 +170,7 @@ The difference between two algorithms is in the step $\theta_m$ they take.
 
 At each interation, Gradient Descent takes a step along the **direction** of steepest descent of the risk given by
 
-$$−g_m = −\Delta_θ R(\theta)|_{\theta=theta^{(m−1)}}.$$
+$$−g_m = −\Delta_θ R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
 To surely reduce risk however, the length of the step taken should be not too long. A popular way to determine the step length $\rho_m$ to take in the steepest descent direction is to use *line search*
 
