@@ -46,9 +46,9 @@ For regression, we assume a conditional Gaussian distribution
 
 $$[Y \| X] ~ Normal(\mu(X), \sigma^2).$$
 
-Maximum likelihood estimation with a Gaussian error assumption is however equivalent to least-squares regression.
+Maximum likelihood estimation with a Gaussian error assumption is however equivalent to least-squares regression as the loss function is equivalent to the squared error loss
 
-$$L(y, f(x)) = (y − f(x))^2.$$
+$$L(y, f(x)) = (y − f(x))^2$$
 
 ## The Risk Function
 
