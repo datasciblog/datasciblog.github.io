@@ -166,7 +166,11 @@ where $\theta_0$ is an initial guess and $\theta_1$, ..., $\theta_M$ are the suc
 
 The difference between two algorithms is in the step $\theta_m$ they take.
 
+#### Gradient Descent
 
+At each interation, Gradient Descent takes a step along the direction of steepest descent of the risk given by
+
+$$−g_m = −\delta_θ R(\theta)|_{\theta=theta^{(m−1)}}.$$
 
 
 
