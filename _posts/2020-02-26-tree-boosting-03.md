@@ -28,7 +28,7 @@ toc_icon: "cog"
 
 Supervised learning is a part of Machine Learning, which is concerned with **modelling** the relationship between a response variable $Y$ and a set of predictor variables $X$.
 
-## Explanatory Modelling vs Predictive Modelling
+## Predictive Modelling
 
 There are two kinds of modelling - **explanatory** and **predictive**. In explanatory modelling, we are interested in understanding the causal relationship between $X$ and $Y$, while predictive modelling is concerned with predicting $Y$ by using $X$ as predictors. From now on, we will concern ourself with predictive modelling.
 
@@ -49,7 +49,7 @@ The **target function** is now defined as
 
 $$f^{*} = \underset{f}{\arg\min} R(f)$$
 
-and we are going to estimate this target function.
+and the goal is to estimate this target function.
 
 ## Empirical Risk Minimization
 
@@ -59,13 +59,13 @@ $$\hat{R} = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
 
 By the strong law of large numbers we have that
 
-$$\lim_{x\to\infty} \hat{R}(x) = R(x)$$
+$$\lim_{x\to\infty} \hat{R}(x) = R(x),$$
 
 almost surely.
 
 The problem of function estimation is now to estimate the **empirical target function**
 
-$$\hat{f} = \underset{f\in\mathcal{F}}{\arg\min} \hat{R}(f)$$
+$$\hat{f} = \underset{f\in\mathcal{F}}{\arg\min} \hat{R}(f).$$
 
 
 **Empirical risk minimization** (ERM) is an induction principle which relies on minimization of the empirical risk. ERM is a criterion to select the optimal function $\hat{f}$ from a set of functions $\mathcal{F}$, also called **model class**. The perhaps most popular model class is the class of linear models
@@ -75,8 +75,9 @@ $$ \mathcal{F} = \{ f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j \} $$
 ## The Learning Algorithm
 
 The model class together with the ERM principle reduces the *learning problem* to an *optimization problem*. The computational aspect of the problem is to actually solve the
-the optimization problem defined by ERM. This is the job of the *learning algorithm*, which is essentially just an *optimization algorithm*. The learning algorithm takes a data set $\mathcal{D}$ as input and outputs a fitted model $\hat{f}$.
+the optimization problem defined by ERM. This is the job of the *learning algorithm*, which is essentially just an *optimization algorithm*. The learning algorithm takes a data set $\mathcal{D}$ as input and outputs a fitted model $\hat{f}$. Most of model classes will have some parameters $\theta$ that the learning algorithm will adjust to fit the data. In this case, in order to estimate the model, we just need to estimate the parameters $\theta$.
 
+Different choices of model classes and loss functions will lead to different optimization problems varying in dificulty and thus requiring different approaches. When the objective function is continuous with respect to $\theta$ we get a **continuous optimization problem**. When this is not the case, we have a **discrete optimization problem**.
 
 (...TO BE CONTINUED)
 
