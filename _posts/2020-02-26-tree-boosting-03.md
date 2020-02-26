@@ -193,21 +193,6 @@ using a boosting algorithm, they form a relatively more accurate model. This is 
 
 The early work on boosting focused on binary classification. After that, the view of boosting algorithms as numerical optimization techniques was developed. This led to the development of general boosting algorithms, e.g. **gradient boosting**, that allowed for optimization of any differentiable loss function. Boosting became applicable to general regression problems and not only classification.
 
-## AdaBoost
-
- AdaBoost is regarded as the first practical boosting algorithm for binary classification. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
-
-The resulting model can be written
-
-$$\hat{f}(x) \equiv \hat{f}^{(M)}(x) = \sum\limits_{m=1}^M \hat{\theta}_m \hat{c}_m(x)$$
-
-where $\hat{c}_m(x) \in \\{ −1, 1 \\} $ are the weak classifiers and hard classifications are given by $\hat{c}_m(x) = sign(\hat{f}(x))$.
-
-In the statistical view of the algorithm, it has been shown
-that AdaBoost was actually minimizing the **exponential loss function**
-
-$$L(y,f(x)) = e^{−yf(x)}.$$
-
 ## Numerical Optimization in Function Space
 
 Above, we have discussed numerical optimization in parameter space. We will now discuss numerical optimization in function space.
@@ -229,6 +214,32 @@ The resulting estimate of $f$ after $M$ iterations can be written as a sum
 $$f(x) \equiv f^{(M)}(x) = \sum\limits_{m=0}^M f_m (x),$$
 
 where $f_0$ is an initial guess and $f_1$,..., $f_M$ are the successive "steps" taken in function space.
+
+### Gradient Descent in Function Space
+
+
+
+### Newton’s Method in Function Space
+
+
+
+
+## AdaBoost
+
+ AdaBoost is regarded as the first practical boosting algorithm for binary classification. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
+
+The resulting model can be written
+
+$$\hat{f}(x) \equiv \hat{f}^{(M)}(x) = \sum\limits_{m=1}^M \hat{\theta}_m \hat{c}_m(x)$$
+
+where $\hat{c}_m(x) \in \\{ −1, 1 \\} $ are the weak classifiers and hard classifications are given by $\hat{c}_m(x) = sign(\hat{f}(x))$.
+
+In the statistical view of the algorithm, it has been shown
+that AdaBoost was actually minimizing the **exponential loss function**
+
+$$L(y,f(x)) = e^{−yf(x)}.$$
+
+
 
 (...TO BE CONTINUED)
 
