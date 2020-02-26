@@ -46,6 +46,10 @@ For regression, we assume a conditional Gaussian distribution
 
 $$[Y | X] \sim Normal(\mu(X), \sigma^2).$$
 
+The loss function based on this likelihood is
+
+$$L(y, \mu(x)) = \frac{1}{2} log 2\pi\sigma^2 + \frac{1}{2\sigma^2} (y − \mu(x))^2.$$
+
 Maximum likelihood estimation with a Gaussian error assumption is however equivalent to least-squares regression as the loss function is equivalent to the squared error loss
 
 $$L(y, f(x)) = (y − f(x))^2.$$
