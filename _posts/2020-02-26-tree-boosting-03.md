@@ -105,7 +105,7 @@ The perhaps most popular model class is the class of linear models
 $$ \mathcal{F} = \{ f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j \} .$$
 
 
-## The Learning Problem
+## The Learning Algorithm
 
 The model class together with the ERM principle reduces the *learning problem* to an *optimization problem*. The computational aspect of the problem is to actually solve the
 the optimization problem defined by ERM. This is the job of the *learning algorithm*, which is essentially just an *optimization algorithm*. 
@@ -114,35 +114,21 @@ The learning algorithm takes a data set $\mathcal{D}$ as input and outputs a fit
 
 $$\hat{f}(x) = f(x;\theta)$$
 
-## The Optimization Problem
+Common learning methods include
 
-Different choices of model classes and loss functions will lead to different optimization problems varying in dificulty and thus requiring different approaches. When the objective function is continuous with respect to $\theta$ we get a **continuous optimization problem**. When this is not the case, we have a **discrete optimization problem**. The continuous optimization problems are typically easier to solve than discrete optimization problems thus are more desirable when it comes to choose the model class and loss function.
+- The Constant
+- Linear Methods
+- Local Regression Methods
+- Basis Function Expansions
+- Adaptive Basis Function Models
+
+## The Optimization Algorithm
+
+Different choices of model classes and loss functions will lead to different optimization problems varying in dificulty and thus requiring different approaches. The simplest problems yield analytic solutions. Most problems do however require *numerical methods*.
+
+When the objective function is continuous with respect to $\theta$ we get a **continuous optimization problem**. When this is not the case, we have a **discrete optimization problem**. The continuous optimization problems are typically easier to solve than discrete optimization problems thus are more desirable when it comes to choose the model class and loss function.
 
 One notable example of a model class which leads to a discrete optimization problem is tree models. Most model classes does however lead to continuous optimization problems. There are numerous methods for continuous optimization problems. Two prominent methods that will be important for tree boosting implementation however, is the method of **gradient descent** and **Newton’s method**. **Gradient boosting** and **Newton boosting** are approximate *nonparametric* versions of these optimization algorithms.
-
-# Boosting
-
-Boosting refers to a class of learning algorithms that fit the data by combining multiple simple models. Each simple model is learnt using a *base learner* or *weak learner* which tend to have a limited predictive ability, but when selected carefully
-using a boosting algorithm, they form a relatively more accurate model. This is the meaning of "boosting".
-
-## AdaBoost
-
- AdaBoost is regarded as the first practical boosting algorithm for binary classification. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
-
-The resulting model can be written
-
-$$\hat{f}(x) \equiv \hat{f}^{(M)}(x) = \sum\limits_{m=1}^M \hat{\theta}_m \hat{c}_m(x)$$
-
-where $\hat{c}_m(x) \in \\{ −1, 1 \\} $ are the weak classifiers and hard classifications are given by $\hat{c}_m(x) = sign(\hat{f}(x))$.
-
-In the statistical view of the algorithm, it has been shown
-that AdaBoost was actually minimizing the **exponential loss function**
-
-$$L(y,f(x)) = e^{−yf(x)}.$$
-
-## Numerical Optimization
-
-The early work on boosting focused on binary classification. After that, the view of boosting algorithms as numerical optimization techniques was developed. This led to the development of general boosting algorithms, e.g. **gradient boosting**, that allowed for optimization of any differentiable loss function. Boosting became applicable to general regression problems and not only classification.
 
 ### Numerical Optimization in Parameter Space
 
@@ -166,7 +152,7 @@ where $\theta_0$ is an initial guess and $\theta_1$, ..., $\theta_M$ are the suc
 
 The difference between two algorithms is in the step $\theta_m$ they take.
 
-#### Gradient Descent
+### Gradient Descent
 
 At each interation, Gradient Descent takes a step along the **direction** of steepest descent of the risk given by
 
@@ -180,7 +166,7 @@ The step taken at iteration $m$ can thus be written
 
 $$\theta_m = −\rho_m g_m.$$
 
-#### Newton’s Method
+### Newton’s Method
 
 Unlike Gradient Descent, Newton’s method determines both the step direction and step length at the same time. Newton’s method can be motivated as a way to approximately solve
 
@@ -199,6 +185,31 @@ The solution to this is given by
 $$\theta_m = −H_m^{−1} g_m.$$
 
 From the discussion above, we can see that Newton’s method is a second-order method, while gradient descent is a first-order method.
+
+# Boosting
+
+Boosting refers to a class of learning algorithms that fit the data by combining multiple simple models. Each simple model is learnt using a *base learner* or *weak learner* which tend to have a limited predictive ability, but when selected carefully
+using a boosting algorithm, they form a relatively more accurate model. This is the meaning of "boosting".
+
+The early work on boosting focused on binary classification. After that, the view of boosting algorithms as numerical optimization techniques was developed. This led to the development of general boosting algorithms, e.g. **gradient boosting**, that allowed for optimization of any differentiable loss function. Boosting became applicable to general regression problems and not only classification.
+
+## AdaBoost
+
+ AdaBoost is regarded as the first practical boosting algorithm for binary classification. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
+
+The resulting model can be written
+
+$$\hat{f}(x) \equiv \hat{f}^{(M)}(x) = \sum\limits_{m=1}^M \hat{\theta}_m \hat{c}_m(x)$$
+
+where $\hat{c}_m(x) \in \\{ −1, 1 \\} $ are the weak classifiers and hard classifications are given by $\hat{c}_m(x) = sign(\hat{f}(x))$.
+
+In the statistical view of the algorithm, it has been shown
+that AdaBoost was actually minimizing the **exponential loss function**
+
+$$L(y,f(x)) = e^{−yf(x)}.$$
+
+
+
 
 (...TO BE CONTINUED)
 
