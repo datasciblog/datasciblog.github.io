@@ -54,7 +54,7 @@ Maximum likelihood estimation with a Gaussian error assumption is however equiva
 
 $$L(y, f(x)) = (y − f(x))^2.$$
 
-For **binary classification**, the Bernoulli/binomial distribution is useful. Letting $\mathcal{Y} = \left{ 0, 1 \right} $, we can assume
+For **binary classification**, the Bernoulli/binomial distribution is useful. Letting \( \mathcal{Y} = \{ 0, 1 \} \), we can assume
 
 $$[Y |X] \sim Bernoulli(p(X)).$$
 
