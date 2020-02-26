@@ -172,9 +172,9 @@ At each interation, Gradient Descent takes a step along the **direction** of ste
 
 $$−g_m = −\Delta_θ R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
-To surely reduce risk however, the length of the step taken should be not too long. A popular way to determine the step length $\rho_m$ to take in the steepest descent direction is to use *line search*
+To surely reduce risk however, the length of the step taken should be not too long. A popular way to determine the **step length** (aka learning rate) $\rho_m$ to take in the steepest descent direction is to use *line search*
 
-$$\rho_m = \underset{\rho}{\arg\min} R(\theta^{(m-1)} - \rho g_m.$$
+$$\rho_m = \underset{\rho}{\arg\min} R(\theta^{(m-1)} - \rho g_m).$$
 
 The step taken at iteration $m$ can thus be written
 
