@@ -7,7 +7,7 @@ excerpt: ""
 categories: 
 - Machine Learning
 tags:
-- tree-based
+- tree boosting
 - decision tree
 - bootstrap
 - bagging

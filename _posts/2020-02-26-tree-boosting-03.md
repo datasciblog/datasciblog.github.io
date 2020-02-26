@@ -7,7 +7,7 @@ excerpt: ""
 categories: 
 - Machine Learning
 tags:
-- tree-based
+- tree boosting
 - boosting
 - ensemble
 - algorithm
@@ -20,7 +20,7 @@ toc_icon: "cog"
 
 # Introduction
 
-- In this part of the series Tree Boosting, we have already talked about the basics of decision trees which are used as base leaners of tree boosting algorithms. We also discuss several approaches of building ensembling models from decision trees such as bagging, random forests and boosting.
+- In this part of the Tree Boosting series, we have already talked about the basics of decision trees which are used as base leaners of tree boosting algorithms. We also discuss several approaches of building ensembling models from decision trees such as bagging, random forests and boosting.
 
 - In this post, we will dive deep into boosting algorithms. The content of this post was extracted from a one-hundred-page paper named *[Tree Boosting With XGBoost - Why Does XGBoost Win "Every" Machine Learning Competition?](https://www.semanticscholar.org/paper/Tree-Boosting-With-XGBoost-Why-Does-XGBoost-Win-Nielsen/04e182aa6d36f643a1aea18f3b9384a74538e6a0)*
 
