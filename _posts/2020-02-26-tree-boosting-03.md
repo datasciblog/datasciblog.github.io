@@ -82,13 +82,13 @@ the optimization problem defined by ERM. This is the job of the *learning algori
 
 The learning algorithm takes a data set $\mathcal{D}$ as input and outputs a fitted model $\hat{f}$. Most of model classes will have some parameters $\theta$ that the learning algorithm will adjust to fit the data. In this case, in order to estimate the model we just need to estimate the parameters $\theta$.
 
-$$f(x) = f(x;\theta)$$
+$$\hat{f}(x) = f(x;\theta)$$
 
 ## The Optimization Problem
 
 Different choices of model classes and loss functions will lead to different optimization problems varying in dificulty and thus requiring different approaches. When the objective function is continuous with respect to $\theta$ we get a **continuous optimization problem**. When this is not the case, we have a **discrete optimization problem**. The continuous optimization problems are typically easier to solve than discrete optimization problems thus are more desirable when it comes to choose the model class and loss function.
 
-One notable example of *a model class which leads to a discrete optimization problem is tree models*. Most model classes does however lead to continuous optimization problems. There are numerous methods for continuous optimization problems. Two prominent methods that will be important for tree boosting implementation however, is the method of **gradient descent** and **Newton’s method**.
+One notable example of *a model class which leads to a discrete optimization problem is tree models*. Most model classes does however lead to continuous optimization problems. There are numerous methods for continuous optimization problems. Two prominent methods that will be important for tree boosting implementation however, is the method of **gradient descent** and **Newton’s method**. **Gradient boosting** and **Newton boosting** are approximate *nonparametric* versions of these optimization algorithms.
 
 
 (...TO BE CONTINUED)
