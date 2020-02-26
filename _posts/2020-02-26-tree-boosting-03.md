@@ -131,7 +131,7 @@ The early work on boosting focused on binary classification where the response i
 
 The resulting model can be written
 
-$$\hat{f}(x) ≡ \hat{f}^{(M)}(x) = \sum\limits_{m=1}^M \hat{\theta}_m \hat(c)_m(x)$$
+$$\hat{f}(x) \equiv \hat{f}^{(M)}(x) = \sum\limits_{m=1}^M \hat{\theta}_m \hat(c)_m(x)$$
 
 where $\hat(c)_m(x) \in \{ −1, 1 \}$ are the weak classifiers and crisp classifications are given by $\hat(c)_m(x) = sign(\hat{f}(x))$.
 
