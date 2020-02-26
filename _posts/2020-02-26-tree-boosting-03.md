@@ -152,7 +152,7 @@ where $\theta_0$ is an initial guess and $\theta_1$, ..., $\theta_M$ are the suc
 
 The difference between two algorithms is in the step $\theta_m$ they take.
 
-### Gradient Descent
+#### Gradient Descent
 
 At each interation, Gradient Descent takes a step along the **direction** of steepest descent of the risk given by
 
@@ -166,7 +166,7 @@ The step taken at iteration $m$ can thus be written
 
 $$\theta_m = −\rho_m g_m.$$
 
-### Newton’s Method
+#### Newton’s Method
 
 Unlike Gradient Descent, Newton’s method determines both the step direction and step length at the same time. Newton’s method can be motivated as a way to approximately solve
 
@@ -208,8 +208,27 @@ that AdaBoost was actually minimizing the **exponential loss function**
 
 $$L(y,f(x)) = e^{−yf(x)}.$$
 
+## Numerical Optimization in Function Space
 
+Above, we have discussed numerical optimization in parameter space. We will now discuss numerical optimization in function space.
 
+Note that minimizing
+
+$$R(f) = E[L(Y, f(X))]$$
+
+is equivalent to minimizing
+
+$$R(f(x)) = E[L(Y, f(x))|X = x]$$
+
+At a current estimate $f^{(m−1)}$, the "step" $f_m$ is taken in function space to obtain $f^{(m)}$. Analogously to parameter optimization update we can write the update at iteration $m$ as
+
+$$f^{(m)}(x) = f^{(m−1)}(x) + f_m(x)$$
+
+The resulting estimate of $f$ after $M$ iterations can be written as a sum
+
+$$f(x) \equiv f^{(M)}(x) = \sum\limits_{m=0}^M f_m (x),$$
+
+where $f_0$ is an initial guess and $f_1$,..., $f_M$ are the successive "steps" taken in function space.
 
 (...TO BE CONTINUED)
 
