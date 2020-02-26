@@ -30,12 +30,15 @@ toc_icon: "cog"
 
 Supervised learning is a part of Machine Learning, which is concerned with **modelling** the relationship between a response variable $Y$ and a set of predictor variables $X$.
 
-There are two kinds of modelling - **explanatory** and **predictive**. In explanatory modelling, we are interested in understanding the causal relationship between $X$ and $Y$, while predictive modelling is concerned with predicting $Y$ using $X$ as predictors.
+There are two kinds of modelling - **explanatory** and **predictive**. In explanatory modelling, we are interested in understanding the causal relationship between $X$ and $Y$, while predictive modelling is concerned with predicting $Y$ using $X$ as predictors. From now on, we will concern ourself with predictive modelling.
 
-## Loss Function and Risk Function
-From now on, we will concern ourself with predictive modelling. In the statistical view, predictive modelling can be viewed as *a problem of function estimation*. The prediction accuracy of the function is measured using a **loss function**, which measures the discrepancy between a prediction and the true outcome.
+## The Loss Function
+
+ In the statistical view, predictive modelling can be viewed as *a problem of function estimation*. The prediction accuracy of the function is measured using a **loss function**, which measures the discrepancy between a prediction and the true outcome.
 
 $$L(y, f(x))$$
+
+## The Risk Function
 
 While the loss function measures the accuracy of a prediction after the outcome is observed. At the time we make the prediction however, the true outcome is still
 unknown, and the loss incurred is consequently a random variable $L(Y, f(X))$. The **true risk** of function $f$ is defined as the *expected loss*
@@ -69,8 +72,10 @@ $$\hat{f} = \underset{f}{\arg\min} \hat{R}(f)$$
 
 $$ \mathcal{F} = \{ f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j \} $$
 
-The model class together with the ERM principle reduces the learning problem to an **optimization problem**. The computational aspect of the problem is to actually solve the
-the optimization problem defined by ERM. This is the job of the **learning algorithm**, which is essentially just an **optimization algorithm**. The learning algorithm takes a data set \mathcal{D} as input and outputs a fitted model \hat{f}.
+## The Learning Algorithm
+
+The model class together with the ERM principle reduces the *learning problem* to an *optimization problem*. The computational aspect of the problem is to actually solve the
+the optimization problem defined by ERM. This is the job of the *learning algorithm*, which is essentially just an *optimization algorithm*. The learning algorithm takes a data set \mathcal{D} as input and outputs a fitted model \hat{f}.
 
 
 (...TO BE CONTINUED)
