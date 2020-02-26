@@ -154,7 +154,7 @@ The difference between two algorithms is in the step $\theta_m$ they take.
 
 ### Gradient Descent
 
-At each interation, Gradient Descent takes a step along the **direction** of steepest descent of the risk given by
+At each interation, gradient descent takes a step along the **direction** of steepest descent of the risk given by
 
 $$−g_m = −\nabla_\theta R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
@@ -168,7 +168,7 @@ $$\theta_m = −\rho_m g_m.$$
 
 ### Newton’s Method
 
-Unlike Gradient Descent, Newton’s method determines both the step direction and step length at the same time. Newton’s method can be motivated as a way to approximately solve
+Unlike gradient descent, Newton’s method determines both the step direction and step length at the same time. Newton’s method can be motivated as a way to approximately solve
 
 $$\nabla_{\theta_m} R(\theta^{(m−1)} + \theta_m) = 0$$
 
@@ -217,7 +217,9 @@ where $f_0$ is an initial guess and $f_1$,..., $f_M$ are the successive "steps" 
 
 ### Gradient Descent in Function Space
 
+Similar to gradient descent in parameter space, we have the direction of steepest descent of the risk by taking the negative gradient
 
+$$−g_m(x) = − E [ \frac{\partial L(Y,f(x))}{\partial f(x)} | X=x ]_{f(x)=f^{(m−1)}(x)}$$
 
 ### Newton’s Method in Function Space
 
