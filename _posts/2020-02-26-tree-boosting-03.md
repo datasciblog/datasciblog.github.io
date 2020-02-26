@@ -127,12 +127,18 @@ using a boosting algorithm, they form a relatively more accurate model. This is 
 
 ## AdaBoost
 
-The early work on boosting focused on binary classification. AdaBoost is regarded as the first practical boosting algorithm. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
+The early work on boosting focused on binary classification where the response is taken to be $y \in \{ −1, 1 \}$ . AdaBoost is regarded as the first practical boosting algorithm. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
 
 The resulting model can be written
 
 $$\hat{f}(x) ≡ \hat{f}^{(M)}(x) = \sum\limit_{m=1}^M \hat{\theta}_m \hat(c)_m(x)$$
 
+where $\hat(c)_m(x) \in \{ −1, 1 \}$ are the weak classifiers and crisp classifications are given by $\hat(c)_m(x) = sign(\hat{f}(x))$.
+
+In the statistical view of the algorithm, it has been shown
+that AdaBoost was actually minimizing the **exponential loss function**
+
+$$L(y,f(x)) = e^{(−yf(x))}.$$
 
 (...TO BE CONTINUED)
 
