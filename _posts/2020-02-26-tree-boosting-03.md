@@ -54,7 +54,7 @@ Maximum likelihood estimation with a Gaussian error assumption is however equiva
 
 $$L(y, f(x)) = (y − f(x))^2.$$
 
-For **binary classification**, the Bernoulli distribution is useful. Letting $ \mathcal{Y} = {\{} 0, 1 {\}} $, we can assume
+For **binary classification**, the Bernoulli distribution is useful. Letting $ \mathcal{Y} = \\{ 0, 1 \\} $, we can assume
 
 $$[Y |X] \sim Bernoulli(p(X)).$$
 
@@ -127,13 +127,13 @@ using a boosting algorithm, they form a relatively more accurate model. This is 
 
 ## AdaBoost
 
-The early work on boosting focused on binary classification where the response is taken to be $y\in\{−1, 1\}$ . AdaBoost is regarded as the first practical boosting algorithm. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
+The early work on boosting focused on binary classification where the response is taken to be $y \in \\{−1, 1 \\} $ . AdaBoost is regarded as the first practical boosting algorithm. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
 
 The resulting model can be written
 
 $$\hat{f}(x) \equiv \hat{f}^{(M)}(x) = \sum\limits_{m=1}^M \hat{\theta}_m \hat{c}_m(x)$$
 
-where $\hat{c}_m(x) \in \{ −1, 1 \} $ are the weak classifiers and crisp classifications are given by $\hat{c}_m(x) = sign(\hat{f}(x))$.
+where $\hat{c}_m(x) \in \\{ −1, 1 \\} $ are the weak classifiers and crisp classifications are given by $\hat{c}_m(x) = sign(\hat{f}(x))$.
 
 In the statistical view of the algorithm, it has been shown
 that AdaBoost was actually minimizing the **exponential loss function**
