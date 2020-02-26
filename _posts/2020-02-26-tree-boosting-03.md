@@ -225,7 +225,7 @@ The step length $\rho_m$ to take in the steepest descent direction can be determ
 
 $$\rho_m = \underset{\rho}{\arg\min} E[L(Y, f^{(m−1)}(X) − \rho g_m(X)].$$
 
-The "step" taken at each iteration m is then given by 
+The "step" taken at each iteration $m$ is then given by 
 
 $$f_m(x) = −\rho_m g_m(x).$$
 
@@ -239,8 +239,7 @@ $$f_m (x) = − \frac{g_m(x)}{h_m(x)}$$
 
 where $h_m(x)$ is the Hessian at the current estimate
 
-$$h_m(x) = E [ \frac{\partial^2 L(Y,f(x))}{\partial f(x)^2} | X=x ]_{f(x)=f^{(m−1)}(x)}$$
-
+$$h_m(x) = E [ \frac{\partial^2 L(Y,f(x))}{\partial f(x)^2} | X=x ]_{f(x)=f^{(m−1)}(x)}.$$
 
 
 ## AdaBoost
