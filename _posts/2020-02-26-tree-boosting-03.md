@@ -241,6 +241,18 @@ where $h_m(x)$ is the Hessian at the current estimate
 
 $$h_m(x) = E \left[ \frac{\partial^2 L(Y,f(x))}{\partial f(x)^2} | X=x \right]_{f(x)=f^{(m−1)}(x)}.$$
 
+## Boosting Algorithms
+
+As seen from the previous sections, boosting fits ensemble models of the kind
+
+$$f(x) =  \sum\limits_{m=1}^M f_m(x).$$
+
+These can be rewritten as adaptive basis function models
+
+$$f(x) = \theta_0 + \sum\limits_{m=1}^M \theta_m \phi_m(x),$$
+
+where $f_0(x) = \theta_0$ and $f_m(x) = \theta_m \phi_m(x)$ for $m = 1, ...M$.
+
 
 ## AdaBoost
 
