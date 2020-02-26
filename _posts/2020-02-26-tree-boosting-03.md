@@ -42,7 +42,7 @@ In theory we can use any loss function that reflect discrepancy between the obse
 
 ### Likelihood-based Loss Functions
 
-For regression, we assume a conditional Gaussian distribution
+For **regression**, we assume a conditional Gaussian distribution
 
 $$[Y | X] \sim Normal(\mu(X), \sigma^2).$$
 
@@ -53,6 +53,16 @@ $$L(y, \mu(x)) = \frac{1}{2} log 2\pi\sigma^2 + \frac{1}{2\sigma^2} (y − \mu(x
 Maximum likelihood estimation with a Gaussian error assumption is however equivalent to least-squares regression as the loss function is equivalent to the squared error loss
 
 $$L(y, f(x)) = (y − f(x))^2.$$
+
+For **binary classification**, the Bernoulli/binomial distribution is useful. Letting $Y = \{ 0, 1 \}$, we can assume
+
+$$[Y |X] \sim Bernoulli(p(X)).$$
+
+The loss function based on this likelihood is
+
+$$L(y, p(x)) = −y log(p(x)) − (1 − y) log(1 − p(x))$$
+
+The loss function based on the Bernoulli likelihood is also referred to as the log-loss, the cross-entropy or the Kullback-Leibler information
 
 ## The Risk Function
 
