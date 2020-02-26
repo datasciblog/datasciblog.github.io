@@ -42,7 +42,13 @@ In theory we can use any loss function that reflect discrepancy between the obse
 
 ### Likelihood-based Loss Functions
 
+For regression, we assume a conditional Gaussian distribution
 
+$$[Y \| X] ~ Normal(\mu(X), \sigma^2).$$
+
+Maximum likelihood estimation with a Gaussian error assumption is however equivalent to least-squares regression.
+
+$$L(y, f(x)) = (y − f(x))^2.$$
 
 ## The Risk Function
 
