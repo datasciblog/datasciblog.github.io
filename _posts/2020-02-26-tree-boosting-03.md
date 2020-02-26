@@ -26,10 +26,13 @@ toc_icon: "cog"
 
 # Supervised Learning
 
+## Explanatory Modelling and Preditive Modelling
+
 Supervised learning is a part of Machine Learning, which is concerned with **modelling** the relationship between a response variable $Y$ and a set of predictor variables $X$.
 
 There are two kinds of modelling - **explanatory** and **predictive**. In explanatory modelling, we are interested in understanding the causal relationship between $X$ and $Y$, while predictive modelling is concerned with predicting $Y$ using $X$ as predictors.
 
+## Loss Function and Risk Function
 From now on, we will concern ourself with predictive modelling. In the statistical view, predictive modelling can be viewed as *a problem of function estimation*. The prediction accuracy of the function is measured using a **loss function**, which measures the discrepancy between a prediction and the true outcome.
 
 $$L(y, f(x))$$
@@ -44,6 +47,8 @@ The **target function** is now defined as
 $$f^{*} = \underset{f}{\arg\min} R(f)$$
 
 and we are going to estimate this target function.
+
+## Empirical Risk Minimization
 
 Unfortunately, since we may never know the true risk $R(f)$, we need to rely on the **empirical risk** when inferring our model.
 
