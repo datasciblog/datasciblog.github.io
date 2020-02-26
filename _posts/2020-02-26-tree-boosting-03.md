@@ -143,7 +143,6 @@ that AdaBoost was actually minimizing the **exponential loss function**
 $$L(y,f(x)) = e^{−yf(x)}.$$
 
 
-
 (...TO BE CONTINUED)
 
 # References
