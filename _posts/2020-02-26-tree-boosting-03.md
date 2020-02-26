@@ -30,7 +30,7 @@ Supervised learning is a part of Machine Learning, which is concerned with **mod
 
 ## Explanatory Modelling vs Predictive Modelling
 
-There are two kinds of modelling - **explanatory** and **predictive**. In explanatory modelling, we are interested in understanding the causal relationship between $X$ and $Y$, while predictive modelling is concerned with predicting $Y$ using $X$ as predictors. From now on, we will concern ourself with predictive modelling.
+There are two kinds of modelling - **explanatory** and **predictive**. In explanatory modelling, we are interested in understanding the causal relationship between $X$ and $Y$, while predictive modelling is concerned with predicting $Y$ by using $X$ as predictors. From now on, we will concern ourself with predictive modelling.
 
 ## The Loss Function
 
@@ -65,7 +65,7 @@ almost surely.
 
 The problem of function estimation is now to estimate the **empirical target function**
 
-$$\hat{f} = \underset{f}{\arg\min} \hat{R}(f)$$
+$$\hat{f} = \underset{f\in\mathcal{F}}{\arg\min} \hat{R}(f)$$
 
 
 **Empirical risk minimization** (ERM) is an induction principle which relies on minimization of the empirical risk. ERM is a criterion to select the optimal function $\hat{f}$ from a set of functions $\mathcal{F}$, also called **model class**. The perhaps most popular model class is the class of linear models
