@@ -148,10 +148,23 @@ The early work on boosting focused on binary classification. After that, the vie
 
 Assume that we are trying to fit a model $f(x) = f(x;\theta)$ parameterized by $\theta$ then the risk of the model can be written as
 
-$$R(\theta) = E[ L(Y,f(X;\theta)) ]$$
+$$R(\theta) = E[L(Y,f(X;\theta))]$$
 
+Given that $R(\theta)$ is differentiable with respect to $\theta$ we can estimate $\theta$ using a numerical optimization algorithm such as **gradient descent** or **Newton’s method**.
 
+For both algorithms, at iteration $m$, the estimate of $\theta$ is updated according to
 
+$$\theta^{(m)} = \theta^{(m-1)} + \theta_m$$
+
+where $\theta_m$ is the step taken at iteration $m$.
+
+The resulting estimate of $\theta$ after $M$ iterations can be written as a sum
+
+$$\theta$ \equiv \theta^{(M)} = \sum\limits_{m=0}^M \theta_m,$$
+
+where $\theta_0$ is an initial guess and $\theta_1$, ..., $\theta_M$ are the successive steps taken by the optimization algorithm.
+
+The difference between two algorithms is in the step $\theta_m$ they take.
 
 
 
