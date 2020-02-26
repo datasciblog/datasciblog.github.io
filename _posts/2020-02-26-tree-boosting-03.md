@@ -152,7 +152,7 @@ where $\theta_0$ is an initial guess and $\theta_1$, ..., $\theta_M$ are the suc
 
 The difference between two algorithms is in the step $\theta_m$ they take.
 
-#### Gradient Descent
+### Gradient Descent
 
 At each interation, Gradient Descent takes a step along the **direction** of steepest descent of the risk given by
 
@@ -166,7 +166,7 @@ The step taken at iteration $m$ can thus be written
 
 $$\theta_m = −\rho_m g_m.$$
 
-#### Newton’s Method
+### Newton’s Method
 
 Unlike Gradient Descent, Newton’s method determines both the step direction and step length at the same time. Newton’s method can be motivated as a way to approximately solve
 
