@@ -82,6 +82,8 @@ the optimization problem defined by ERM. This is the job of the *learning algori
 
 The learning algorithm takes a data set $\mathcal{D}$ as input and outputs a fitted model $\hat{f}$. Most of model classes will have some parameters $\theta$ that the learning algorithm will adjust to fit the data. In this case, in order to estimate the model we just need to estimate the parameters $\theta$.
 
+$$f(x) = f(x;\theta)$$
+
 ## The Optimization Problem
 
 Different choices of model classes and loss functions will lead to different optimization problems varying in dificulty and thus requiring different approaches. When the objective function is continuous with respect to $\theta$ we get a **continuous optimization problem**. When this is not the case, we have a **discrete optimization problem**. The continuous optimization problems are typically easier to solve than discrete optimization problems thus are more desirable when it comes to choose the model class and loss function.
