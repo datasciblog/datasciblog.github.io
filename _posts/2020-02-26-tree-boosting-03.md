@@ -44,7 +44,7 @@ In theory we can use any loss function that reflect discrepancy between the obse
 
 For regression, we assume a conditional Gaussian distribution
 
-$$[Y \| X] \distas Normal(\mu(X), \sigma^2).$$
+$$[Y | X] \distas Normal(\mu(X), \sigma^2).$$
 
 Maximum likelihood estimation with a Gaussian error assumption is however equivalent to least-squares regression as the loss function is equivalent to the squared error loss
 
