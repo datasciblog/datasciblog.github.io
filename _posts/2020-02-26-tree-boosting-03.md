@@ -219,7 +219,7 @@ where $f_0$ is an initial guess and $f_1$,..., $f_M$ are the successive "steps" 
 
 Similar to the case of gradient descent in parameter space, we have the direction of steepest descent of the risk by taking the negative gradient
 
-$$−g_m(x) = − E [ \frac{\partial L(Y,f(x))}{\partial f(x)} | X=x ]_{f(x)=f^{(m−1)}(x)}$$
+$$−g_m(x) = − E \left[ \frac{\partial L(Y,f(x))}{\partial f(x)} | X=x \right]_{f(x)=f^{(m−1)}(x)}$$
 
 The step length $\rho_m$ to take in the steepest descent direction can be determined using line search
 
