@@ -60,9 +60,11 @@ The problem of function estimation is now to estimate the **empirical target fun
 $$\hat{f} = \underset{f}{\arg\min} \hat{R}(f)$$
 
 
-**Empirical risk minimization** (ERM) is an induction principle which relies on minimization of the empirical risk. ERM is a criterion to select the optimal function $\hat{f}$ from a set of functions $\mathcal{F}$. The choice of $\mathcal{F}$ is of major importance.
+**Empirical risk minimization** (ERM) is an induction principle which relies on minimization of the empirical risk. ERM is a criterion to select the optimal function $\hat{f}$ from a set of functions $\mathcal{F}$, also called as **model class**. The choice of $\mathcal{F}$ is of major importance.
 
+The perhaps most popular model class is the class of linear models
 
+$$\mathcal{F} = {f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j}$$.
 
 
 (...TO BE CONTINUED)
