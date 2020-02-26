@@ -38,6 +38,12 @@ There are two kinds of modelling - **explanatory** and **predictive**. In explan
 
 $$L(y, f(x))$$
 
+In theory we can use any loss function that reflect discrepancy between the observations and the predictions. In practice however, there are a few popular loss functions which tend to be used for a wide variety of problems. Many of the loss functions used in practice are **likelihood-based**, i.e. negative log-likelihoods.
+
+### Likelihood-based Loss Functions
+
+
+
 ## The Risk Function
 
 While the loss function measures the accuracy of a prediction after the outcome is observed. At the time we make the prediction however, the true outcome is still
