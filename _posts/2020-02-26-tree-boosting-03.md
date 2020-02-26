@@ -184,11 +184,11 @@ $$\theta_m = −\rho_m g_m.$$
 
 Unlike Gradient Descent, Newton’s method determines both the step direction and step length at the same time. Newton’s method can be motivated as a way to approximately solve
 
-$$\nabla_{θ_m} R(\theta^{(m−1)} + θ_m) = 0$$
+$$\nabla_{\theta_m} R(\theta^{(m−1)} + \theta_m) = 0$$
 
 By doing a second-order Taylor expansion, we get
 
-$$\nabla_{θ_m} R(\theta^{(m−1)} + θ_m) \approx g_m + H_m \theta_m = 0$$
+$$\nabla_{\theta_m} R(\theta^{(m−1)} + \theta_m) \approx g_m + H_m \theta_m = 0$$
 
 where $H_m$ is the Hessian matrix at the current estimate
 
@@ -196,7 +196,7 @@ $$H_m = \nabla_{\theta}^2 R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
 The solution to this is given by
 
-$$θm = −H_m^{−1} g_m.$$
+$$\theta_m = −H_m^{−1} g_m.$$
 
 From the discussion above, we can see that Newton’s method is a second-order method, while gradient descent is a first-order method.
 
