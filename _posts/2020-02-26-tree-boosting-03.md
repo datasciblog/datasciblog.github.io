@@ -170,7 +170,7 @@ The difference between two algorithms is in the step $\theta_m$ they take.
 
 At each interation, Gradient Descent takes a step along the **direction** of steepest descent of the risk given by
 
-$$−g_m = −\nabla_θ R(\theta)|_{\theta=\theta^{(m−1)}}.$$
+$$−g_m = −\nabla_\theta R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
 To surely reduce risk however, the length of the step taken should be not too long. A popular way to determine the **step length** (aka learning rate) $\rho_m$ to take in the steepest descent direction is to use *line search*
 
@@ -180,7 +180,19 @@ The step taken at iteration $m$ can thus be written
 
 $$\theta_m = −\rho_m g_m.$$
 
+#### Newton’s Method
 
+Unlike Gradient Descent, Newton’s method determines both the step direction and step length at the same time. Newton’s method can be motivated as a way to approximately solve
+
+$$\nabla_{θ_m} R(\theta^{(m−1)} + θ_m) = 0$$
+
+By doing a second-order Taylor expansion, we get
+
+$$\nabla_{θ_m} R(\theta^{(m−1)} + θ_m) \approx g_m + H_m \theta_m = 0$$
+
+where $H_m$ is the Hessian matrix at the current estimate
+
+$$Hm = \nabla_{\theta}^2 R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
 (...TO BE CONTINUED)
 
