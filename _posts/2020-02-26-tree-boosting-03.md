@@ -64,7 +64,7 @@ $$\hat{f} = \underset{f}{\arg\min} \hat{R}(f)$$
 
 The perhaps most popular model class is the class of linear models
 
-$$ \mathcal{F} = \{ f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j \} $$.
+$$ \mathcal{F} = \{ f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j \} $$
 
 
 (...TO BE CONTINUED)
