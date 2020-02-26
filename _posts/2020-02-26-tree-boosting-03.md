@@ -62,9 +62,9 @@ The loss function based on this likelihood is
 
 $$L(y, p(x)) = −y log(p(x)) − (1 − y) log(1 − p(x))$$
 
-while 
+with 
 
-$$p∗(x) = Prob[Y = 1|X = x].$$
+$$p(x) = Prob[Y = 1|X = x].$$
 
 The loss function based on the Bernoulli likelihood is also referred to as the **log-loss**, the **cross-entropy** or the Kullback-Leibler information
 
