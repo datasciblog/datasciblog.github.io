@@ -75,7 +75,7 @@ $$ \mathcal{F} = \{ f : f(x) = \theta_0 + \sum\limits_{j=1}^p \theta_j x_j \} $$
 ## The Learning Algorithm
 
 The model class together with the ERM principle reduces the *learning problem* to an *optimization problem*. The computational aspect of the problem is to actually solve the
-the optimization problem defined by ERM. This is the job of the *learning algorithm*, which is essentially just an *optimization algorithm*. The learning algorithm takes a data set $\mathcal{D}$ as input and outputs a fitted model $\hat{f}$. Most of model classes will have some parameters $\theta$ that the learning algorithm will adjust to fit the data. In this case, in order to estimate the model, we just need to estimate the parameters $\theta$.
+the optimization problem defined by ERM. This is the job of the *learning algorithm*, which is essentially just an *optimization algorithm*. The learning algorithm takes a data set $\mathcal{D}$ as input and outputs a fitted model $\hat{f}$. Most of model classes will have some parameters $\theta$ that the learning algorithm will adjust to fit the data. In this case, in order to estimate the model we just need to estimate the parameters $\theta$.
 
 ## The Optimization Problem
 
