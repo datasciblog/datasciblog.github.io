@@ -138,7 +138,7 @@ where $\hat{c}_m(x) \in \{ −1, 1 \} $ are the weak classifiers and crisp class
 In the statistical view of the algorithm, it has been shown
 that AdaBoost was actually minimizing the **exponential loss function**
 
-$$L(y,f(x)) = e^{(−yf(x))}.$$
+$$L(y,f(x)) = e^{−yf(x)}.$$
 
 
 
