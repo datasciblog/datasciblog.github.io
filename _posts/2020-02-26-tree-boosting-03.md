@@ -221,6 +221,18 @@ Similar to gradient descent in parameter space, we have the direction of steepes
 
 $$−g_m(x) = − E [ \frac{\partial L(Y,f(x))}{\partial f(x)} | X=x ]_{f(x)=f^{(m−1)}(x)}$$
 
+The step length $\rho_m$ to take in the steepest descent direction can be determined using line search
+
+$$\rho_m = \underset{\rho}{\arg\min} E[L(Y, f^{(m−1)}(X) − \rho g_m(X)].$$
+
+The "step" taken at each iteration m is then given by 
+
+$$f_m(x) = −\rho_m g_m(x).$$
+
+Performing updates iteratively according to this yields the gradient descent algorithm in function space.
+
+
+
 ### Newton’s Method in Function Space
 
 
