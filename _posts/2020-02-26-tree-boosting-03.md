@@ -192,7 +192,7 @@ $$\nabla_{θ_m} R(\theta^{(m−1)} + θ_m) \approx g_m + H_m \theta_m = 0$$
 
 where $H_m$ is the Hessian matrix at the current estimate
 
-$$Hm = \nabla_{\theta}^2 R(\theta)|_{\theta=\theta^{(m−1)}}.$$
+$$H_m = \nabla_{\theta}^2 R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
 The solution to this is given by
 
