@@ -127,7 +127,7 @@ using a boosting algorithm, they form a relatively more accurate model. This is 
 
 ## AdaBoost
 
-The early work on boosting focused on binary classification where the response is taken to be $y \in \{ −1, 1 \} $ . AdaBoost is regarded as the first practical boosting algorithm. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
+The early work on boosting focused on binary classification where the response is taken to be $y\in\{−1, 1\}$ . AdaBoost is regarded as the first practical boosting algorithm. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
 
 The resulting model can be written
 
