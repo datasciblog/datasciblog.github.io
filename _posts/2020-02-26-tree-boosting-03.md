@@ -239,7 +239,7 @@ $$f_m (x) = − \frac{g_m(x)}{h_m(x)}$$
 
 where $h_m(x)$ is the Hessian at the current estimate
 
-$$h_m(x) = E [ \frac{\partial^2 L(Y,f(x))}{\partial f(x)^2} | X=x ]_{f(x)=f^{(m−1)}(x)}.$$
+$$h_m(x) = E \left[ \frac{\partial^2 L(Y,f(x))}{\partial f(x)^2} | X=x \right]_{f(x)=f^{(m−1)}(x)}.$$
 
 
 ## AdaBoost
