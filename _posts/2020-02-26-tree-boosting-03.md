@@ -196,11 +196,9 @@ $$Hm = \nabla_{\theta}^2 R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
 The solution to this is given by
 
-$$θm = −H_m^{−1} g_m$$.
+$$θm = −H_m^{−1} g_m.$$
 
-From the discussion
-above, we can see that Newton’s method is a second-order method, while gradient
-descent is a first-order method.
+From the discussion above, we can see that Newton’s method is a second-order method, while gradient descent is a first-order method.
 
 (...TO BE CONTINUED)
 
