@@ -125,9 +125,11 @@ One notable example of *a model class which leads to a discrete optimization pro
 Boosting refers to a class of learning algorithms that fit the data by combining multiple simple models. Each simple model is learnt using a *base learner* or *weak learner* which tend to have a limited predictive ability, but when selected carefully
 using a boosting algorithm, they form a relatively more accurate model. This is the meaning of "boosting".
 
+The early work on boosting focused on binary classification, after that the view of boosting algorithms as numerical optimization techniques was developed which led to the development of general boosting algorithms that allowed for optimization of any differentiable loss function. This generalized boosting to be applicable to general regression problems and not only classification.
+
 ## AdaBoost
 
-The early work on boosting focused on binary classification where the response is taken to be $y \in \\{−1, 1 \\} $ . AdaBoost is regarded as the first practical boosting algorithm. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
+ AdaBoost is regarded as the first practical boosting algorithm for binary classification. This algorithm fits a weak learner to *weighted* versions of the data *iteratively*. At each iteration, the weights are updated such that the misclassified data points recieve higher weights.
 
 The resulting model can be written
 
