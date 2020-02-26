@@ -158,7 +158,7 @@ At each interation, gradient descent takes a step along the **direction** of ste
 
 $$−g_m = −\nabla_\theta R(\theta)|_{\theta=\theta^{(m−1)}}.$$
 
-To surely reduce risk however, the length of the step taken should be not too long. A popular way to determine the **step length** (aka learning rate) $\rho_m$ to take in the steepest descent direction is to use *line search*
+To surely reduce risk however, the length of the step taken should be not too long. A popular way to determine the step length $\rho_m$ to take in the steepest descent direction is to use *line search*
 
 $$\rho_m = \underset{\rho}{\arg\min} R(\theta^{(m-1)} - \rho g_m).$$
 
@@ -217,7 +217,7 @@ where $f_0$ is an initial guess and $f_1$,..., $f_M$ are the successive "steps" 
 
 ### Gradient Descent in Function Space
 
-We have the direction of steepest descent of the risk by taking the negative gradient
+Similar to the case of gradient descent in parameter space, we have the direction of steepest descent of the risk by taking the negative gradient
 
 $$−g_m(x) = − E [ \frac{\partial L(Y,f(x))}{\partial f(x)} | X=x ]_{f(x)=f^{(m−1)}(x)}$$
 
