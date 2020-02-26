@@ -66,7 +66,7 @@ with
 
 $$p(x) = Prob[Y = 1|X = x].$$
 
-The loss function based on the Bernoulli likelihood is also referred to as the **log-loss**, the **cross-entropy** or the Kullback-Leibler information
+The loss function based on the Bernoulli likelihood is also referred to as the **log-loss**, the **cross-entropy** or the Kullback-Leibler information.
 
 ## The Risk Function
 
