@@ -57,7 +57,7 @@
   p,
   li {
     font-family: $sans-serif;
-    font-size: $type-size-8;
+    font-size: $type-size-7;
     line-height: 1.5;
   }
 
@@ -173,6 +173,7 @@
 .author__bio {
   margin: 0;
   font-style: italic;
+  font-size: $type-size-8;
 
 
   @include breakpoint($large) {
