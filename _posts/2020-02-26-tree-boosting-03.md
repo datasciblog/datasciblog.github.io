@@ -217,7 +217,7 @@ where $f_0$ is an initial guess and $f_1$,..., $f_M$ are the successive "steps" 
 
 ### Gradient Descent in Function Space
 
-Similar to the case of gradient descent in parameter space, we have the direction of steepest descent of the risk by taking the negative gradient
+Similar to the case of [gradient descent in parameter space](#gradient-descent), we have the direction of steepest descent of the risk by taking the negative gradient
 
 $$−g_m(x) = − E \left[ \frac{\partial L(Y,f(x))}{\partial f(x)} | X=x \right]_{f(x)=f^{(m−1)}(x)}$$
 
