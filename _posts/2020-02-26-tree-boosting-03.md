@@ -263,6 +263,12 @@ either exactly or approximately at each iteration. **Gradient boosting** and **N
 
 The development of gradient boosting is based on [gradient descent in function space](#gradient-descent-in-function-space) that we derived before. Here, the empirical risk will take the place of the true risk.
 
+The empirical version of the negative gradient is given by
+
+$$−\hat{g}_m(x_i) = − \left[ \frac{\partial L(y_i,f(x_i))}{\partial f(x_i)}\right]_{f(x)=f^{(m−1)}(x)}$$
+
+Note that this empirical gradient is only defined at the data points ${x_i}_{i=1}^n$. We need to learn an approximate negative gradient using a restricted set of basis functions $\Phi$. At iteration $m$, the basis function $\phi_m \in \Phi$ is learnt from the data such that it produces output ${\phi_m(x_i}_{i=1}^n$ which is most highly correlated with the negative gradient ${−\hat{g}_m(x_i)}_{i=1}^n$.
+
 ### Newton Boosting
 
 
