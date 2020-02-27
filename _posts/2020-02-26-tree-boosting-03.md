@@ -89,7 +89,7 @@ $$\hat{R} = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
 
 By the strong law of large numbers we have that
 
-$$\lim_{x\to\infty} \hat{R}(x) = R(x),$$
+$$\lim_{n\to\infty} \hat{R}(f) = R(f),$$
 
 almost surely.
 
