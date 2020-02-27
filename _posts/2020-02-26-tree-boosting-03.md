@@ -267,7 +267,9 @@ The empirical version of the negative gradient is given by
 
 $$−\hat{g}_m(x_i) = − \left[ \frac{\partial L(y_i,f(x_i))}{\partial f(x_i)}\right]_{f(x)=f^{(m−1)}(x)}$$
 
-Note that this empirical gradient is only defined at the data points $\\{x_i\\}_{i=1}^n$. Thus, to generalize to other points and prevent overfitting, we need to learn an approximate negative gradient using a set of basis functions $\Phi$. At iteration $m$, the basis function $\phi_m \in \Phi$ is learnt from the data such that it produces output $\\{\phi_m(x_i)\\}_{i=1}^n$ which is most highly correlated with the negative gradient $\\{−\hat{g}_m(x_i)\\}_{i=1}^n$. This is obtained by
+Note that this empirical gradient is only defined at the data points $ \\{ x_i \\}_{i=1}^n $. 
+
+Thus, to generalize to other points and prevent overfitting, we need to learn an approximate negative gradient using a set of basis functions $\Phi$. At iteration $m$, the basis function $\phi_m \in \Phi$ is learnt from the data such that it produces output $\\{\phi_m(x_i)\\}_{i=1}^n$ which is most highly correlated with the negative gradient $\\{−\hat{g}_m(x_i)\\}_{i=1}^n$. This is obtained by
 
 $$\hat{\phi}_m = \underset{\phi_m \in \Phi, \beta}{\arg\min}
 \sum\limits_{i=1}^n \left[ (− \hat{g}_m(x_i)) − \beta \phi(x_i)\right]^2$$
