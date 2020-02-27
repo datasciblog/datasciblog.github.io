@@ -257,7 +257,13 @@ Most boosting algorithms can be seen to solve
 
 $$\\{ \hat{\theta}_m, \hat{\phi}_m \\} = \underset{ \\{ \theta_m, \phi_m}{\arg\min\\} } \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(_xi) + \theta_m \phi_m(x_i))$$
 
-either exactly or approximately at each iteration.
+either exactly or approximately at each iteration. **Gradient boosting** and **Newton boosting** can be viewed as general algorithms that solve the equation approximately for any suitable loss function. Also, gradient boosting and Newton boosting can be viewed as *empirical versions* of the numerical optimization algorithms in function space we developed above.
+
+### Gradient Boosting
+
+### Newton Boosting
+
+
 
 ## AdaBoost
 
