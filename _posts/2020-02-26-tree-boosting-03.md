@@ -294,7 +294,9 @@ Doing this iteratively yields the gradient boosting procedure.
 
 ### Newton Boosting
 
-
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/2.png?raw=true">
+</figure>
 
 ## AdaBoost
 
