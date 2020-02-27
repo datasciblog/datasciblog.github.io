@@ -269,7 +269,7 @@ $$−\hat{g}_m(x_i) = − \left[ \frac{\partial L(y_i,f(x_i))}{\partial f(x_i)}\
 
 Note that this empirical gradient is only defined at the data points $ \\{ x_i \\}_{i=1}^n $. 
 
-Thus, to generalize to other points and prevent overfitting, we need to learn an approximate negative gradient using a set of basis functions $\Phi$. 
+Thus, to generalize to other points and prevent overfitting, we need to learn an approximate negative gradient using a set of basis functions $\Phi$.
 
 At iteration $m$, the basis function $\phi_m \in \Phi$ is learnt from the data such that it produces output $ \\{ \phi_m x_i \\}_{i=1}^n $ which is most highly correlated with the negative gradient $ \\{ −\hat{g}_m(x_i) \\}_{i=1}^n $. This is obtained by
 
