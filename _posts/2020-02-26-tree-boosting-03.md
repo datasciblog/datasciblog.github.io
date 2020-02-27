@@ -272,7 +272,7 @@ Note that this empirical gradient is only defined at the data points $ \\{ x_i \
 Thus, to generalize to other points and prevent overfitting, we need to learn an approximate negative gradient using a set of basis functions $\Phi$. At iteration $m$, the basis function $\phi_m \in \Phi$ is learnt from the data such that it produces output $\\{\phi_m(x_i)\\}_{i=1}^n$ which is most highly correlated with the negative gradient $\\{−\hat{g}_m(x_i)\\}_{i=1}^n$. This is obtained by
 
 $$\hat{\phi}_m = \underset{\phi_m \in \Phi, \beta}{\arg\min}
-\sum\limits_{i=1}^n \left[ (− \hat{g}_m(x_i)) − \beta \phi(x_i)\right]^2$$
+\sum\limits_{i=1}^n \bigg[ (− \hat{g}_m(x_i)) − \beta \phi(x_i)\bigg]^2$$
 
 ### Newton Boosting
 
