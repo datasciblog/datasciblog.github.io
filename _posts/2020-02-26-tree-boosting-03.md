@@ -290,7 +290,6 @@ Doing this iteratively yields the gradient boosting procedure.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/1.png?raw=true">
-  <figcaption>The gradient boosting procedure</figcaption>
 </figure>
 
 ### Newton Boosting
