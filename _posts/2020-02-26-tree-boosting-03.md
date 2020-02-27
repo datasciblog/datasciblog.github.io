@@ -272,7 +272,13 @@ Note that this empirical gradient is only defined at the data points $ \\{ x_i \
 $$\hat{\phi}_m = \underset{\phi_m \in \Phi, \beta}{\arg\min}
 \sum\limits_{i=1}^n \Big[ (− \hat{g}_m(x_i)) − \beta \phi(x_i)\Big]^2$$
 
-The basis function $\phi_m$ is learnt using a base learner where the squared error loss is used as a surrogate loss.
+The basis function $\phi_m$ is learnt using a base learner where the squared error loss is used as a surrogate loss. The step length ρm to take in this step direction can subsequently be
+determined using *line search*
+
+$$_\hat{\rho}_m = \underset{\rho}{\arg\min} \sum\limits_{i=1}^n
+L(y_i, \hat{f}^{(m−1)}(x_i) + \rho \hat{\phi}_m(x_i)).$$
+
+
 
 ### Newton Boosting
 
