@@ -296,13 +296,19 @@ Doing this iteratively yields the gradient boosting procedure.
 
 Similar to the case for gradient boosting, we have that the empirical gradient is defined solely at the data points. We thus also need a base learner here to select a basis function from a restricted set of functions. The Newton "step" is found by solving
 
-$$\hat{\phi}_m = \underset{\phi \in \Phi}{\arg\min} \sum\limits_{i=1}^n \frac{1}{2} \hat{h}_m(x_i) \Big[\frac{\hat{g}_m(x_i)}{\hat{h}_m(x_i)} + \phi(x_i) \Big]^2.$$
+$$\hat{\phi}_m = \underset{\phi \in \Phi}{\arg\min} \sum\limits_{i=1}^n \frac{1}{2} \hat{h}_m(x_i) \Big[\frac{\hat{g}_m(x_i)}{\hat{h}_m(x_i)} + \phi(x_i) \Big]^2$$
+
+where $\hat{g}_m(x_i)$ is the gradient and $\hat{h}_m(x_i)$ is the Hessian matrix.
 
 The "step" taken at each iteration $m$ is given by
 
 $$\hat{f}_m (x) = \eta \hat{\phi}_m(x).$$
 
-Repeating this iteratively yields the Newton boosting procedure.
+Repeating this iteratively yields the Newton boosting procedure. 
+
+<div class="notice--info">
+Note that the boosting algorithm developed here is the one used by XGBoost.
+</div>
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/2.png?raw=true">
