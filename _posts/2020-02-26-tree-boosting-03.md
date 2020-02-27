@@ -85,7 +85,7 @@ and the goal is to estimate this target function.
 
 Unfortunately, since we may never know the true risk $R(f)$, we need to rely on the **empirical risk** when inferring our model.
 
-$$\hat{R} = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
+$$\hat{R}(f) = \frac{1}{n} \sum\limits_{i=1}^n L(y_i, f(x_i))$$
 
 By the strong law of large numbers we have that
 
