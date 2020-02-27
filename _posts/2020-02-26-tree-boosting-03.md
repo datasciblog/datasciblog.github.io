@@ -280,7 +280,7 @@ determined using *line search*
 $$\hat{\rho}_m = \underset{\rho}{\arg\min} \sum\limits_{i=1}^n
 L(y_i, \hat{f}^{(m−1)}(x_i) + \rho \hat{\phi}_m(x_i)).$$
 
-A regularization technique, *shrinkage*, is also used where the step length at each iteration is multiplied by some factor $0 < \eta \leq 1$. The factor $\eta$ is sometimes referred to as the **learning rate** as lowering it can slow down learning.
+A regularization technique is also used where the step length at each iteration is multiplied by some factor $0 < \eta \leq 1$. The factor $\eta$ is sometimes referred to as the **learning rate** as lowering it can slow down learning.
 
 Combining all this, the "step" taken at each iteration $m$ is given by
 
@@ -293,6 +293,10 @@ Doing this iteratively yields the gradient boosting procedure.
 </figure>
 
 ### Newton Boosting
+
+Similar to the case for gradient boosting, we have that the empirical gradient is defined solely at the data points. We thus also need a base learner here to select a basis function from a restricted set of functions. The Newton "step" is found by solving
+
+$$\hat{\phi}_m = \underset{\phi \in \Phi}{\arg\min} \sum\limits_{i=1}^n \Big[\hat{g}_m(x_i) \phi(x_i) + \frac{1}{2} \hat{h}_m(x_i) \phi(x_i)^2 \Big].$$
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/2.png?raw=true">
