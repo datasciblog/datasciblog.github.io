@@ -62,7 +62,7 @@ The loss function based on this likelihood is
 
 $$L(y, p(x)) = −y log(p(x)) − (1 − y) log(1 − p(x))$$
 
-with 
+where 
 
 $$p(x) = Prob[Y = 1|X = x].$$
 
