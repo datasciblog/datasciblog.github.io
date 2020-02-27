@@ -275,7 +275,7 @@ At iteration $m$, the basis function $\phi_m \in \Phi$ is learnt from the data s
 
 $ \\{ \phi_m(x_i) \\}_{i=1}^n $ which is most highly correlated with the negative gradient 
 
-$ \\{ −\hat{g}_m(x_i) \\}_{i=1}^n $. This is obtained by
+$ \\{ −\hat{g}_m (x_i) \\}_{i=1}^n $. This is obtained by
 
 $$\hat{\phi}_m = \underset{\phi_m \in \Phi, \beta}{\arg\min}
 \sum\limits_{i=1}^n \Big[ (− \hat{g}_m(x_i)) − \beta \phi(x_i)\Big]^2$$
