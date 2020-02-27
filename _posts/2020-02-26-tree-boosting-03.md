@@ -280,9 +280,16 @@ L(y_i, \hat{f}^{(m−1)}(x_i) + \rho \hat{\phi}_m(x_i)).$$
 
 A regularization technique, *shrinkage*, also was introduced, where the step length at each iteration is multiplied by some factor $0 < \eta \leq 1$. The factor $\eta$ is sometimes referred to as the **learning rate** as lowering it can slow down learning.
 
-Combining all this, the "step" taken at each iteration m is given by
+Combining all this, the "step" taken at each iteration $m$ is given by
 
-$$ \hat{f}_m(x) = \eta \hat{\rho}_m \hat{\phi}_m(x) $$
+$$ \hat{f}_m(x) = \eta \hat{\rho}_m \hat{\phi}_m(x).$$
+
+Doing this iteratively yields the gradient boosting procedure.
+
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/1.png?raw=true">
+  <figcaption>The gradient boosting procedure</figcaption>
+</figure>
 
 ### Newton Boosting
 
