@@ -302,7 +302,7 @@ The "step" taken at each iteration $m$ is given by
 
 $$\hat{f}_m (x) = \eta \hat{\phi}_m(x).$$
 
-Repeating this iteratively yields the Newton boosting procedure
+Repeating this iteratively yields the Newton boosting procedure.
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/2.png?raw=true">
