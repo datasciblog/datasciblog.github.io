@@ -261,6 +261,8 @@ either exactly or approximately at each iteration. **Gradient boosting** and **N
 
 ### Gradient Boosting
 
+The development of gradient boosting is based on [gradient descent in function space](#gradient-descent-in-function-space) that we derived before. Here, the empirical risk will take the place of the true risk.
+
 ### Newton Boosting
 
 
