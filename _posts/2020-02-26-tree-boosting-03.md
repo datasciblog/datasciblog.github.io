@@ -245,7 +245,7 @@ $$h_m(x) = E \left[ \frac{\partial^2 L(Y,f(x))}{\partial f(x)^2} | X=x \right]_{
 
 As seen from the previous sections, boosting fits ensemble models of the kind
 
-$$f(x) =  \sum\limits_{m=1}^M f_m(x).$$
+$$f(x) =  \sum\limits_{m=0}^M f_m(x).$$
 
 These can be rewritten as adaptive basis function models
 
@@ -255,7 +255,7 @@ where $f_0(x) = \theta_0$ and $f_m(x) = \theta_m \phi_m(x)$ for $m = 1, ...M$.
 
 Most boosting algorithms can be seen to solve
 
-$$ \{ \hat{\theta}_m, \hat{\phi}_m \} = \underset{ \{ \theta_m, \phi_m \} }{\arg\min} \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(_xi) + \theta_m \phi_m(x_i))$$
+$$ \{ \hat{\theta}_m, \hat{\phi}_m \} = \underset{ \{ \theta_m, \phi_m \} }{\arg\min} \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(x_i) + \theta_m \phi_m(x_i))$$
 
 either exactly or approximately at each iteration. **Gradient boosting** and **Newton boosting** can be viewed as general algorithms that solve the equation approximately for any suitable loss function. Also, gradient boosting and Newton boosting can be viewed as *empirical versions* of the numerical optimization algorithms in function space we developed above.
 
