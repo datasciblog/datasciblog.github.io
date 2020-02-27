@@ -296,7 +296,7 @@ Doing this iteratively yields the gradient boosting procedure.
 
 Similar to the case for gradient boosting, we have that the empirical gradient is defined solely at the data points. We thus also need a base learner here to select a basis function from a restricted set of functions. The Newton "step" is found by solving
 
-$$\hat{\phi}_m = \underset{\phi \in \Phi}{\arg\min} \sum\limits_{i=1}^n \Big[\hat{g}_m(x_i) \phi(x_i) + \frac{1}{2} \hat{h}_m(x_i) \phi(x_i)^2 \Big].$$
+$$\hat{\phi}_m = \underset{\phi \in \Phi}{\arg\min} \sum\limits_{i=1}^n \frac{1}{2} \hat{h}_m(x_i) \Big[\frac{\hat{g}_m(x_i)}{\hat{h}_m(x_i)} + \phi(x_i) \Big]^2.$$
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/2.png?raw=true">
