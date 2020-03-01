@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "TreeBoosting-03: Tree Boosting With XGBoost"
+title:  "TreeBoosting-03: Tree Boosting With XGBoost-2"
 date:   2020-02-26
-permalink: /2020/02/26/tree-boosting-03/
+permalink: /2020/02/26/tree-boosting-03-2/
 excerpt: ""
 categories: 
 - Machine Learning
