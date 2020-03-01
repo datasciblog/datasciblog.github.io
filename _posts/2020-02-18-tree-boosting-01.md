@@ -101,12 +101,31 @@ One can show that the entropy will take on a value near zero if the $\hat{p}_{mk
 
 # Advantages and Disadvantages of Trees
 
-- Very easy to **interpret and explain**. In fact, they are even easier to explain than linear regression.
-- More closely **mirror human decision-making** than other approaches.
-- Easily to handle **qualitative predictors** (categorical features).
-- Unfortunately, they are generally low at predictive accuracy. Trees can also be very **non-robust**. In other words, a small change in the data can lead to a large change in the final tree.
-- However, by aggregating many decision trees, using methods like [**bagging**, **random forests**, and **boosting**](https://datasciblog.github.io/2020/02/19/tree-boosting-02/), the predictive performance of trees can be substantially improved.
+Some of the advantages of tree methods are that they
+
+- are more closely **mirror human decision-making** than other approaches.
+- are easily interpretable.
+- are relatively fast to construct.
+- can naturally deal with both continuous and categorical data.
+- can naturally deal with missing data.
+- are robust to outliers in the inputs.
+- are invariant under monotone transformations of the inputs.
+- perform implicit variable selection.
+- can capture non-linear relationships in the data.
+- can capture high-order interactions between inputs.
+- scale well to large data sets.
+
+Some of the disadvantages of tree methods are that they
+
+- tend to select predictors with a higher number of distinct values.
+- can overfit when faced with predictors with many categories.
+- are unstable and have high variance.
+- lack smoothness.
+- have difficulty capturing additive structure.
+- tend to have limited predictive performance.
 
 # References
 
   James, G., Witten, Daniela, author, Hastie, Trevor, author, & Tibshirani, Robert, author. (2015). An introduction to statistical learning : with applications in R.
+  
+  Nielsen, D. (2016). Tree Boosting With XGBoost - Why Does XGBoost Win "Every" Machine Learning Competition?
