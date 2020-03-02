@@ -493,6 +493,21 @@ We can also see that line search clearly improves the rate of convergence. In bo
 
 # Why Does XGBoost Win "Every" Competition?
 
+We all know that, for any specific data set, any method may dominate others. In this section, we will thus provide arguments as to why tree boosting seems to be such a **versatile** and **adaptive** approach, yielding good results for a wide range of problems, and why XGBoost may outperform MART for many problem.
+
+Generally, tree boosting is so effective because it
+fits additive tree models, which have rich representational ability, using adaptively determined neighbourhoods. The property of adaptive neighbourhoods makes it able to use variable degrees of flexibility in different regions of the input space. Consequently, it will be able to perform automatic feature selection and capture high-order interactions without breaking down. It can thus be seen to be robust to the curse of dimensionality.
+
+For MART, the number of terminal nodes is kept fixed for all trees, which might be suboptimal. For example, for highdimensional data sets, there might be some group of features which have a high order of interaction with each other, while other features only have lower order interactions, perhaps only additive structure. We would thus like to use deeper trees for some features than for the others. If the number of terminal nodes is fixed, the tree might be forced to do further splitting when it is not necessary. The variance of the additive tree model might thus increase unnecessarily. In contrast, XGBoost uses clever penalization of the individual trees. The trees are consequently allowed to have varying number of terminal nodes.
+
+Moreover, while MART uses only shrinkage to reduce the leaf weights, XGBoost can also shrink them using penalization. The benefit of this is that the leaf weights are not all shrunk
+by the same factor, but leaf weights estimated using less evidence in the data will be shrunk more heavily. Again, we see the bias-variance tradeoff being taken into account during model fitting. XGBoost can thus be seen to be even more adaptive
+to the data than MART.
+
+In addition to this, XGBoost employs Newton boosting rather than gradient boosting. By doing this, XGBoost is likely to learn better tree structures.
+
+Finally, XGBoost includes an extra randomization parameter. This can be used to decorrelate the individual trees even further, possibly resulting in reduced overall variance of the model.
+
 (...TO BE CONTINUED)
 
 # References
