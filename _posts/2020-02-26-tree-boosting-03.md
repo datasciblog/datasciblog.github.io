@@ -422,7 +422,7 @@ In this section, we will compare the two tree boosting algorithms discussed abov
 
 $$ \{ \hat{w}_{jm}, \hat{R}_{jm} \} \limits_{j=1}^{T_m} $$
 
-$$= \underset{ \{ w_{jm}, R_{jm} \} \limits_{j=1}^{T_m} } {\arg\min} \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(x_i) + \sum\limits_{j=1}^{T_m} w_{jm} I(x_i \in R_{jm})).$$
+$$= \underset{ \{ w_{jm}, R_{jm} \} _{j=1}^{T_m} } {\arg\min} \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(x_i) + \sum\limits_{j=1}^{T_m} w_{jm} I(x_i \in R_{jm})).$$
 
 This is repeated for $m = 1, ..., M$ to yield an approximation to the solution to empirical risk minimization problem.
 
