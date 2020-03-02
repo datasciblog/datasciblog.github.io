@@ -473,7 +473,7 @@ Considering this, gradient tree boosting can be seen to generally use a more acc
 To get an idea of how they compare in practice, we will test their performance on two standard datasets, the Sonar and the Ionosphere datasets. The log-loss was used to measure prediction accuracy. We will use only tree stumps (trees with two terminal nodes) and no other form regularization of the individual
 trees.
 
-The learning rate was set to $\eta = 0.1$ and the number of trees was set to $M = 10000$. Predictions were made at each iteration. To get a fairly stable estimate of out-of-sample perfomance, three repetitions of 10-fold cross-validation was used. The folds were the same for both algorithms. 
+The learning rate was set to $\eta = 0.1$ and the number of trees was set to $M = 10,000$. Predictions were made at each iteration. To get a fairly stable estimate of out-of-sample perfomance, three repetitions of 10-fold cross-validation was used. The folds were the same for both algorithms. 
 
 To study the effect of line search for gradient tree boosting, one fit were also done using gradient boosting with line search.
 
