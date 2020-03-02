@@ -391,11 +391,8 @@ While Newton tree boosting is simply [Newton boosting](#newton-boosting) with tr
 
 The Newton tree boosting algorithm is simply the Newton boosting shown in [Algorithm 2](#newton-boosting-algorithm) where the basis functions are tree models. As dicussed above, Newton boosting approximates the FSAM criterion by 
 
-$$Jm
-(φm) =
-n� i
-=1
-�gˆm(xi)φm(xi) + 12hˆm(xi)φm(xi)2�,$$
+$$\tilde{J}_m (\phi_m) = \sum\limits_{i=1}^n \left[ \hat{g}_m(x_i) \phi_m (x_i_) + \frac{1}{2} \hat{h}_m (x_i) \phi_m (x_i)^2,$$
+
 
 which is the second-order approximation.
 
@@ -403,13 +400,17 @@ which is the second-order approximation.
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/5.png?raw=true">
 </figure>
 
-Note that, $G_{jm} = \sum\limits_{i \in I_{jm}} \hat{g}_m(x_i)$ and $H_{jm} = \sum\limits_{i \in I_{jm}} \hat{h}_m(x_i).$
+Note that, 
+$$G_{jm} = \sum\limits_{i \in I_{jm}} \hat{g}_m(x_i)$$ 
+and 
+
+$$H_{jm} = \sum\limits_{i \in I_{jm}} \hat{h}_m(x_i).$$
 
 ### Gradient Tree Boosting Algorithm
 
 The gradient tree boosting algorithm is closely related to the gradient boosting algorithm shown in Algorithm 1. In line 4, a tree is learnt using the criterion 
 
-$$J_m (\phi_m) = \sum\limits_{i=1}^n \left[ (−\hat{g}_m(x_i)) − \beta \phi(x_i) \right]^2,$$
+$$\tilde{J}_m (\phi_m) = \sum\limits_{i=1}^n \left[ (−\hat{g}_m(x_i)) − \beta \phi(x_i) \right]^2,$$
 
 which is an approximation to the FSAM criterion. 
 
