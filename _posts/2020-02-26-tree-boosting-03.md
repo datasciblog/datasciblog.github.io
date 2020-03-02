@@ -464,9 +464,9 @@ weights are the same as the leaf weights learnt when searching for the tree stru
 
 $$\tilde{w}_{jm} = − \frac{G_{jm}}{H_{jm}}.$$
 
-Gradient tree boosting, on the other hand, uses a different criterion to learn the leaf weights. The final leaf weights are determined by separate line searches in each terminal node
+Gradient tree boosting, on the other hand, uses a different criterion to learn the leaf weights. The final leaf weights are determined by separate line searches in each terminal node $j = 1, ..., T$
 
-$$ \hat{w}_{jm} = \underset{w_j}{\arg\min} \sum\limits_{i \in \hat{I}_{jm}} L(y_i, \hat{f}^{(m−1)}(x_i) + w_j), j = 1, ..., T$$
+$$ \hat{w}_{jm} = \underset{w_j}{\arg\min} \sum\limits_{i \in \hat{I}_{jm}} L(y_i, \hat{f}^{(m−1)}(x_i) + w_j).$$
 
 Considering this, gradient tree boosting can be seen to generally use a more accurate criterion to learn the leaf weights than Newton tree boosting. These more accurate leaf weights are however determined for a less accurate tree structure.
 
