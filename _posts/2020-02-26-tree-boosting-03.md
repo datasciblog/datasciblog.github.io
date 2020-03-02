@@ -420,7 +420,9 @@ which is an approximation to the FSAM criterion.
 
 In this section, we will compare the two tree boosting algorithms discussed above. Recall that, at iteration $m$, both these two algorithms seek to minimize the FSAM criterion which can be rewritten
 
-$$ \{ \hat{w}_{jm}, \hat{R}_{jm} \}\limits_{j=1}^{T_m} = \underset{ \{ w_{jm}, R_{jm} \} \limits_{j=1}^{T_m} } {\arg\min} \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(x_i) + \sum\limits_{j=1}^{T_m} w_{jm} I(x_i \in R_{jm})).$$
+$$ \{ \hat{w}_{jm}, \hat{R}_{jm} \} \limits_{j=1}^{T_m} $$
+
+$$= \underset{ \{ w_{jm}, R_{jm} \} \limits_{j=1}^{T_m} } {\arg\min} \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(x_i) + \sum\limits_{j=1}^{T_m} w_{jm} I(x_i \in R_{jm})).$$
 
 This is repeated for $m = 1, ..., M$ to yield an approximation to the solution to empirical risk minimization problem.
 
