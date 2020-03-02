@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "TreeBoosting-03: Why Does XGBoost Win "Every" Machine Learning Competition?"
+title:  "TreeBoosting-03: Why Does XGBoost Win "Every" Competition?"
 date:   2020-02-26
 permalink: /2020/02/26/tree-boosting-03/
 excerpt: ""
