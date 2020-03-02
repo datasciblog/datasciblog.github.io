@@ -357,9 +357,7 @@ For additive tree models, shallow regression trees are commonly used, i.e. regre
 
 ### Complexity Penalization
 
-One of the core improvements of XGBoost over MART is that it offers the possibility of penalizing the complexity of the trees.
-
-The penalty is the sum of the *complexity penalties of the individual trees* in the additive tree model.
+One of the core improvements of XGBoost over MART is that it offers the possibility of penalizing the complexity of the trees. The penalty is the sum of the *complexity penalties of the individual trees* in the additive tree model.
 
 $$ \omega(f) = \sum\limits_{m=1}^M \left[ \gamma T_m + \frac{1}{2} \lambda ||w_m||_2^2 + \alpha ||w_m||_1 \right].$$
 
@@ -389,7 +387,11 @@ While Newton tree boosting is simply [Newton boosting](#newton-boosting) with tr
 
 The Newton tree boosting algorithm is simply the Newton boosting shown in [Algorithm 2](#newton-boosting-algorithm) where the basis functions are tree models. As dicussed above, Newton boosting approximates the FSAM criterion by 
 
-$$\tilde{J}_m (\phi_m) = \sum\limits_{i=1}^n \left[ \hat{g}_m(x_i) \phi_m (x_i_) + \frac{1}{2} \hat{h}_m (x_i) \phi_m (x_i)^2,$$
+$$\tilde{J}_m (\phi_m) $$
+
+$$= \sum\limits_{i=1}^n $$
+
+$$ \left[ \hat{g}_m(x_i) \phi_m (x_i_) + \frac{1}{2} \hat{h}_m (x_i) \phi_m (x_i)^2,$$
 
 
 which is the second-order approximation.
