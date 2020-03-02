@@ -470,6 +470,27 @@ $$ \hat{w}_{jm} = \underset{w_j}{\arg\min} \sum\limits_{i \in \hat{I}_{jm}} L(y_
 
 Considering this, gradient tree boosting can be seen to generally use a more accurate criterion to learn the leaf weights than Newton tree boosting. These more accurate leaf weights are however determined for a less accurate tree structure.
 
+#### Empirical Comparison
+
+To get an idea of how they compare in practice, we will test their performance on two standard datasets, the Sonar and the Ionosphere datasets. The log-loss was used to measure prediction accuracy. We will use only tree stumps (trees with two terminal nodes) and no other form regularization of the individual
+trees.
+
+The learning rate was set to $\eta = 0.1$ and the number of trees was set to $M = 10000$. Predictions were made at each iteration. To get a fairly stable estimate of out-of-sample perfomance, three repetitions of 10-fold cross-validation was used. The folds were the same for both algorithms. 
+
+To study the effect of line search for gradient tree boosting, one fit were also done using gradient boosting with line search.
+
+<figure class="half">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/7.png?raw=true">
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/8.png?raw=true">
+	<figcaption>Newton tree boosting and Gradient tree boosting with and without (plain) line search. Left: Sonar dataset. Right: Ionosphere dataset. </figcaption>
+</figure>
+
+From figures above, we observe that NTB seems to outperform GTB slighly for the Sonar dataset. We can see that NTB converges slightly faster, but GTB outperforms NTB when run for enough iterations for the Ionosphere dataset. They do however seem to have very similar performance for both problems. Of course, due to randomness, any algorithm might perform best in practice for any particular data set.
+
+We can also see that line search clearly improves the rate of convergence. In both cases, line search also seems to improve the lowest log-loss achieved. Line search thus seems to be very beneficial for gradient tree boosting.
+
+# Why Does XGBoost Win "Every" Competition?
+
 (...TO BE CONTINUED)
 
 # References
