@@ -424,11 +424,29 @@ In this section, we will compare the two tree boosting algorithms discussed abov
 
 $$ \{ \hat{w}_{jm}, \hat{R}_{jm} \}\limits_{j=1}^{T_m} = \underset{ \{ w_{jm}, R_{jm} \} \limits_{j=1}^{T_m} } {\arg\min} \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(x_i) + \sum\limits_{j=1}^{T_m} w_{jm} I(x_i \in R_{jm})).$$
 
-This is repeated for $m = 1, ..., M$ to yield an approximation to the solution to the empirical risk minimization problem.
+This is repeated for $m = 1, ..., M$ to yield an approximation to the solution to empirical risk minimization problem.
 
+Gradient tree boosting and Newton tree boosting however, differ in the tree structures they learn and how they learn the leaf weights to assign in the terminal nodes of the learnt tree structure.
 
+#### Learning the Structure
 
+Gradient tree boosting and Newton tree boosting optimize different criteria when learning the structure of the tree at each iteration. 
 
+- Gradient tree boosting learns the tree which is most highly correlated with the negative gradient of the current
+empirical risk. 
+
+- Newton tree boosting, on the other hand, learns the tree which best fits the second-order Taylor expansion of the loss function. 
+
+Learning the structure amounts to searching for splits which
+maximize the gain. For gradient tree boosting, this gain is given by
+
+$$ Gain =  \frac{1}{2} \left[ \frac{G_L^2}{n_L} + \frac{G_R^2}{n_R} − \frac{G_{jm}^2}{n_{jm}} \right], $$
+
+while for Newton tree boosting, the gain is given by
+
+$$ Gain =  \frac{1}{2} \left[ \frac{G_L^2}{H_L} + \frac{G_R^2}{H_R} − \frac{G_{jm}^2}{H_{jm}} \right]. $$
+
+Newton tree boosting learns the tree structure using a higher-order approximation of the FSAM criterion. We would thus expect it to learn better tree structures than gradient tree boosting.
 
 
 (...TO BE CONTINUED)
