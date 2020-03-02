@@ -317,11 +317,7 @@ The "step" taken at each iteration $m$ is given by
 
 $$\hat{f}_m (x) = \eta \hat{\phi}_m(x).$$
 
-Repeating this iteratively yields the Newton boosting procedure. 
-
-<div class="notice--info">
-Note that the boosting algorithm developed here is the one used by XGBoost.
-</div>
+Repeating this iteratively yields the Newton boosting procedure. Note that the boosting algorithm developed here is the one used by XGBoost.
 
 #### Newton Boosting Algorithm
 
