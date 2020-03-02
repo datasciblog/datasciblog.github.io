@@ -403,7 +403,7 @@ which is the second-order approximation.
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/5.png?raw=true">
 </figure>
 
-Note that, $G_{jm} = \sum\limits_{i \in I_{jm}} \hat{g}_m(x_i)$ and $H_{jm} = \sum\limits_{i \in I_{jm}} \hat{h}_m(x_i).$$
+Note that, $G_{jm} = \sum\limits_{i \in I_{jm}} \hat{g}_m(x_i)$ and $H_{jm} = \sum\limits_{i \in I_{jm}} \hat{h}_m(x_i).$
 
 ### Gradient Tree Boosting Algorithm
 
