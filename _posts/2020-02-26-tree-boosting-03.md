@@ -387,7 +387,7 @@ While Newton tree boosting is simply [Newton boosting](#newton-boosting) with tr
 
 The Newton tree boosting algorithm is simply the Newton boosting shown in [Algorithm 2](#newton-boosting-algorithm) where the basis functions are tree models. As dicussed above, Newton boosting approximates the FSAM criterion by 
 
-$$\tilde{J}_m (\phi_m) = \sum\limits_{i=1}^n \left[ \hat{g}_m(x_i) \phi_m (x_i_) + \frac{1}{2} \hat{h}_m (x_i) \phi_m (x_i)^2 \right] ,$$
+$$\tilde{J}_m (\phi_m) = \sum\limits_{i=1}^n \left[ \hat{g}_m(x_i) \phi_m (x_i) + \frac{1}{2} \hat{h}_m (x_i) \phi_m (x_i)^2 \right] ,$$
 
 
 which is the second-order approximation.
