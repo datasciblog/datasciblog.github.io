@@ -418,7 +418,11 @@ which is an approximation to the FSAM criterion.
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/6.png?raw=true">
 </figure>
 
+### Comparison of Tree Boosting Algorithms
 
+In this section, we will compare the two tree boosting algorithms discussed above. Recall that, at iteration $m$, both these two algorithms seek to minimize the FSAM criterion which can be rewritten
+
+$$ \{ \hat{w}_{jm}, \hat{R}_{jm} \}\limits_{j=1}^{T_m} = \underset{ \{ w_{jm}, R_{jm} \} \limits_{j=1}^{T_m} } {\arg\min} \sum\limits_{i=1}^n L(y_i, \hat{f}^{(m−1)}(x_i) + \sum\limits_{j=1}^{T_m} w_{jm} I(x_i \in R_{jm})).$$  
 
 (...TO BE CONTINUED)
 
