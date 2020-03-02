@@ -391,7 +391,7 @@ $$\tilde{J}_m (\phi_m) $$
 
 $$= \sum\limits_{i=1}^n $$
 
-$$ \left[ \hat{g}_m(x_i) \phi_m (x_i_) + \frac{1}{2} \hat{h}_m (x_i) \phi_m (x_i)^2,$$
+$$ \left[ \hat{g}_m(x_i) \phi_m (x_i_) + \frac{1}{2} \hat{h}_m (x_i) \phi_m (x_i)^2 \right] ,$$
 
 
 which is the second-order approximation.
