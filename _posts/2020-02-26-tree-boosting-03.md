@@ -508,8 +508,6 @@ In addition to this, XGBoost employs Newton boosting rather than gradient boosti
 
 Finally, XGBoost includes an extra randomization parameter. This can be used to decorrelate the individual trees even further, possibly resulting in reduced overall variance of the model.
 
-(...TO BE CONTINUED)
-
 # References
 
   Nielsen, D. (2016). Tree Boosting With XGBoost - Why Does XGBoost Win "Every" Machine Learning Competition?
