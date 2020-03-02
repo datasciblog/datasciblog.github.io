@@ -446,8 +446,29 @@ while for Newton tree boosting, the gain is given by
 
 $$ Gain =  \frac{1}{2} \left[ \frac{G_L^2}{H_L} + \frac{G_R^2}{H_R} − \frac{G_{jm}^2}{H_{jm}} \right]. $$
 
-Newton tree boosting learns the tree structure using a higher-order approximation of the FSAM criterion. We would thus expect it to learn better tree structures than gradient tree boosting.
+Newton tree boosting learns the tree structure using a higher-order approximation of the FSAM criterion. We would thus expect it to learn better tree structures than gradient tree boosting. The leaf weights learnt during the search for structure
+are given by
 
+$$\tilde{w}_{jm} = − \frac{G_{jm}}{n_{jm}}$$
+
+for gradient tree boosting and by
+
+$$\tilde{w}_{jm} = − \frac{G_{jm}}{H_{jm}}$$
+
+for Newton tree boosting. For gradient tree boosting these leaf weights are however subsequently readjusted.
+
+#### Learning the Leaf Weights
+
+After a tree structure is learnt, the leaf weights need to be determined. For Newton tree boosting, the final leaf
+weights are the same as the leaf weights learnt when searching for the tree structure, i.e.
+
+$$\tilde{w}_{jm} = − \frac{G_{jm}}{H_{jm}}.$$
+
+Gradient tree boosting, on the other hand, uses a different criterion to learn the leaf weights. The final leaf weights are determined by separate line searches in each terminal node
+
+$$ \hat{w}_{jm} = \underset{w_j}{\arg\min} \sum\limits_{i \in \hat{I}_{jm}} L(y_i, \hat{f}^{(m−1)}(x_i) + w_j), j = 1, ..., T$$
+
+Considering this, gradient tree boosting can be seen to generally use a more accurate criterion to learn the leaf weights than Newton tree boosting. These more accurate leaf weights are however determined for a less accurate tree structure.
 
 (...TO BE CONTINUED)
 
