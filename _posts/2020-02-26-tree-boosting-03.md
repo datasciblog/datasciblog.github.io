@@ -4,7 +4,7 @@ title:  "TreeBoosting-03: Why Does XGBoost Win Every Machine Learning Competitio
 date:   2020-02-26
 permalink: /2020/02/26/tree-boosting-03/
 header:
-  teaser: ""https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/0.png?raw=true""
+  teaser: "https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-26-tree-boosting-03/0.png?raw=true"
 excerpt: ""
 categories: 
 - Machine Learning
