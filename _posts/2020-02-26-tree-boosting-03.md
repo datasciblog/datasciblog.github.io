@@ -13,6 +13,7 @@ tags:
 - boosting
 - ensemble
 - algorithm
+- gbm
 - xgboost
 classes: wide
 toc: true
