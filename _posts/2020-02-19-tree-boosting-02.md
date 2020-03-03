@@ -8,11 +8,11 @@ categories:
 - Machine Learning
 tags:
 - tree boosting
-- decision tree
+- Decision Tree
 - bootstrap
-- bagging
-- random forests
-- boosting
+- Bagging
+- Random Forests
+- Boosting
 - ensemble
 - algorithm
 classes: wide
