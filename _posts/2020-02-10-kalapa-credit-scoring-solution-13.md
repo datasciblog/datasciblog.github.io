@@ -32,11 +32,6 @@ The post was originally written in Vietnamese and published on <a href="https://
 
 </div>
 
-<figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/3.png?raw=true">
-  <figcaption>Posted on forum.machinelearningcoban.com</figcaption>
-</figure>
-
 # Giới thiệu
 
 Dưới đây là lời giải phần 2 của mình cho cuộc thi [Kalapa’s Credit Scoring Challenge](https://challenge.kalapa.vn/) với nhiều thay đổi trong **Feature Engineering** và **Modelling** kể từ lời giải [phần 1](https://forum.machinelearningcoban.com/t/kalapas-credit-scoring-challenge-17-solution-21-01-0-22737-gini-score/7071). Lời giải này đã đưa mình lên vị trí thứ 13 vào ngày 02/02/2020 với Gini Score 0.2729.

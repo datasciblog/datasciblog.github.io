@@ -20,16 +20,11 @@ classes: wide
 
 This was my first solution for the <a href="https://challenge.kalapa.vn/">Credit Scoring Challenge</a> hosted by <a href="https://kalapa.vn/en/home-en/">Kalapa</a> with the first prize is up to AUD$6000. 
 
-The post was originally written in Vietnamese and published on <a href="https://forum.machinelearningcoban.com/t/kalapas-credit-scoring-challenge-17-solution-21-01-0-22737-gini-score/7071"> the largest machine learning forum in Vietnam</a>. I feel honored for having more than 2.3k views and many thanks for this baseline solution.
+The post was originally written in Vietnamese and published on <a href="https://forum.machinelearningcoban.com/t/kalapas-credit-scoring-challenge-17-solution-21-01-0-22737-gini-score/7071"> the largest machine learning forum in Vietnam</a>. I felt honored for having more than 3k views and many thanks for this baseline solution.
 
 The English version of this post will come soon!
 
 </div>
-
-<figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-21-kalapa-credit-scoring-solution-17/0.png?raw=true">
-  <figcaption>Posted on forum.machinelearningcoban.com</figcaption>
-</figure>
 
 # Giới thiệu
 Dưới đây là lời giải của mình cho cuộc thi [Kalapa's Credit Scoring Challenge](https://challenge.kalapa.vn/regulations.html). Lời giải này đã đưa mình lên vị trí thứ 17 vào ngày 21/01/2020. Đây cũng là lần đầu tiên mình tham gia một cuộc thi dữ liệu dạng này nên mọi thứ mình làm đều là các bước tiếp cận cơ bản, phù hợp với các bạn mới, muốn xây dựng một baseline model.
