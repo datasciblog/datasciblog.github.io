@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Kalapa's Credit Scoring Challenge - #13 Solution, 0.2729 Gini Score"
+title:  "Kalapa's Credit Scoring Challenge - #13 Solution, 0.2729 Gini Score - #4 Finalist"
 date:   2020-02-10
 permalink: /2020/02/10/kalapa-credit-scoring-solution-13/
 excerpt: ""
@@ -15,6 +15,15 @@ classes: wide
 # toc_label: "Table of Contents"
 # toc_icon: "cog"
 ---
+
+
+<div class="notice--info">
+
+Updated: This solution brought me to the 4th place in the private leader board on 15/04/2020. <a href="https://www.aivivn.com/contests/10">Check it out!</a>
+
+</div>
+
+
 <div class="notice--info">
 
 This was my second solution for the <a href="https://challenge.kalapa.vn/">Credit Scoring Challenge</a> hosted by <a href="https://kalapa.vn/en/home-en/">Kalapa</a> with the first prize is up to AUD$6000. After the first solution was <a href="https://datasciblog.github.io/2020/01/21/kalapa-credit-scoring-solution-17/">published</a> and get some credit, I kept improving my baseline and achieved a better result. 
@@ -111,10 +120,6 @@ Dưới đây là lời giải phần 2 của mình cho cuộc thi [Kalapa’s C
 
 - Từ mô hình tốt nhất này, mình nhận ra validation score của fold 3 rất thấp (0.2425). Và vì kết quả cuối cùng mà mình có là giá trị probability trung bình của 5 mô hình được huấn luyện trên 5 folds, vậy nếu mô hình số 3 là một mô hình "tồi" thì kết quả trung bình kia sẽ bị ảnh hưởng nghiêm trọng. Do đó mình đã loại bỏ mô hình số 3, chỉ lấy probability trung bình của 4 mô hình còn lại. Gini Score trên LB của mình tăng lên **0.26559**.
 - Mình tiếp tục thử nghiệm và loại bỏ lần lượt các mô hình còn lại, chỉ giữ lại mô hình số 4 với validation score cao nhất (0.3135). Điểm số trên LB của mình lúc này tăng lên **0.2729** đưa mình lên vị trí thứ 13 trên bảng xếp hạng.
-
-<figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/2.png?raw=true">
-</figure>
 
 # What's next?
 
