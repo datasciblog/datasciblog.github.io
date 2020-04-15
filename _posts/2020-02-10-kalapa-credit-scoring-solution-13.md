@@ -23,6 +23,9 @@ Updated: This solution brought me to the 4th place in the private leader board o
 
 </div>
 
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/0.png?raw=true">
+</figure>
 
 <div class="notice--info">
 
