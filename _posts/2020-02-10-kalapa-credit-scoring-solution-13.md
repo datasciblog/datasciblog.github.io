@@ -17,7 +17,7 @@ classes: wide
 ---
 
 
-<div class="notice--info">
+<div class="notice--success">
 
 Updated: This solution brought me to the 4th place in the private leader board on 15/04/2020. <a href="https://www.aivivn.com/contests/10">Check it out!</a>
 
