@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Kalapa's Credit Scoring Challenge - #13 Solution, 0.2729 Gini Score - #4 Finalist"
+title:  "Kalapa's Credit Scoring Challenge - #13 Solution, 0.2729 Gini Score - [#4 FINALIST]"
 date:   2020-02-10
 permalink: /2020/02/10/kalapa-credit-scoring-solution-13/
 excerpt: ""
@@ -17,7 +17,7 @@ classes: wide
 ---
 
 
-<div class="notice--success">
+<div class="notice--primary">
 
 Updated: This solution brought me to the 4th place in the private leader board on 15/04/2020. <a href="https://www.aivivn.com/contests/10">Check it out!</a>
 
@@ -26,7 +26,7 @@ Updated: This solution brought me to the 4th place in the private leader board o
 
 <div class="notice--info">
 
-This was my second solution for the <a href="https://challenge.kalapa.vn/">Credit Scoring Challenge</a> hosted by <a href="https://kalapa.vn/en/home-en/">Kalapa</a> with the first prize is up to AUD$6000. After the first solution was <a href="https://datasciblog.github.io/2020/01/21/kalapa-credit-scoring-solution-17/">published</a> and get some credit, I kept improving my baseline and achieved a better result. 
+This was my second solution for the <a href="https://challenge.kalapa.vn/">Credit Scoring Challenge</a> hosted by <a href="https://kalapa.vn/en/home-en/">Kalapa</a> with the first prize is up to AUD$6000. After the first solution was <a href="https://datasciblog.github.io/2020/01/21/kalapa-credit-scoring-solution-17/">published</a> and got some credit, I kept improving my baseline and achieved a better result. 
 
 The post was originally written in Vietnamese and published on <a href="https://forum.machinelearningcoban.com/t/kalapa-s-credit-scoring-challenge-13-solution-02-02-0-2729-gini-score/7139"> the largest machine learning forum in Vietnam</a>. The English version of this post will come soon!
 
