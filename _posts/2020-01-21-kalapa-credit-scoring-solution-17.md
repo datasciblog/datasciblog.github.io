@@ -24,12 +24,12 @@ The post was originally written in Vietnamese and published on <a href="https://
 
 The English version of this post will come soon!
 
-<figure>
-	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-21-kalapa-credit-scoring-solution-17/0.png?raw=true">
-</figure>
-
 </div>
 
+<figure>
+	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-01-21-kalapa-credit-scoring-solution-17/0.png?raw=true">
+  <figcaption>Posted on forum.machinelearningcoban.com</figcaption>
+</figure>
 
 # Giới thiệu
 Dưới đây là lời giải của mình cho cuộc thi [Kalapa's Credit Scoring Challenge](https://challenge.kalapa.vn/regulations.html). Lời giải này đã đưa mình lên vị trí thứ 17 vào ngày 21/01/2020. Đây cũng là lần đầu tiên mình tham gia một cuộc thi dữ liệu dạng này nên mọi thứ mình làm đều là các bước tiếp cận cơ bản, phù hợp với các bạn mới, muốn xây dựng một baseline model.

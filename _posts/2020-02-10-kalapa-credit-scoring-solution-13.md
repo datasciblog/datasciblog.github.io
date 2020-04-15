@@ -34,6 +34,7 @@ The post was originally written in Vietnamese and published on <a href="https://
 
 <figure>
 	<img src="https://github.com/datasciblog/datasciblog.github.io/blob/master/_posts/images/2020-02-10-kalapa-credit-scoring-solution-13/3.png?raw=true">
+  <figcaption>Posted on forum.machinelearningcoban.com</figcaption>
 </figure>
 
 # Giới thiệu
