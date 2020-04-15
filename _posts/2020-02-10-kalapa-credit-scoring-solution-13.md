@@ -120,6 +120,10 @@ Dưới đây là lời giải phần 2 của mình cho cuộc thi [Kalapa’s C
 
 - Từ mô hình tốt nhất này, mình nhận ra validation score của fold 3 rất thấp (0.2425). Và vì kết quả cuối cùng mà mình có là giá trị probability trung bình của 5 mô hình được huấn luyện trên 5 folds, vậy nếu mô hình số 3 là một mô hình "tồi" thì kết quả trung bình kia sẽ bị ảnh hưởng nghiêm trọng. Do đó mình đã loại bỏ mô hình số 3, chỉ lấy probability trung bình của 4 mô hình còn lại. Gini Score trên LB của mình tăng lên **0.26559**.
 - Mình tiếp tục thử nghiệm và loại bỏ lần lượt các mô hình còn lại, chỉ giữ lại mô hình số 4 với validation score cao nhất (0.3135). Điểm số trên LB của mình lúc này tăng lên **0.2729** đưa mình lên vị trí thứ 13 trên bảng xếp hạng.
+- Đây là bộ hyperparameter mà mình dùng - *LightGBM parameters found by Bayesian optimization*. <a href="https://www.kaggle.com/tilii7/olivier-lightgbm-parameters-by-bayesian-opt/code">Xin được credit cho tác giả.</a>
+
+        clf = LGBMClassifier( nthread=4, n_estimators=10000, learning_rate=0.02, num_leaves=128, colsample_bytree=0.9497036, subsample=0.8715623, max_depth=8, reg_alpha=0.041545473, reg_lambda=0.0735294, min_split_gain=0.0222415, min_child_weight=39.3259775, silent=-1, verbose=-1)
+
 
 # What's next?
 
