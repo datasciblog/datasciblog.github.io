@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Kalapa's Credit Scoring Challenge - #13 Solution, 0.2729 Gini Score - [#4/847 FINALIST]"
+title:  "Kalapa's Credit Scoring Challenge - #13 Solution, 0.2729 Gini Score - [FINALIST #4/847]"
 date:   2020-02-10
 permalink: /2020/02/10/kalapa-credit-scoring-solution-13/
 excerpt: ""
