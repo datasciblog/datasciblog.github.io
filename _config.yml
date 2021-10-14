@@ -112,7 +112,7 @@ author:
   name             : "Ha NGUYEN"
   avatar           : "/assets/images/ava.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am learning by participating competitions"
-  location         : "Melbourne, Australia"
+  location         : "Tasmania, Australia"
   email            : #"trungha.ngx@gmail.com"
   links:
     - label: "Email"
