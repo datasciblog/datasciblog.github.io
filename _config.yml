@@ -110,25 +110,25 @@ analytics:
 author:
   name: 'Ha NGUYEN'
   avatar: '/assets/images/ava.jpg' # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: 'Data Analyst at Tasmanian Berries'
+  bio: 'Data Analyst at Bulk Nutrients'
   location: 'Tasmania, Australia'
   email: #"trungha.ngx@gmail.com"
   links:
     - label: 'Email'
       icon: 'fas fa-fw fa-envelope-square'
-      url: mailto:trungha.ngx@gmail.com
+      url: mailto:trungha.dev@gmail.com
     - label: 'LinkedIn'
       icon: 'fab fa-fw fa-linkedin'
       url: 'https://www.linkedin.com/in/trungha-nguyen/'
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
-      url: 'https://github.com/trungha-ngx/'
+      url: 'https://github.com/earlybird-dev/'
     - label: 'Facebook'
       icon: 'fab fa-fw fa-facebook-square'
       # url: "https://www.facebook.com/trungha.ngx"
     - label: 'Website'
       icon: 'fas fa-fw fa-link'
-      # url: "https://your-website.com"
+      url: "https://early-bird.dev/"
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
       # url: "https://instagram.com/"
