@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: 'dirt' # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: 'dark' # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 header:
   image: '/assets/images/thumbnail_0.png'
 
 # Site Settings
 locale: 'en-US'
-title: 'Data Science Blog by Ha Nguyen'
+title: 'Data Science Blog'
 title_separator: '-'
 subtitle: # "Ancora imparo"
 name: 'Ha NGUYEN'
@@ -110,8 +110,8 @@ analytics:
 author:
   name: 'Ha NGUYEN'
   avatar: '/assets/images/ava.jpg' # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: 'Data Analyst at Bulk Nutrients'
-  location: 'Tasmania, Australia'
+  bio: 'Analytics Engineer / Data Analyst at Bulk Nutrients'
+  location: 'Australia'
   email: #"trungha.ngx@gmail.com"
   links:
     - label: 'Email'
